@@ -4,5 +4,9 @@ third_party/ElegantPaper/* -whitespace
 *.pdf binary
 *.docx binary
 *.tsv whitespace=-blank-at-eol,cr-at-eol
-"资料/序列/*.gb" -whitespace
-"资料/序列/*.gp" -whitespace
+"资料/序列/*.gb" -text -whitespace
+"资料/序列/*.gp" -text -whitespace
+# Preserve Matplotlib-generated SVG path formatting and its bound hashes.
+"报告/images/B/cloning-workflow.svg" -text -whitespace
+"报告/images/B/plasmid-map.svg" -text -whitespace
+"报告/images/B/predicted-bands.svg" -text -whitespace

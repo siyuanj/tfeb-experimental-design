@@ -1,0 +1,710 @@
+{
+  "status": "rendered; visual review recorded separately",
+  "kind": "predicted annotated sequence map",
+  "created_at_utc": "2026-10-23T17:54:33.541000+00:00",
+  "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/render_accepted_map.py'",
+  "design_version": "B-v1",
+  "sequence_gate": {
+    "path": "docs/协作/sequence-ready.json",
+    "sha256": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde",
+    "files": {
+      "设计/construct_spec.json": "395881bd325bc92798e3b97de46ad5adf2d1c4fd6387e2aa5329cb784d416e5b",
+      "资料/序列/TFEB_reference.gb": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+      "资料/序列/TFEB_NM_007162.2.gb": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+      "资料/序列/TFEB_NP_009093.1.gp": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+      "资料/序列/pEGFP-N1_U55762.1.gb": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+      "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+      "设计/construct.fasta": "2db5e19b5aa860ea1cec25821473b1753e4b72708a1b620e4f8eda88cea02b55",
+      "设计/fusion_protein.fasta": "66c927ec01732a07cde049aa6d4b5e858fae7f458785b64a2dd490f3208cb7ba",
+      "设计/fusion_orf.fasta": "a953cdeaf9a6ea24f140b0bf846167251df978c7496b514d3a0ec301b6023908",
+      "设计/PCR_product.fasta": "6d71e7a6592305cf55895603576dfb647f769cd5e2aae7b4f138363820003b73",
+      "设计/primers.tsv": "e2e07b361a59defbc1b506b999da920c65dfc08e8661d34f91cbbaa6bd5f19d2",
+      "设计/construct_features.tsv": "5d55af8a9a1b5086570439c9d18529983dbd16cfd086fc7f6beed89cbfe5371f",
+      "设计/junctions.tsv": "6a1712e5b225e55ee5c637d4920af32c9a5655f252bd28ca20ffdfb424a58672",
+      "设计/construct_metrics.json": "06956a37332a45c117c1f7369aaf3529e2d31d533b6f49432296283dee8e6cd9",
+      "设计/primer_checks.json": "82cc14c43877347398cf2fc4b81248daf26cc446d4b547e3283bdc49d9f86bdd",
+      "scripts/B-sequence/build_construct.py": "4b42095125f2bbf8d7498171b1e90d4221828a4a4f0f3ad28edb8585ba0df7d2",
+      "scripts/B-sequence/prepare_spec.py": "1451f654d3a5b9efb0a780e705c20da301c54af9330445c824750c3812ef1891",
+      "资料/序列/TFEB_cds.fasta": "75d58c3b36cdf65b8d25f2f78595301c6703e4b28c0d02d261bb2616ebf687bc",
+      "设计/verification_summary.json": "1da2b7af68326c07b2fba042819096b27f65f917eca190322a398242c6fc05fa",
+      "设计/independent_verification.json": "0043b02a288a2519c7142bf0a8477c1d0bb9257f04ac8a13eade8fb1d68b302f",
+      "设计/reference_verification.json": "133bc6489e4cf61d5268619a5e16415fd5a4c05c13ed4f5d0c6face4c2b6bb2e",
+      "设计/environment.json": "2c750e0af5103e6354322efaec9cbbe7dee6e49ff2f6db75d85085e40810225a",
+      "scripts/B-sequence/independent_verify.py": "bb7e40fec664f145997d49aa276e129619bfbb745a027568936d6fc69e692f70",
+      "资料/序列/TFEB_protein.fasta": "8f82f67a06b0e2a00e6bca6888ae250f5a7637f764af5a94edc4bea7e16c93a9",
+      "资料/序列/TFEB_cds_no_stop.fasta": "0cf6cf32a43c001521e65ab1cfdf29688d7cbd9f5ba3bceb7f3354425821475e",
+      "资料/序列/pEGFP-N1_U55762.1.fasta": "60b64c3181db52561fa971b58190734a34914cff73f93cb9b48ff090c58acee1"
+    }
+  },
+  "source": {
+    "path": "设计/construct.gb",
+    "format": "genbank",
+    "sha256": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0"
+  },
+  "length_bp": 6134,
+  "features_displayed": [
+    {
+      "feature_index_0based": 0,
+      "type": "promoter",
+      "label": "CMV promoter",
+      "input_location": "[0:589](+)",
+      "qualifiers": {
+        "label": [
+          "CMV promoter"
+        ],
+        "note": [
+          "PT3027-5 p2"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 0,
+      "end_exclusive_0based": 589,
+      "start_1based": 1,
+      "end_inclusive_1based": 589,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#326EB5",
+      "display_label": "CMV promoter"
+    },
+    {
+      "feature_index_0based": 1,
+      "type": "polyA_signal",
+      "label": "SV40 polyA signal 1",
+      "input_location": "[2952:2958](+)",
+      "qualifiers": {
+        "label": [
+          "SV40 polyA signal 1"
+        ],
+        "note": [
+          "PT3027-5 p2; signal motif only"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 2952,
+      "end_exclusive_0based": 2958,
+      "start_1based": 2953,
+      "end_inclusive_1based": 2958,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#D28B36",
+      "display_label": "SV40 polyA signal 1"
+    },
+    {
+      "feature_index_0based": 2,
+      "type": "polyA_signal",
+      "label": "SV40 polyA signal 2",
+      "input_location": "[2981:2987](+)",
+      "qualifiers": {
+        "label": [
+          "SV40 polyA signal 2"
+        ],
+        "note": [
+          "PT3027-5 p2; signal motif only"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 2981,
+      "end_exclusive_0based": 2987,
+      "start_1based": 2982,
+      "end_inclusive_1based": 2987,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#D28B36",
+      "display_label": "SV40 polyA signal 2"
+    },
+    {
+      "feature_index_0based": 3,
+      "type": "rep_origin",
+      "label": "f1 origin",
+      "input_location": "[3049:3505](-)",
+      "qualifiers": {
+        "label": [
+          "f1 origin"
+        ],
+        "note": [
+          "PT3027-5 p2; packages EGFP noncoding strand"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3049,
+      "end_exclusive_0based": 3505,
+      "start_1based": 3050,
+      "end_inclusive_1based": 3505,
+      "strand": -1,
+      "parsed_location_strand": -1,
+      "direction_from_note": false,
+      "arrow_strand": -1,
+      "color": "#8862B3",
+      "display_label": "f1 origin"
+    },
+    {
+      "feature_index_0based": 4,
+      "type": "promoter",
+      "label": "KanR promoter -35",
+      "input_location": "[3566:3572](+)",
+      "qualifiers": {
+        "label": [
+          "KanR promoter -35"
+        ],
+        "note": [
+          "PT3027-5 p2"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3566,
+      "end_exclusive_0based": 3572,
+      "start_1based": 3567,
+      "end_inclusive_1based": 3572,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#326EB5",
+      "display_label": "KanR promoter -35"
+    },
+    {
+      "feature_index_0based": 5,
+      "type": "promoter",
+      "label": "KanR promoter -10",
+      "input_location": "[3589:3595](+)",
+      "qualifiers": {
+        "label": [
+          "KanR promoter -10"
+        ],
+        "note": [
+          "PT3027-5 p2"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3589,
+      "end_exclusive_0based": 3595,
+      "start_1based": 3590,
+      "end_inclusive_1based": 3595,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#326EB5",
+      "display_label": "KanR promoter -10"
+    },
+    {
+      "feature_index_0based": 6,
+      "type": "enhancer",
+      "label": "SV40 early enhancer 1",
+      "input_location": "[3678:3750](+)",
+      "qualifiers": {
+        "label": [
+          "SV40 early enhancer 1"
+        ],
+        "note": [
+          "PT3027-5 p2"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3678,
+      "end_exclusive_0based": 3750,
+      "start_1based": 3679,
+      "end_inclusive_1based": 3750,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#8294A8",
+      "display_label": "SV40 early enhancer 1"
+    },
+    {
+      "feature_index_0based": 7,
+      "type": "enhancer",
+      "label": "SV40 early enhancer 2",
+      "input_location": "[3750:3822](+)",
+      "qualifiers": {
+        "label": [
+          "SV40 early enhancer 2"
+        ],
+        "note": [
+          "PT3027-5 p2"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3750,
+      "end_exclusive_0based": 3822,
+      "start_1based": 3751,
+      "end_inclusive_1based": 3822,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#8294A8",
+      "display_label": "SV40 early enhancer 2"
+    },
+    {
+      "feature_index_0based": 8,
+      "type": "rep_origin",
+      "label": "SV40 origin",
+      "input_location": "[3845:3981](+)",
+      "qualifiers": {
+        "label": [
+          "SV40 origin"
+        ],
+        "note": [
+          "PT3027-5 p2; no directional arrow assigned"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3845,
+      "end_exclusive_0based": 3981,
+      "start_1based": 3846,
+      "end_inclusive_1based": 3981,
+      "strand": 0,
+      "parsed_location_strand": 1,
+      "direction_from_note": true,
+      "arrow_strand": 0,
+      "color": "#8862B3",
+      "display_label": "SV40 origin"
+    },
+    {
+      "feature_index_0based": 9,
+      "type": "promoter",
+      "label": "SV40 early promoter element",
+      "input_location": "[3901:3908](+)",
+      "qualifiers": {
+        "label": [
+          "SV40 early promoter element"
+        ],
+        "note": [
+          "PT3027-5 p2; not whole promoter boundary"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 3901,
+      "end_exclusive_0based": 3908,
+      "start_1based": 3902,
+      "end_inclusive_1based": 3908,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#326EB5",
+      "display_label": "SV40 early promoter\nelement"
+    },
+    {
+      "feature_index_0based": 10,
+      "type": "CDS",
+      "label": "KanR/NeoR",
+      "input_location": "[4029:4824](+)",
+      "qualifiers": {
+        "label": [
+          "KanR/NeoR"
+        ],
+        "note": [
+          "U55762.1 CDS; Kan for bacteria, G418 for mammalian cells"
+        ],
+        "translation": [
+          "MIEQDGLHAGSPAAWVERLFGYDWAQQTIGCSDAAVFRLSAQGRPVLFVKTDLSGALNELQDEAARLSWLATTGVPCAAVLDVVTEAGRDWLLLGEVPGQDLLSSHLAPAEKVSIMADAMRRLHTLDPATCPFDHQAKHRIERARTRMEAGLVDQDDLDEEHQGLAPAELFARLKASMPDGEDLVVTHGDACLPNIMVENGRFSGFIDCGRLGVADRYQDIALATRDIAEELGGEWADRFLVLYGIAAPDSQRIAFYRLLDEFF"
+        ],
+        "codon_start": [
+          "1"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 4029,
+      "end_exclusive_0based": 4824,
+      "start_1based": 4030,
+      "end_inclusive_1based": 4824,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#9962A9",
+      "display_label": "KanR/NeoR"
+    },
+    {
+      "feature_index_0based": 11,
+      "type": "polyA_signal",
+      "label": "HSV TK polyA signal 1",
+      "input_location": "[5059:5065](+)",
+      "qualifiers": {
+        "label": [
+          "HSV TK polyA signal 1"
+        ],
+        "note": [
+          "PT3027-5 p2; signal motif only"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 5059,
+      "end_exclusive_0based": 5065,
+      "start_1based": 5060,
+      "end_inclusive_1based": 5065,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#D28B36",
+      "display_label": "HSV TK polyA signal 1"
+    },
+    {
+      "feature_index_0based": 12,
+      "type": "polyA_signal",
+      "label": "HSV TK polyA signal 2",
+      "input_location": "[5072:5078](+)",
+      "qualifiers": {
+        "label": [
+          "HSV TK polyA signal 2"
+        ],
+        "note": [
+          "PT3027-5 p2; signal motif only"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 5072,
+      "end_exclusive_0based": 5078,
+      "start_1based": 5073,
+      "end_inclusive_1based": 5078,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#D28B36",
+      "display_label": "HSV TK polyA signal 2"
+    },
+    {
+      "feature_index_0based": 13,
+      "type": "rep_origin",
+      "label": "pUC origin",
+      "input_location": "[5408:6052](+)",
+      "qualifiers": {
+        "label": [
+          "pUC origin"
+        ],
+        "note": [
+          "PT3027-5 p2; origin interval, no directional arrow assigned"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 5408,
+      "end_exclusive_0based": 6052,
+      "start_1based": 5409,
+      "end_inclusive_1based": 6052,
+      "strand": 0,
+      "parsed_location_strand": 1,
+      "direction_from_note": true,
+      "arrow_strand": 0,
+      "color": "#8862B3",
+      "display_label": "pUC origin"
+    },
+    {
+      "feature_index_0based": 14,
+      "type": "CDS",
+      "label": "TFEB-EGFP fusion ORF",
+      "input_location": "[630:2799](+)",
+      "qualifiers": {
+        "label": [
+          "TFEB-EGFP fusion ORF"
+        ],
+        "note": [
+          "B-v1; NM_007162.3 + defined linker + U55762.1 EGFP; includes terminal TAA"
+        ],
+        "translation": [
+          "MASRIGLRMQLMREQAQQEEQRERMQQQAVMHYMQQQQQQQQQQLGGPPTPAINTPVHFQSPPPVPGEVLKVQSYLENPTSYHLQQSQHQKVREYLSETYGNKFAAHISPAQGSPKPPPAASPGVRAGHVLSSSAGNSAPNSPMAMLHIGSNPERELDDVIDNIMRLDDVLGYINPEMQMPNTLPLSSSHLNVYSSDPQVTASLVGVTSSSCPADLTQKRELTDAESRALAKERQKKDNHNLIERRRRFNINDRIKELGMLIPKANDLDVRWNKGTILKASVDYIRRMQKDLQKSRELENHSRRLEMTNKQLWLRIQELEMQARVHGLPTTSPSGMNMAELAQQVVKQELPSEEGPGEALMLGAEVPDPEPLPALPPQAPLPLPTQPPSPFHHLDFSHSLSFGGREDEGPPGYPEPLAPGHGSPFPSLSKKDLDLMLLDDSLLPLASDPLLSTMSPEASKASSRRSSFSMEEGDVLGDPPVATMVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITLGMDELYK"
+        ],
+        "codon_start": [
+          "1"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 630,
+      "end_exclusive_0based": 2799,
+      "start_1based": 631,
+      "end_inclusive_1based": 2799,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#326EB5",
+      "display_label": "TFEB-EGFP fusion ORF"
+    },
+    {
+      "feature_index_0based": 15,
+      "type": "misc_feature",
+      "label": "TFEB",
+      "input_location": "[630:2058](+)",
+      "qualifiers": {
+        "label": [
+          "TFEB"
+        ],
+        "note": [
+          "NM_007162.3 CDS 303..1730; native stop omitted; native start retained"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 630,
+      "end_exclusive_0based": 2058,
+      "start_1based": 631,
+      "end_inclusive_1based": 2058,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#149A8A",
+      "display_label": "TFEB"
+    },
+    {
+      "feature_index_0based": 16,
+      "type": "misc_feature",
+      "label": "linker GDPPVAT",
+      "input_location": "[2058:2079](+)",
+      "qualifiers": {
+        "label": [
+          "linker GDPPVAT"
+        ],
+        "note": [
+          "B-v1 GG frame bases + residual BamHI-to-EGFP vector segment"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 2058,
+      "end_exclusive_0based": 2079,
+      "start_1based": 2059,
+      "end_inclusive_1based": 2079,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#C78B2D",
+      "display_label": "linker GDPPVAT"
+    },
+    {
+      "feature_index_0based": 17,
+      "type": "misc_feature",
+      "label": "EGFP",
+      "input_location": "[2079:2799](+)",
+      "qualifiers": {
+        "label": [
+          "EGFP"
+        ],
+        "note": [
+          "U55762.1 CDS 679..1398; internal ATG retained; terminal TAA"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 2079,
+      "end_exclusive_0based": 2799,
+      "start_1based": 2080,
+      "end_inclusive_1based": 2799,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#799E28",
+      "display_label": "EGFP"
+    },
+    {
+      "feature_index_0based": 18,
+      "type": "misc_feature",
+      "label": "initiation context ACC",
+      "input_location": "[627:630](+)",
+      "qualifiers": {
+        "label": [
+          "initiation context ACC"
+        ],
+        "note": [
+          "B-v1 forward-primer tail; -3 A and +4 G"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 627,
+      "end_exclusive_0based": 630,
+      "start_1based": 628,
+      "end_inclusive_1based": 630,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#BD6D8D",
+      "display_label": "initiation context ACC"
+    },
+    {
+      "feature_index_0based": 19,
+      "type": "misc_feature",
+      "label": "retained upstream MCS",
+      "input_location": "[590:622](+)",
+      "qualifiers": {
+        "label": [
+          "retained upstream MCS"
+        ],
+        "note": [
+          "U55762.1 MCS fragment; not a contiguous original MCS after cloning"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 590,
+      "end_exclusive_0based": 622,
+      "start_1based": 591,
+      "end_inclusive_1based": 622,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#BD6D8D",
+      "display_label": "retained upstream MCS"
+    },
+    {
+      "feature_index_0based": 20,
+      "type": "misc_feature",
+      "label": "retained downstream MCS",
+      "input_location": "[2060:2072](+)",
+      "qualifiers": {
+        "label": [
+          "retained downstream MCS"
+        ],
+        "note": [
+          "U55762.1 BamHI-to-AgeI segment; overlaps translated linker"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 2060,
+      "end_exclusive_0based": 2072,
+      "start_1based": 2061,
+      "end_inclusive_1based": 2072,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#BD6D8D",
+      "display_label": "retained downstream MCS"
+    },
+    {
+      "feature_index_0based": 21,
+      "type": "misc_feature",
+      "label": "HindIII site",
+      "input_location": "[621:627](+)",
+      "qualifiers": {
+        "label": [
+          "HindIII site"
+        ],
+        "note": [
+          "sequence-exact restriction recognition site"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 621,
+      "end_exclusive_0based": 627,
+      "start_1based": 622,
+      "end_inclusive_1based": 627,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#BD6D8D",
+      "display_label": "HindIII site"
+    },
+    {
+      "feature_index_0based": 22,
+      "type": "misc_feature",
+      "label": "BamHI site",
+      "input_location": "[2060:2066](+)",
+      "qualifiers": {
+        "label": [
+          "BamHI site"
+        ],
+        "note": [
+          "sequence-exact restriction recognition site"
+        ]
+      },
+      "part_index_0based": 0,
+      "part_count": 1,
+      "start_0based": 2060,
+      "end_exclusive_0based": 2066,
+      "start_1based": 2061,
+      "end_inclusive_1based": 2066,
+      "strand": 1,
+      "parsed_location_strand": 1,
+      "direction_from_note": false,
+      "arrow_strand": 1,
+      "color": "#BD6D8D",
+      "display_label": "BamHI site"
+    }
+  ],
+  "features_omitted": [],
+  "restriction_enzymes": [
+    {
+      "enzyme": "HindIII",
+      "recognition_sequence": "AAGCTT",
+      "cuts": [
+        {
+          "search_result_1based": 623,
+          "first_base_after_cut_1based": 623,
+          "last_base_before_cut_1based": 622,
+          "cut_boundary_0based": 622
+        }
+      ],
+      "cut_count": 1
+    },
+    {
+      "enzyme": "BamHI",
+      "recognition_sequence": "GGATCC",
+      "cuts": [
+        {
+          "search_result_1based": 2062,
+          "first_base_after_cut_1based": 2062,
+          "last_base_before_cut_1based": 2061,
+          "cut_boundary_0based": 2061
+        }
+      ],
+      "cut_count": 1
+    }
+  ],
+  "software": {
+    "python": "3.12.15",
+    "biopython": "1.88",
+    "dna_features_viewer": "3.1.5",
+    "matplotlib": "3.11.2"
+  },
+  "scripts": {
+    "scripts/B-figures/render_accepted_map.py": "c8387450bba74a0c1a113d22e0e7259bac56d62c1651339a321b409712297510",
+    "scripts/B-figures/render_plasmid_map.py": "b8c80b5ed5611f72dddaf2d9838f3793255ca79d743953cd3f5896708a720e42",
+    "scripts/B-figures/handoff.py": "23360abef2285abfa531f5817fd39cae15c24cc6a7c8270849f8231e383b56a6",
+    "scripts/B-figures/figure_layouts.py": "8e45fa91f0d92eb4f0cc6c69f43cf3e4637d10fc4e198ed892a1ba750242fbf4"
+  },
+  "conventions": [
+    "Feature coordinates are 0-based half-open, with 1-based inclusive equivalents",
+    "Enzyme labels are the first 1-based nucleotide after reference-strand cleavage",
+    "An explicit no-direction note suppresses the origin arrow after GenBank round-trip",
+    "PolyA annotations mark signal motifs, not the entire processing region",
+    "Overlapping fusion ORF and component annotations are intentional"
+  ],
+  "outputs": {
+    "报告/images/B/plasmid-map.pdf": "b1cd1bfac9a1bb917c492710f7e97ef2a2ff42bdc22e7c1ff68e3005ba868f4f",
+    "报告/images/B/plasmid-map.svg": "39a9ca518b00071213ace4f6fb36c3f0b0878f050bfce9c6902439b5e6bc0726",
+    "报告/images/B/plasmid-map.png": "19787623e3af1ff1accabcafbe9b48c67941c27aa62af5040df9d5747732744a"
+  }
+}

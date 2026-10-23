@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "pdf_sha256": "a3d7ba452ccd8ad7c474b2a6b088f0a48b9710445a9e899b5e516eb000f93b10",
+  "snapshot": "docs/核查/B/main-final-review-a3d7ba452ccd/snapshot.pdf",
+  "page_count": 14,
+  "dpi": 110,
+  "script_sha256": "a4e3b832746d7c36efac6b1c2b73ad5aeda51f6b8e61478c653f66b1d88ea610",
+  "pages": [
+    {
+      "page": 1,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-01.png",
+      "sha256": "07db2adc8e9ec0a47b2b8524328589ffd32a3524368ee4c44c12b0dc03ff87ac",
+      "status": "visually_reviewed",
+      "note": "Title, author names, Working draft, abstract and hypotheses are legible; no fabricated experiment results."
+    },
+    {
+      "page": 2,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-02.png",
+      "sha256": "6ae7aa9bec03dff36cb8dff4c319d33df733ac30fbec0431b1dd85ab20b1d263",
+      "status": "visually_reviewed",
+      "note": "Accession/version, template stock qualification, tag direction and historical enzyme distinction read correctly."
+    },
+    {
+      "page": 3,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-03.png",
+      "sha256": "083d6f0f1e22b36ecdb690b3c4203dda3276739670a9ce85afdfc640f1b183b8",
+      "status": "visually_reviewed",
+      "note": "Both full cloning oligos and partitions are readable; Q5 table and thermal program fit without overlap."
+    },
+    {
+      "page": 4,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-04.png",
+      "sha256": "48a945e4e37ca6cb69245264d78a5436e7abd6148a045169ba92daeeaa2251e1",
+      "status": "visually_reviewed",
+      "note": "Cleanup, SDS B7024 handling, nominal lengths and ligation equation are clear; no cropped text."
+    },
+    {
+      "page": 5,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-05.png",
+      "sha256": "0e7c51718f84a6253f7b8bada4d13e919bb03719b67f49ce697c74189dfd79f2",
+      "status": "visually_reviewed",
+      "note": "Digestion/ligation caption stays with complete table; transformation and colony PCR parameters remain legible."
+    },
+    {
+      "page": 6,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-06.png",
+      "sha256": "0a513f376704c3aa9836b2ae4f907fc6af24e8cf3b0e2ccadc993c7f558493a3",
+      "status": "visually_reviewed",
+      "note": "All ten Sanger primer rows fit on one page with intact sequences, coordinates and windows."
+    },
+    {
+      "page": 7,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-07.png",
+      "sha256": "439c54f6e2c538fda2c6c0303b65515ac5f5403737fb3dbd25ebdc11a7465798",
+      "status": "visually_reviewed",
+      "note": "Sequencing target and acceptance conditions, independent A boundary and N/C equation are intact."
+    },
+    {
+      "page": 8,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-08.png",
+      "sha256": "7e800480c725e73f25b945ee9aad47327f5961b138118d2920e1a279e3f2b422",
+      "status": "visually_reviewed",
+      "note": "B results end before the figures; prior isolated continuation page is removed without losing screening limitations."
+    },
+    {
+      "page": 9,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-09.png",
+      "sha256": "f214a457f99aa93b5c65219f9ef919a15e22ae93b4f07f31cff95bdda4f8950e",
+      "status": "visually_reviewed",
+      "note": "Coordinate map and screening table readable; 623/2062 cleavage convention and non-directional origins explained."
+    },
+    {
+      "page": 10,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-10.png",
+      "sha256": "686dfe18b5377dcbb55105b5ef0d9b91ff795ea8690563675dc4709f44ffe546",
+      "status": "visually_reviewed",
+      "note": "ImageGen seven-step schematic, controls and arrows checked; caption excludes exact geometry and experimental reads."
+    },
+    {
+      "page": 11,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-11.png",
+      "sha256": "a9c57124d81217720475778ebdfdd80e8c7d15b3da43ffbcecfc9d9ba969a69c",
+      "status": "visually_reviewed",
+      "note": "Four predicted gel panels and lane labels readable; small fragments, three-base differences and uncut DNA limits explicit."
+    },
+    {
+      "page": 12,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-12.png",
+      "sha256": "9872e1b17ace0503818c5df40bc1e98d8404aec12c4308ea62a8ce07efb21132",
+      "status": "visually_reviewed",
+      "note": "Cell predictions, limitations, planned contributions and AI declaration accurately retain the working-draft boundary."
+    },
+    {
+      "page": 13,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-13.png",
+      "sha256": "eafbd103cf6a45be12a6afc6508193081e61d616ec2a388a7df00944b113c540",
+      "status": "visually_reviewed",
+      "note": "AI declaration continues normally; references 1–18 and long URLs fit within margins."
+    },
+    {
+      "page": 14,
+      "image": "docs/核查/B/main-final-review-a3d7ba452ccd/page-14.png",
+      "sha256": "e8f1b385d3e6e395b26e807ebc05e2c90f35071756af37fe6d6dabb0e33ce74c",
+      "status": "visually_reviewed",
+      "note": "References 19–27 are complete and legible; no undefined citations, clipping or replacement glyphs observed."
+    }
+  ],
+  "reviewed_at": "2026-10-23T14:13:55.762277-04:00",
+  "reviewer": "Primary Codex assistant; not a claim of human author review",
+  "method": "Viewed every page PNG with view_image after rendering an immutable PDF snapshot",
+  "resolved_issues": [
+    "B-R01: isolated three-line continuation page eliminated"
+  ],
+  "excluded_evidence": [
+    "Earlier concurrent live-PDF render changed hashes and is invalid",
+    "15-page f532a83fc3b6 and 0a36c46fdb3e snapshots were intermediate layout reviews"
+  ],
+  "limitations": [
+    "Visual review does not establish wet-laboratory success",
+    "Independent A parameters and author confirmation remain outstanding"
+  ]
+}

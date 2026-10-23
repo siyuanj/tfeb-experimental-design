@@ -5,6 +5,7 @@ docs/备份/
 报告/build/
 *.aux
 *.bbl
+*-blx.bib
 *.bcf
 *.blg
 *.fdb_latexmk

@@ -8,6 +8,7 @@
 - PCR模板：拟订制与上述CDS一致的1431nt线性dsDNA、不做密码子优化；采购例为IDT gBlocks HiFi（产品使用序列确认的克隆中间体，仍不保证本项目每个分子无错误）。不预设HeLa表达哪个转录本，不声称已获得cDNA或已测浓度。下单可行性/QC需将来核验；最终克隆须全覆盖测序。
 - 空载体：NCBI Clontech直接提交 `U55762.1`，4733bp环状pEGFP-N1。该记录是完整设计参考，厂家说明其由公开资料及部分测序汇编，不能冒充本次实物全长测序。使用前需核实空载体身份。
 - 方向：TFEB–EGFP（C端EGFP），与Roczniak-Ferguson 2012的HeLa饥饿/Torin1定位先例最直接一致。Park2021有N端EGFP先例；Martina2013显示N端调控重要，但两者不证明N端标签一定失活，也不构成标签方向的直接优劣实验。
+- 命名解释：pEGFP-N1 将目标 TFEB 接在 EGFP 的 N 侧，因此 EGFP 实际位于 TFEB 的 C 端；与参考选择线的命名说明一致。
 - native TFEB ATG保留；TFEB原TGA移除；EGFP的ATG成为内部Met，最终由EGFP TAA终止。整个蛋白必须从最终质粒翻译核验。
 
 ## 酶对、接头及引物
