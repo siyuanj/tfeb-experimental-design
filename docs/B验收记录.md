@@ -4,7 +4,7 @@
 
 ## 当前结论
 
-P0–P8 已通过；P9 的科学、引用、图文及逐页PDF核查已完成，Git合并与实现PR正在交付。整份作业仍是 Working draft，独立A不冒记为完成。
+**B 的 P0–P9 已完成。** 科学、引用、图文及逐页PDF核查通过；主分支内容已整合，工作分支已推送并建立[实现PR #4](https://github.com/siyuanj/tfeb-experimental-design/pull/4)。整份作业仍是 Working draft，独立A不冒记为完成。
 
 用户要求：完成B及其必要A依赖，全程本地、不连接或使用UF，不处理MacBook。融合方向、试剂组合、数值模型、筛查阈值与流程细节为基于证据的设计判断。父会话另转达用户允许ImageGen用于适合的示意图；其科学文字和步骤仍须验收，精确坐标/条带保留数据生成版本。
 
@@ -60,6 +60,8 @@ P5 ready：`a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde`，
 
 ## Git交付
 
-序列里程碑 `bb9a07b`、P6方法里程碑 `3821a71` 已推送到 `origin/codex/b-design`。最终报告、P9记录与实现PR尚待交付；不得用计划PR#1替代本次实现交付。
+序列里程碑 `bb9a07b`、P6方法里程碑 `3821a71`、最终图文/审查 `2fc5668` 已提交。合并提交 `22f07f5b4c8592802eeaa80cb0af8a23b4f98619` 的父提交为 `2fc56686d735a656205984846996ba0aed96af5f` 与主分支 `d107242731e3467974fcb5c82ca06bca2d399319`；22处冲突按已审阅的集成记录解决，全部冻结文件保持验收字节。合并后重跑主线核查，156项、103绑定文件和14页PDF通过。
 
-首次完整暂存检查发现3份Matplotlib生成SVG的路径数据带行尾空格；这是生成器格式，不是图文错误。只为这3份绑定SVG配置`-text -whitespace`，保留原字节与图源哈希；未放宽原创代码/文档的空白检查。重新检查结果以最终交付记录为准。
+2026-10-23 14:19 EDT，GitHub回查[PR #4](https://github.com/siyuanj/tfeb-experimental-design/pull/4)为OPEN / MERGEABLE，head为上述合并提交，base为`main`，没有返回CI检查项。创建连接器返回403后，用已登录GitHub CLI建立同一PR，并附到本聊天；没有重复创建。后续文档收口提交沿用该PR，最终head以PR和Git历史为准。此次交付没有合并PR或向网络学堂提交作业。
+
+首次完整暂存检查发现3份Matplotlib生成SVG的路径数据带行尾空格；这是生成器格式，不是图文错误。只为这3份绑定SVG配置`-text -whitespace`，保留原字节与图源哈希；未放宽原创代码/文档的空白检查。最终图文提交及合并提交前的`git diff --cached --check`均通过。
