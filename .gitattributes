@@ -3,3 +3,6 @@ third_party/ElegantPaper/* -whitespace
 报告/elegantpaper.cls -whitespace
 *.pdf binary
 *.docx binary
+*.tsv whitespace=-blank-at-eol,cr-at-eol
+"资料/序列/*.gb" -whitespace
+"资料/序列/*.gp" -whitespace

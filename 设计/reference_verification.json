@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "accessions": [
+    "NM_007162.3",
+    "NM_007162.2",
+    "NP_009093.1",
+    "U55762.1"
+  ],
+  "cds_translation_matches_NP": true,
+  "historic_current_CDS_identical": true,
+  "historic_only_difference": "10 terminal A bases",
+  "cds_sha256": "df96a3360fb0e7886f42964481c1918c04b80363fcbae10a9659854154ef7f21",
+  "inputs": [
+    {
+      "accession_version": "NM_007162.3",
+      "path": "资料/序列/TFEB_reference.gb",
+      "url": "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NM_007162.3&db=nuccore&report=genbank&retmode=text",
+      "retrieved_at_utc": "2026-10-23T17:19:27.512124+00:00",
+      "length": 2354,
+      "file_sha256": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+      "sequence_sha256": "0702312ceb2a00b30cc060d1ba809bfeeef5105c132be49512818041cc26e70e",
+      "matches_prior_worktree_file": true
+    },
+    {
+      "accession_version": "NM_007162.2",
+      "path": "资料/序列/TFEB_NM_007162.2.gb",
+      "url": "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NM_007162.2&db=nuccore&report=genbank&retmode=text",
+      "retrieved_at_utc": "2026-10-23T17:19:28.092436+00:00",
+      "length": 2364,
+      "file_sha256": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+      "sequence_sha256": "080f92f539ae5015adefc68de1865d8ead5371931c5eb14cfbc9a955c1fb1a0f",
+      "matches_prior_worktree_file": true
+    },
+    {
+      "accession_version": "NP_009093.1",
+      "path": "资料/序列/TFEB_NP_009093.1.gp",
+      "url": "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NP_009093.1&db=protein&report=genbank&retmode=text",
+      "retrieved_at_utc": "2026-10-23T17:19:28.639642+00:00",
+      "length": 476,
+      "file_sha256": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+      "sequence_sha256": "84f910f982077df035fe31d4dc4baa3731c043c6efb3682ed2fac9cd807a0ae9",
+      "matches_prior_worktree_file": true
+    },
+    {
+      "accession_version": "U55762.1",
+      "path": "资料/序列/pEGFP-N1_U55762.1.gb",
+      "url": "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=U55762.1&db=nuccore&report=genbank&retmode=text",
+      "retrieved_at_utc": "2026-10-23T17:19:29.236382+00:00",
+      "length": 4733,
+      "file_sha256": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+      "sequence_sha256": "63918e4dcae6eed7f21a2d430f8b24a7172acc9a174e307d933550034189efde",
+      "matches_prior_worktree_file": true
+    }
+  ]
+}

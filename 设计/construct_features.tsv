@@ -1,0 +1,24 @@
+name	start_1based	end_1based	strand	type	source	note
+CMV promoter	1	589	1	promoter	PT3027-5 p2	
+retained upstream MCS	591	622	1	misc_feature	U55762.1 MCS fragment	not a contiguous original MCS after cloning
+HindIII site	622	627	1	misc_feature	sequence-exact restriction recognition site	
+initiation context ACC	628	630	1	misc_feature	B-v1 forward-primer tail	-3 A and +4 G
+TFEB	631	2058	1	misc_feature	NM_007162.3 CDS 303..1730	native stop omitted; native start retained
+TFEB-EGFP fusion ORF	631	2799	1	CDS	B-v1; NM_007162.3 + defined linker + U55762.1 EGFP	includes terminal TAA
+linker GDPPVAT	2059	2079	1	misc_feature	B-v1 GG frame bases + residual BamHI-to-EGFP vector segment	
+BamHI site	2061	2066	1	misc_feature	sequence-exact restriction recognition site	
+retained downstream MCS	2061	2072	1	misc_feature	U55762.1 BamHI-to-AgeI segment	overlaps translated linker
+EGFP	2080	2799	1	misc_feature	U55762.1 CDS 679..1398	internal ATG retained; terminal TAA
+SV40 polyA signal 1	2953	2958	1	polyA_signal	PT3027-5 p2; signal motif only	
+SV40 polyA signal 2	2982	2987	1	polyA_signal	PT3027-5 p2; signal motif only	
+f1 origin	3050	3505	-1	rep_origin	PT3027-5 p2; packages EGFP noncoding strand	
+KanR promoter -35	3567	3572	1	promoter	PT3027-5 p2	
+KanR promoter -10	3590	3595	1	promoter	PT3027-5 p2	
+SV40 early enhancer 1	3679	3750	1	enhancer	PT3027-5 p2	
+SV40 early enhancer 2	3751	3822	1	enhancer	PT3027-5 p2	
+SV40 origin	3846	3981	0	rep_origin	PT3027-5 p2; no directional arrow assigned	
+SV40 early promoter element	3902	3908	1	promoter	PT3027-5 p2; not whole promoter boundary	
+KanR/NeoR	4030	4824	1	CDS	U55762.1 CDS; Kan for bacteria, G418 for mammalian cells	
+HSV TK polyA signal 1	5060	5065	1	polyA_signal	PT3027-5 p2; signal motif only	
+HSV TK polyA signal 2	5073	5078	1	polyA_signal	PT3027-5 p2; signal motif only	
+pUC origin	5409	6052	0	rep_origin	PT3027-5 p2; origin interval, no directional arrow assigned	

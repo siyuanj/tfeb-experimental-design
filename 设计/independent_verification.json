@@ -1,0 +1,227 @@
+{
+  "status": "pass",
+  "success": true,
+  "checked_at_utc": "2026-10-23T17:33:28.980534+00:00",
+  "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-sequence/independent_verify.py'",
+  "python_version": "3.12.15",
+  "script_path": "scripts/B-sequence/independent_verify.py",
+  "script_sha256": "bb7e40fec664f145997d49aa276e129619bfbb745a027568936d6fc69e692f70",
+  "implementation": "Python standard library only; no builder imports, pydna, Bio, or primer3",
+  "independence": "Pinned source coordinates and sequence hashes; literal cut geometry; independent codon lookup and mass summation",
+  "mass_convention": "Average neutral unmodified linear protein; free amino acid masses minus (n-1)*18.0153 Da; same convention as main-line average MW",
+  "inputs": [
+    {
+      "path": "设计/construct_spec.json",
+      "bytes": 8146,
+      "file_sha256": "395881bd325bc92798e3b97de46ad5adf2d1c4fd6387e2aa5329cb784d416e5b"
+    },
+    {
+      "path": "资料/序列/TFEB_reference.gb",
+      "bytes": 21549,
+      "file_sha256": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594"
+    },
+    {
+      "path": "资料/序列/TFEB_NM_007162.2.gb",
+      "bytes": 19724,
+      "file_sha256": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb"
+    },
+    {
+      "path": "资料/序列/TFEB_NP_009093.1.gp",
+      "bytes": 14833,
+      "file_sha256": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f"
+    },
+    {
+      "path": "资料/序列/pEGFP-N1_U55762.1.gb",
+      "bytes": 9370,
+      "file_sha256": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d"
+    },
+    {
+      "path": "资料/序列/TFEB_cds.fasta",
+      "bytes": 1505,
+      "file_sha256": "75d58c3b36cdf65b8d25f2f78595301c6703e4b28c0d02d261bb2616ebf687bc"
+    },
+    {
+      "path": "设计/primers.tsv",
+      "bytes": 677,
+      "file_sha256": "e2e07b361a59defbc1b506b999da920c65dfc08e8661d34f91cbbaa6bd5f19d2"
+    },
+    {
+      "path": "设计/construct.fasta",
+      "bytes": 6292,
+      "file_sha256": "2db5e19b5aa860ea1cec25821473b1753e4b72708a1b620e4f8eda88cea02b55"
+    },
+    {
+      "path": "设计/construct.gb",
+      "bytes": 13165,
+      "file_sha256": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0"
+    },
+    {
+      "path": "设计/fusion_protein.fasta",
+      "bytes": 787,
+      "file_sha256": "66c927ec01732a07cde049aa6d4b5e858fae7f458785b64a2dd490f3208cb7ba"
+    },
+    {
+      "path": "设计/construct_metrics.json",
+      "bytes": 2424,
+      "file_sha256": "06956a37332a45c117c1f7369aaf3529e2d31d533b6f49432296283dee8e6cd9"
+    }
+  ],
+  "checks": [
+    {
+      "name": "pinned_sources_and_independent_reference_translation",
+      "passed": true,
+      "detail": {
+        "TFEB_CDS_nt": 1431,
+        "TFEB_aa": 476,
+        "EGFP_aa": 239
+      }
+    },
+    {
+      "name": "primers_sequences_tails_reverse_complement_and_binding",
+      "passed": true,
+      "detail": {
+        "forward": {
+          "full_nt": 37,
+          "annealing_nt": 22
+        },
+        "reverse": {
+          "full_nt": 36,
+          "annealing_nt": 22
+        }
+      }
+    },
+    {
+      "name": "explicit_PCR_top_bottom_cut_and_ligation",
+      "passed": true,
+      "detail": {
+        "PCR_nt": 1457,
+        "insert_nominal_nt": 1439,
+        "insert_ds_span_nt": 1443,
+        "backbone_nominal_nt": 4695,
+        "backbone_ds_span_nt": 4699,
+        "vector_top_cut_after_1based": [
+          622,
+          660
+        ],
+        "PCR_top_cut_after_1based": [
+          7,
+          1446
+        ],
+        "junctions": {
+          "upstream": "AAGCTTACCATGGCGTCACGC",
+          "downstream": "GGCGATGTGCTGGGGGATCCACCGGTCGCCACCATGGTGAGCAAG"
+        }
+      }
+    },
+    {
+      "name": "complete_construct_ORF_protein_mass_backbone_annotations_and_metrics",
+      "passed": true,
+      "detail": {
+        "orf_start_1based": 631,
+        "orf_end_1based": 2799,
+        "tfeb_end_1based": 2058,
+        "egfp_start_1based": 2080,
+        "linker_start_1based": 2059,
+        "linker_end_1based": 2079,
+        "orf_nt_including_stop": 2169,
+        "recognition_starts_1based": {
+          "HindIII": 622,
+          "BamHI": 2061
+        },
+        "plasmid_bp": 6134,
+        "fusion_aa": 722,
+        "fusion_molecular_weight_Da": 80424.9891,
+        "mass_difference_Da": 0.0,
+        "DNA_sha256": "ff116efaccbd7d35a035004e136da34e8681bd6e9beaecd818b75c7a961c02ec",
+        "protein_sha256": "564a2f094af5fbedab14fcc9be747b0d241b7f83267b44dba8673fc68bdd4a00",
+        "linker_nt": "GGGGATCCACCGGTCGCCACC",
+        "linker_aa": "GDPPVAT"
+      }
+    },
+    {
+      "name": "four_semantic_negative_controls",
+      "passed": true,
+      "detail": "All rejected by their intended invariant; no exact-sequence equality check used"
+    },
+    {
+      "name": "input_snapshot_unchanged",
+      "passed": true,
+      "detail": "Every recorded input hash was rechecked after validation"
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "reverse_TFEB_insert",
+      "rejected": true,
+      "expected_reason": "insert_orientation",
+      "actual_reason": "insert_orientation",
+      "reason_matches": true,
+      "detail": "TFEB is reverse-complemented",
+      "mutant_sequence_sha256": "cbef15c56e76f8a92dbc244bc47492415a537c329232b57466872944d924911f"
+    },
+    {
+      "name": "one_base_frameshift",
+      "rejected": true,
+      "expected_reason": "reading_frame",
+      "actual_reason": "reading_frame",
+      "reason_matches": true,
+      "detail": "ORF length is not divisible by three",
+      "mutant_sequence_sha256": "56f0f3657e347d2e4922baa787e7a96ae58596e4e0c4a1b5c996600f75b1d483"
+    },
+    {
+      "name": "restore_native_TFEB_stop",
+      "rejected": true,
+      "expected_reason": "premature_stop",
+      "actual_reason": "premature_stop",
+      "reason_matches": true,
+      "detail": "Internal stop in fusion ORF",
+      "mutant_sequence_sha256": "ad32150c5ff320e27c1f2af996c0187c237cf7e9a04930a07ba3a736a9dc7916"
+    },
+    {
+      "name": "introduce_internal_HindIII",
+      "rejected": true,
+      "expected_reason": "restriction_site_multiplicity",
+      "actual_reason": "restriction_site_multiplicity",
+      "reason_matches": true,
+      "detail": "Each cloning enzyme must cut once; internal sites are forbidden",
+      "mutant_sequence_sha256": "23b25959242a9f5cc6222b466b4439dea87b0f93a89bf2fe67e62e2694e2e341"
+    }
+  ],
+  "limitations": [
+    "No wet-lab validation or verification of acquired physical stocks",
+    "No whole-transcriptome off-target analysis; terminal 12mers checked only in the defined synthetic template",
+    "Primer3 thermodynamics are not independently recomputed by this standard-library audit",
+    "The average-mass convention is shared with the main calculation; algorithm and constants are independently embedded",
+    "Reference-origin output coordinates are required; arbitrary circular rotations are not accepted",
+    "Backbone feature coordinate mapping is checked against the approved spec, not independently reannotated from functional assays"
+  ],
+  "self_review_scope": [
+    "One-based inclusive versus zero-based half-open boundaries",
+    "Reverse-primer annealing orientation and frame-adjustment reverse complement",
+    "Five-prime sticky ends, equal strand lengths and four-base larger duplex spans",
+    "Full-ORF terminal stop, annotation mapping and mutation rejection before exact equality",
+    "Only the designated verification JSON is written; failed checks return a nonzero exit code"
+  ],
+  "design_version": "B-v1",
+  "verified_construct": {
+    "orf_start_1based": 631,
+    "orf_end_1based": 2799,
+    "tfeb_end_1based": 2058,
+    "egfp_start_1based": 2080,
+    "linker_start_1based": 2059,
+    "linker_end_1based": 2079,
+    "orf_nt_including_stop": 2169,
+    "recognition_starts_1based": {
+      "HindIII": 622,
+      "BamHI": 2061
+    },
+    "plasmid_bp": 6134,
+    "fusion_aa": 722,
+    "fusion_molecular_weight_Da": 80424.9891,
+    "mass_difference_Da": 0.0,
+    "DNA_sha256": "ff116efaccbd7d35a035004e136da34e8681bd6e9beaecd818b75c7a961c02ec",
+    "protein_sha256": "564a2f094af5fbedab14fcc9be747b0d241b7f83267b44dba8673fc68bdd4a00",
+    "linker_nt": "GGGGATCCACCGGTCGCCACC",
+    "linker_aa": "GDPPVAT"
+  }
+}

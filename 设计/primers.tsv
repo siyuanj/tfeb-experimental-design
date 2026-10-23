@@ -1,0 +1,3 @@
+name	direction	sequence_5to3	protective_bases	restriction_site	adjustment	adjustment_role	annealing_sequence_5to3	full_length_nt	annealing_length_nt	full_gc_percent	annealing_gc_percent	annealing_tm_C	full_oligo_tm_C_not_for_initial_annealing	template_CDS_start_1based	template_CDS_end_1based	strand
+TFEB-HindIII-F	forward	ACTGACAAGCTTACCATGGCGTCACGCATAGGGTTGC	ACTGAC	AAGCTT	ACC	translation initiation context	ATGGCGTCACGCATAGGGTTGC	37	22	54.054	59.091	69.498	77.238	1	22	1
+TFEB-BamHI-R	reverse	TATGACGGATCCCCCAGCACATCGCCCTCCTCCATG	TATGAC	GGATCC	CC	reverse complement of coding-strand GG frame adjustment	CAGCACATCGCCCTCCTCCATG	36	22	61.111	63.636	69.05	78.896	1407	1428	-1

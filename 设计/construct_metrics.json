@@ -1,0 +1,138 @@
+{
+  "plasmid_bp": 6134,
+  "empty_vector_bp": 4733,
+  "TFEB_reference_CDS_with_stop_nt": 1431,
+  "TFEB_coding_no_stop_nt": 1428,
+  "PCR_product_bp": 1457,
+  "removed_vector_nominal_nt": 38,
+  "digested_backbone_nominal_nt": 4695,
+  "digested_insert_nominal_nt": 1439,
+  "backbone": {
+    "ds_span_bp": 4699,
+    "watson_nt": 4695,
+    "crick_nt": 4695,
+    "five_prime_end": [
+      "5'",
+      "gatc"
+    ],
+    "three_prime_end": [
+      "5'",
+      "agct"
+    ]
+  },
+  "insert": {
+    "ds_span_bp": 1443,
+    "watson_nt": 1439,
+    "crick_nt": 1439,
+    "five_prime_end": [
+      "5'",
+      "agct"
+    ],
+    "three_prime_end": [
+      "5'",
+      "gatc"
+    ]
+  },
+  "all_vector_fragments": [
+    {
+      "ds_span_bp": 42,
+      "watson_nt": 38,
+      "crick_nt": 38,
+      "five_prime_end": [
+        "5'",
+        "agct"
+      ],
+      "three_prime_end": [
+        "5'",
+        "gatc"
+      ]
+    },
+    {
+      "ds_span_bp": 4699,
+      "watson_nt": 4695,
+      "crick_nt": 4695,
+      "five_prime_end": [
+        "5'",
+        "gatc"
+      ],
+      "three_prime_end": [
+        "5'",
+        "agct"
+      ]
+    }
+  ],
+  "all_PCR_fragments": [
+    {
+      "ds_span_bp": 11,
+      "watson_nt": 7,
+      "crick_nt": 11,
+      "five_prime_end": [
+        "blunt",
+        ""
+      ],
+      "three_prime_end": [
+        "5'",
+        "agct"
+      ]
+    },
+    {
+      "ds_span_bp": 1443,
+      "watson_nt": 1439,
+      "crick_nt": 1439,
+      "five_prime_end": [
+        "5'",
+        "agct"
+      ],
+      "three_prime_end": [
+        "5'",
+        "gatc"
+      ]
+    },
+    {
+      "ds_span_bp": 11,
+      "watson_nt": 11,
+      "crick_nt": 7,
+      "five_prime_end": [
+        "5'",
+        "gatc"
+      ],
+      "three_prime_end": [
+        "blunt",
+        ""
+      ]
+    }
+  ],
+  "TFEB_aa": 476,
+  "linker_aa": 7,
+  "EGFP_aa": 239,
+  "fusion_aa": 722,
+  "fusion_molecular_weight_Da": 80424.98909999999,
+  "fusion_orf_nt_including_stop": 2169,
+  "fusion_start_1based": 631,
+  "fusion_end_1based": 2799,
+  "TFEB_end_1based": 2058,
+  "EGFP_start_1based": 2080,
+  "linker_sequence": "GGGGATCCACCGGTCGCCACC",
+  "linker_peptide": "GDPPVAT",
+  "vector_top_cut_after_1based": [
+    622,
+    660
+  ],
+  "PCR_top_cut_after_1based": [
+    7,
+    1446
+  ],
+  "construct_top_cut_after_1based": {
+    "HindIII": [
+      622
+    ],
+    "BamHI": [
+      2061
+    ],
+    "XhoI": [
+      613,
+      1598
+    ],
+    "KpnI": []
+  }
+}
