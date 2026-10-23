@@ -1,0 +1,37 @@
+assay	sample	reagents	fragment_id	size_bp	length_definition	visibility	interpretation	limitation
+marker	NEB N3232	1kb ladder	1	10002	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	2	8001	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	3	6001	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	4	5001	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	5	4001	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	6	3001	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	7	2000	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	8	1500	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	9	1000	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	10	517	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+marker	NEB N3232	1kb ladder	11	500	nominal bp	predicted;not observed	manufacturer listed sizes	500 and517 co-migrate on routine1%agarose
+cloning_PCR	synthetic_TFEB_template	TFEB-HindIII-F + TFEB-BamHI-R	1	1457	nominal bp	predicted;not observed	tailed full-length PCR target	
+cloning_PCR	no_template_control	TFEB-HindIII-F + TFEB-BamHI-R	1	0	nominal bp	no specific band predicted	no specific product expected	contamination and primer dimers are empirical possibilities
+preparative_digest	empty_vector	HindIII-HF + BamHI-HF	1	4695	top-strand cut-to-cut nt	predicted;not observed	recover larger backbone	small MCS may be invisible
+preparative_digest	empty_vector	HindIII-HF + BamHI-HF	2	38	top-strand cut-to-cut nt	below routine1%gel useful range	recover larger backbone	small MCS may be invisible
+preparative_digest	PCR_product	HindIII-HF + BamHI-HF	1	1439	top-strand cut-to-cut nt	predicted;not observed	recover central insert	7/11nt terminal pieces not visible;strand lengths differ only for discarded terminals
+preparative_digest	PCR_product	HindIII-HF + BamHI-HF	2	11	top-strand cut-to-cut nt	below routine1%gel useful range	recover central insert	7/11nt terminal pieces not visible;strand lengths differ only for discarded terminals
+preparative_digest	PCR_product	HindIII-HF + BamHI-HF	3	7	top-strand cut-to-cut nt	below routine1%gel useful range	recover central insert	7/11nt terminal pieces not visible;strand lengths differ only for discarded terminals
+diagnostic_digest	correct_construct	HindIII-HF + BamHI-HF	1	4695	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+diagnostic_digest	correct_construct	HindIII-HF + BamHI-HF	2	1439	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+colony_flanking	correct_construct	S-F1 + S-R1	1	2605	nominal bp	predicted;not observed	insert-size screen	no product requires positive PCR control;3bp difference not resolvable
+colony_orientation	correct_construct	S-F2 + S-R1	1	2093	nominal bp	predicted;not observed	orientation screen	no product requires positive PCR control;3bp difference not resolvable
+diagnostic_digest	empty_vector	HindIII-HF + BamHI-HF	1	4695	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+diagnostic_digest	empty_vector	HindIII-HF + BamHI-HF	2	38	top-strand cut-to-cut nt	below routine1%gel useful range	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+colony_flanking	empty_vector	S-F1 + S-R1	1	1204	nominal bp	predicted;not observed	insert-size screen	no product requires positive PCR control;3bp difference not resolvable
+colony_orientation	empty_vector	S-F2 + S-R1	1	0	nominal bp	no specific band predicted	orientation screen	no product requires positive PCR control;3bp difference not resolvable
+diagnostic_digest	reverse_TFEB_model	HindIII-HF + BamHI-HF	1	4695	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+diagnostic_digest	reverse_TFEB_model	HindIII-HF + BamHI-HF	2	1439	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+colony_flanking	reverse_TFEB_model	S-F1 + S-R1	1	2605	nominal bp	predicted;not observed	insert-size screen	no product requires positive PCR control;3bp difference not resolvable
+colony_orientation	reverse_TFEB_model	S-F2 + S-R1	1	0	nominal bp	no specific band predicted	orientation screen	no product requires positive PCR control;3bp difference not resolvable
+diagnostic_digest	retained_stop_model	HindIII-HF + BamHI-HF	1	4695	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+diagnostic_digest	retained_stop_model	HindIII-HF + BamHI-HF	2	1442	top-strand cut-to-cut nt	predicted;not observed	gross insert/backbone size check	reverse model can match correct;3bp stop difference not resolvable;Sanger required
+colony_flanking	retained_stop_model	S-F1 + S-R1	1	2608	nominal bp	predicted;not observed	insert-size screen	no product requires positive PCR control;3bp difference not resolvable
+colony_orientation	retained_stop_model	S-F2 + S-R1	1	2096	nominal bp	predicted;not observed	orientation screen	no product requires positive PCR control;3bp difference not resolvable
+colony_flanking	no_template_control	S-F1 + S-R1	1	0	nominal bp	no specific band predicted	no specific product expected	
+colony_orientation	no_template_control	S-F2 + S-R1	1	0	nominal bp	no specific band predicted	no specific product expected	

@@ -1,0 +1,300 @@
+{
+  "status": "designed_not_experimentally_validated",
+  "design_version": "B-v1",
+  "inputs": {
+    "设计/construct_spec.json": "395881bd325bc92798e3b97de46ad5adf2d1c4fd6387e2aa5329cb784d416e5b",
+    "资料/序列/TFEB_reference.gb": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+    "资料/序列/TFEB_NM_007162.2.gb": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+    "资料/序列/TFEB_NP_009093.1.gp": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+    "资料/序列/pEGFP-N1_U55762.1.gb": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+    "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+    "设计/construct.fasta": "2db5e19b5aa860ea1cec25821473b1753e4b72708a1b620e4f8eda88cea02b55",
+    "设计/fusion_protein.fasta": "66c927ec01732a07cde049aa6d4b5e858fae7f458785b64a2dd490f3208cb7ba",
+    "设计/fusion_orf.fasta": "a953cdeaf9a6ea24f140b0bf846167251df978c7496b514d3a0ec301b6023908",
+    "设计/PCR_product.fasta": "6d71e7a6592305cf55895603576dfb647f769cd5e2aae7b4f138363820003b73",
+    "设计/primers.tsv": "e2e07b361a59defbc1b506b999da920c65dfc08e8661d34f91cbbaa6bd5f19d2",
+    "设计/construct_features.tsv": "5d55af8a9a1b5086570439c9d18529983dbd16cfd086fc7f6beed89cbfe5371f",
+    "设计/junctions.tsv": "6a1712e5b225e55ee5c637d4920af32c9a5655f252bd28ca20ffdfb424a58672",
+    "设计/construct_metrics.json": "06956a37332a45c117c1f7369aaf3529e2d31d533b6f49432296283dee8e6cd9",
+    "设计/primer_checks.json": "82cc14c43877347398cf2fc4b81248daf26cc446d4b547e3283bdc49d9f86bdd",
+    "scripts/B-sequence/build_construct.py": "4b42095125f2bbf8d7498171b1e90d4221828a4a4f0f3ad28edb8585ba0df7d2",
+    "scripts/B-sequence/prepare_spec.py": "1451f654d3a5b9efb0a780e705c20da301c54af9330445c824750c3812ef1891",
+    "资料/序列/TFEB_cds.fasta": "75d58c3b36cdf65b8d25f2f78595301c6703e4b28c0d02d261bb2616ebf687bc",
+    "设计/verification_summary.json": "1da2b7af68326c07b2fba042819096b27f65f917eca190322a398242c6fc05fa",
+    "设计/independent_verification.json": "0043b02a288a2519c7142bf0a8477c1d0bb9257f04ac8a13eade8fb1d68b302f",
+    "设计/reference_verification.json": "133bc6489e4cf61d5268619a5e16415fd5a4c05c13ed4f5d0c6face4c2b6bb2e",
+    "设计/environment.json": "2c750e0af5103e6354322efaec9cbbe7dee6e49ff2f6db75d85085e40810225a",
+    "scripts/B-sequence/independent_verify.py": "bb7e40fec664f145997d49aa276e129619bfbb745a027568936d6fc69e692f70",
+    "资料/序列/TFEB_protein.fasta": "8f82f67a06b0e2a00e6bca6888ae250f5a7637f764af5a94edc4bea7e16c93a9",
+    "资料/序列/TFEB_cds_no_stop.fasta": "0cf6cf32a43c001521e65ab1cfdf29688d7cbd9f5ba3bceb7f3354425821475e",
+    "资料/序列/pEGFP-N1_U55762.1.fasta": "60b64c3181db52561fa971b58190734a34914cff73f93cb9b48ff090c58acee1",
+    "docs/协作/sequence-ready.json": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde"
+  },
+  "coordinate_convention": "1-based inclusive tables;0-based half-open implementation",
+  "source_ids": [
+    "M01",
+    "M02",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09",
+    "M10",
+    "M11",
+    "M12",
+    "M13",
+    "M14",
+    "M15",
+    "M16",
+    "M17",
+    "M18",
+    "M19",
+    "M20"
+  ],
+  "cloning_PCR": {
+    "product": "NEB M0492",
+    "total_uL": 50,
+    "mix_2X_uL": 25,
+    "primer_10uM_each_uL": 2.5,
+    "template_target_ng": 1,
+    "template_target_ng_per_uL": 1,
+    "template_uL": 1,
+    "water_uL": 19,
+    "initial_denaturation_C_s": [
+      98,
+      30
+    ],
+    "cycles": 30,
+    "denaturation_C_s": [
+      98,
+      10
+    ],
+    "annealing_C_s": [
+      65,
+      20
+    ],
+    "extension_C_s": [
+      72,
+      45
+    ],
+    "final_extension_C_s": [
+      72,
+      120
+    ],
+    "gradient_C": [
+      62,
+      65,
+      68
+    ],
+    "template_type": "planned synthetic linear dsDNA",
+    "wet_lab_optimized": false
+  },
+  "digest": {
+    "enzymes": [
+      "HindIII-HF R3104",
+      "BamHI-HF R3136"
+    ],
+    "each_stock_U_per_uL": 20,
+    "each_uL": 1,
+    "DNA_target_ng": 500,
+    "total_uL": 50,
+    "buffer10X_uL": 5,
+    "C": 37,
+    "min": 60,
+    "DNA_target_ng_per_uL": 50,
+    "DNA_uL": 10,
+    "water_uL": 33,
+    "glycerol_percent": 2,
+    "cleanup_required": true,
+    "heat_inactivation_used": false
+  },
+  "digest_gel_loading": {
+    "loading_dye": "NEB B7024 Purple Gel Loading Dye, with SDS",
+    "stock_X": 6,
+    "final_X": 1,
+    "dye_to_sample_volume_ratio": [
+      1,
+      5
+    ],
+    "scope": "Direct preparative and diagnostic gel loading of unpurified BamHI-HF digests only; not added to ligation",
+    "SYBR_Safe_or_GelRed": "post-electrophoresis staining only",
+    "source_ids": [
+      "M19",
+      "M20"
+    ]
+  },
+  "ligation": {
+    "length_for_molarity": "mean strand length;equals top-strand nominal length for selected equal5prime overhangs",
+    "backbone_bp": 4695,
+    "insert_bp": 1439,
+    "vector_fmol": 20,
+    "insert_fmol": 60,
+    "insert_to_vector_molar_ratio": 3,
+    "vector_ng": 61.974,
+    "insert_ng": 56.9844,
+    "vector_stock_target_ng_per_uL": 20,
+    "insert_stock_target_ng_per_uL": 10,
+    "vector_uL": 3.0987,
+    "insert_uL": 5.69844,
+    "buffer10X_uL": 2,
+    "ligase_uL": 1,
+    "ligase_U": 400,
+    "water_uL": 8.20286,
+    "total_uL": 20,
+    "total_DNA_ng_per_uL": 5.94792,
+    "C_range": [
+      20,
+      25
+    ],
+    "min": 10,
+    "heat_inactivation_C_min": [
+      65,
+      10
+    ]
+  },
+  "transformation": {
+    "cells": "NEB5-alpha C2987 DH5alpha derivative",
+    "cells_uL": 50,
+    "ligation_uL": 2,
+    "ice_before_min": 30,
+    "heat_shock_C_s": [
+      42,
+      30
+    ],
+    "ice_after_min": 5,
+    "SOC_uL": 950,
+    "outgrowth_C_min_rpm": [
+      37,
+      60,
+      250
+    ],
+    "plate_uL": 100,
+    "dilutions": [
+      1,
+      10,
+      100
+    ],
+    "kanamycin_ug_per_mL": 30,
+    "pUC19_control_antibiotic": "ampicillin100ug/mL"
+  },
+  "colony_PCR": {
+    "product": "OneTaq M0482",
+    "colonies_initial_screen": 8,
+    "total_uL": 25,
+    "mix2X_uL": 12.5,
+    "primer10uM_each_uL": 0.5,
+    "water_uL": 11.5,
+    "template": "trace colony material;patch saved",
+    "initial_lysis_C_s": [
+      94,
+      300
+    ],
+    "cycles": 30,
+    "denaturation_C_s": [
+      94,
+      30
+    ],
+    "annealing_C_s": [
+      58,
+      30
+    ],
+    "extension_C_s": [
+      68,
+      160
+    ],
+    "final_extension_C_s": [
+      68,
+      300
+    ],
+    "pairs": {
+      "colony_flanking": {
+        "primers": [
+          "S-F1",
+          "S-R1"
+        ],
+        "model_tm_C": [
+          60.042805621099376,
+          62.54558743947052
+        ],
+        "initial_Ta_C": 58,
+        "optimization_gradient_C": [
+          55,
+          58,
+          61
+        ],
+        "heterodimer_tm_C": -32.54155351959585
+      },
+      "colony_orientation": {
+        "primers": [
+          "S-F2",
+          "S-R1"
+        ],
+        "model_tm_C": [
+          66.09159622577522,
+          62.54558743947052
+        ],
+        "initial_Ta_C": 58,
+        "optimization_gradient_C": [
+          55,
+          58,
+          61
+        ],
+        "heterodimer_tm_C": 0.045006549090317094
+      }
+    },
+    "Tm_model": {
+      "mv_mM": 50,
+      "Mg_mM": 1.8,
+      "total_dNTP_mM": 0.8,
+      "primer_nM": 200,
+      "salt": "SantaLucia;monovalent assumption"
+    }
+  },
+  "sanger": {
+    "service": "Eurofins Standard Read purified plasmid",
+    "primer_count": 10,
+    "target_start_1based": 602,
+    "target_end_1based": 2799,
+    "target_nt": 2198,
+    "usable_offsets_from_3prime": [
+      51,
+      650
+    ],
+    "usable_nt_per_read": 600,
+    "minimum_forward_depth": 1,
+    "minimum_reverse_depth": 1,
+    "quality_threshold": "Q20 both directions;no unresolved ambiguity",
+    "Tm_model": {
+      "mv_mM": 50,
+      "Mg_mM": 0,
+      "dNTP_mM": 0,
+      "primer_nM": 50,
+      "model": "SantaLucia",
+      "actual_service_chemistry": false
+    },
+    "design_constraints": {
+      "length_nt": [
+        18,
+        25
+      ],
+      "Tm_C": [
+        50,
+        62
+      ],
+      "GC_percent": [
+        35,
+        60
+      ],
+      "hairpin_or_homodimer_Tm_max_C": 40,
+      "homopolymer_max": 3,
+      "unique_full_match_in_final_plasmid": true
+    }
+  },
+  "limitations": [
+    "All outputs are predictions;no wet-lab data",
+    "Exact-match specificity only within supplied constructs",
+    "Reverse model is a hypothetical failure challenge,not a product of compatible directional ligation",
+    "Sanger windows require validation from actual quality-trimmed traces;whole backbone is not fully covered"
+  ]
+}

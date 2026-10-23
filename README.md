@@ -6,13 +6,15 @@
 
 ## 当前状态
 
-截至 2026-10-23，本轮仅初始化协作项目、迁移已有提纲并建立 LaTeX 文档结构。当前是工作草稿，尚不能作为最终作业提交；序列、引物、载体、实验条件和身份信息仍需补齐。详见 [课程要求与待办](docs/10-23%20课程要求与待办.md)，本次核查与构建结果见 [STATUS](docs/STATUS.md)。
+截至 2026-10-23，B-v1 已固定为人 TFEB `NM_007162.3` / `NP_009093.1`、pEGFP-N1 空载体 `U55762.1` 与 C 端 EGFP 融合。序列设计经本地独立路径验收：最终质粒 6134 bp，融合蛋白 722 aa，理论未修饰平均质量约 80.425 kDa。阶段结果以 [B 执行进度](docs/B执行进度.md) 与 [STATUS](docs/STATUS.md) 的实际证据为准。
+
+整篇报告仍是工作稿：独立 A 实验细节、身份信息、真实个人贡献及课程提交要求尚待完善。计算和图表均是设计预测，没有湿实验数据。详见 [课程要求与待办](docs/10-23%20课程要求与待办.md) 和 [B 给 A 的交接](docs/B交接给A.md)。
 
 ## B 部分执行入口
 
 蒋思源负责的 B 部分按 [详细执行计划与产出验收](docs/10-23%20B部分执行计划.md) 的 P0–P9 推进。新会话直接使用 [执行指令](docs/10-23%20B部分新会话指令.md)。计划尚未合入 main 时，从 `codex/b-execution-plan` 读取；不要只读初始化版本就开始设计。
 
-用户已明确：**本项目不使用 UF，少量序列分析和报告工作在本地完成；不再处理 MacBook 同步。** 完成 B 所需的 A 内容可以一并补齐，不需要等 A 先完成。计划已建立，科学设计阶段尚未执行；进度和验收以实际证据为准。
+用户已明确：**本项目不使用 UF，少量序列分析和报告工作在本地完成；不再处理 MacBook 同步。** 完成 B 所需的 A 内容可以一并补齐，不需要等 A 先完成。当前实现分支为 `codex/b-design`；完整阶段清单保留于 `docs/B执行进度.md`，不以单个 ready 文件或成功编译代替最终验收。
 
 ## 文件入口
 
@@ -24,6 +26,10 @@
 | `资料/原始提纲/TFEB_Experimental_Design_Outline.docx` | 保留不变的原始提纲 |
 | `docs/10-23 课程要求与待办.md` | 课程要求来源、缺项及待确认事项 |
 | `docs/10-23 模板来源.md` | ElegantPaper 固定版本、许可及编译说明 |
+| `设计/construct_spec.json`、`construct.gb`、`construct.fasta` | 唯一设计参数及可导入序列工具的最终构建 |
+| `设计/primers.tsv`、`expected_fragments.tsv`、`sanger_coverage.tsv` | 完整引物、鉴定预测及测序覆盖 |
+| `资料/B来源索引.tsv`、`资料/序列/` | 来源台账、带版本原始记录与派生参考序列 |
+| `scripts/B-sequence/`、`scripts/B-methods/`、`scripts/B-figures/` | 可复算序列、方法与图表；运行前阅读对应说明 |
 
 课程课件不上传公开仓库；本仓库只保留与完成作业有关的要求摘要。
 
@@ -67,3 +73,11 @@ xelatex main.tex
 ```
 
 上述是项目约定的构建方式，实际已验证的环境与结果以 STATUS 为准。模板官方默认 Biber；本项目选用 BibTeX 是为了兼容 Tectonic 与 XeLaTeX 两条构建路径，详见 [模板来源](docs/10-23%20模板来源.md)。
+
+## 本地复算与版本绑定
+
+复用旧课程已安装的本地质粒环境，解释器为 `/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python`，不修改该环境。依赖实测版本记录于 `设计/environment.json`；其他机器应按记录建立等效环境，不能直接照用此机器路径。
+
+序列复算顺序及长度定义见 [序列说明](scripts/B-sequence/README.md)。科学输入与派生文件通过 `docs/协作/sequence-ready.json`、`methods-ready.json`、`report-ready.json` 逐阶段绑定 SHA-256。重新生成序列或方法可能改变文件哈希；先撤回受影响的 ready，再按依赖重验，不能混用旧图、旧 PDF 和新序列。
+
+主线最终结构核查命令为 `python scripts/B-audit/final_audit.py`，只读取科学文件并写出独立核查 JSON；须在三个阶段均就绪后运行。它不代替科学审阅、逐页目视或 Git/PR 交付检查。
