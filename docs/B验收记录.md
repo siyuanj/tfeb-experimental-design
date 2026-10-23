@@ -4,7 +4,7 @@
 
 ## 当前结论
 
-**B 的 P0–P9 已完成。** 科学、引用、图文及逐页PDF核查通过；主分支内容已整合，工作分支已推送并建立[实现PR #4](https://github.com/siyuanj/tfeb-experimental-design/pull/4)。整份作业仍是 Working draft，独立A不冒记为完成。
+**B 的 P0–P9 已完成，并通过父会话独立总验收。** 科学、引用、图文及逐页PDF核查通过；[实现PR #4](https://github.com/siyuanj/tfeb-experimental-design/pull/4) 已合并到main，含S002来源修订及监督记录。整份作业仍是 Working draft，独立A不冒记为完成。
 
 用户要求：完成B及其必要A依赖，全程本地、不连接或使用UF，不处理MacBook。融合方向、试剂组合、数值模型、筛查阈值与流程细节为基于证据的设计判断。父会话另转达用户允许ImageGen用于适合的示意图；其科学文字和步骤仍须验收，精确坐标/条带保留数据生成版本。
 
@@ -59,6 +59,12 @@ P5 ready：`a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde`，
 - 独立A仍需培养/转染/处理的具体条件、成像采样与统计、Western完整参数。作者英文署名、学号、实际个人贡献和课程最终通知仍由作者完成。没有提交网络学堂、联系同学或合并PR。
 
 ## Git交付
+
+### 用户授权后的main收口
+
+用户追加要求提交GitHub供同学查看并收束分支。父会话独立总验收passed，公开记录为`docs/协作/监督验收.json`及监督进度，入口为`scripts/B-supervision/review_handoffs.py`。主线核对110个监督输入（108个公开版本文件、2个本地私有原文）及7个来源、脚本哈希后，在`48ceb09`纳入记录；未重算科学产物。
+
+PR #4以精确head `48ceb0912b4e9d158c5ade815119b70afbeadeca`合并，main科学交付提交为`4df60dee8cbe0ed79a5e4ac8cea6929eaf4e3915`。合并后正文/PDF、来源及监督记录与验收版本一致。分支清理和最终交接详见`docs/协作/主线交接.md`；本节以下PR尚未合并的描述为早期交付时点记录。
 
 ### 总验收补充修订 S002
 
