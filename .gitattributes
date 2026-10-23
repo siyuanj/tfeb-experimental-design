@@ -1,0 +1,5 @@
+# Preserve upstream bytes; do not apply project whitespace rules to vendored files.
+third_party/ElegantPaper/* -whitespace
+报告/elegantpaper.cls -whitespace
+*.pdf binary
+*.docx binary
