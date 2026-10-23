@@ -2,6 +2,8 @@
 
 获取及核查日期：2026-10-23。只包含公开数据库参考与其衍生序列，不是实物测序结果。
 
+**当前 B-v1 复算入口是 [scripts/B-sequence/README.md](../../scripts/B-sequence/README.md)。** 本文保留参考选择线的来源与历史命令；存在 P5 交接清单时，旧 `scripts/verify_reference_choices.py` 会在任何输出前拒绝运行，避免重写已冻结 FASTA 和核查 JSON。需要研究旧阶段时使用该阶段的独立 checkout；不能把旧格式输出混入当前 ready 链。
+
 原始 GenBank/GenPept 保留 NCBI 返回的全部字节，包括格式自带的行尾空格和末尾空行；`.gitattributes` 对这些记录关闭换行转换和空白告警。原创文档与 TSV 仍执行通常的空白检查。
 
 | 文件 | 来源或生成方式 |
@@ -15,7 +17,7 @@
 | `TFEB_protein.fasta` | 翻译并核对 NP_009093.1，476 aa |
 | `pEGFP-N1_U55762.1.fasta` | 空载体原序列，4,733 bp |
 
-## 本轮下载命令
+## 参考选择线的历史下载命令
 
 在项目根目录执行。重新获取时先保存为新文件并比较，不覆盖冻结参考：版本相同的注释记录仍可能更新。
 
@@ -26,7 +28,7 @@ curl --fail --location 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcg
 curl --fail --location 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=U55762.1&rettype=gb&retmode=text' -o 资料/序列/pEGFP-N1_U55762.1.gb
 ```
 
-## 离线复算
+## 参考选择线的历史离线复算
 
 现有课程环境：Python 3.12.15 / Biopython 1.88；无需网络、UF 或 GPU。
 

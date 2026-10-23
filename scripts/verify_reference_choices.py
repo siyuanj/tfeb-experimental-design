@@ -62,6 +62,8 @@ def write_fasta(name, sequence, identifier, description):
 
 
 def main():
+    require(not (ROOT / "docs/协作/sequence-ready.json").exists(),
+            "Legacy reference writer is disabled after P5 handoff; use scripts/B-sequence/README.md")
     current, current_meta = read_record("TFEB_reference.gb", "NM_007162.3")
     historic, historic_meta = read_record("TFEB_NM_007162.2.gb", "NM_007162.2")
     protein_record, protein_meta = read_record("TFEB_NP_009093.1.gp", "NP_009093.1")

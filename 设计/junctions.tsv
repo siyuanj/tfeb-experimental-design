@@ -1,0 +1,4 @@
+junction	start_1based	end_1based	dna_5to3	translation	interpretation
+5prime vector-insert	622	648	AAGCTTACCATGGCGTCACGCATAGGG	upstream AAGCTTACC untranslated | MASRIG	HindIII; ACC context; native TFEB ATG
+TFEB-linker-EGFP	2041	2097	GAGGAGGGCGATGTGCTGGGGGATCCACCGGTCGCCACCATGGTGAGCAAGGGCGAG	EEGDVLGDPPVATMVSKGE	last 6 TFEB aa | GDPPVAT | first 6 EGFP aa
+terminal stop	2782	2799	GACGAGCTGTACAAGTAA	DELYK*	EGFP-derived final TAA; no TFEB stop

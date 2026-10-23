@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-10-23T14:14:01.299202-04:00",
+  "reviewed_pdf_sha256": "a3d7ba452ccd8ad7c474b2a6b088f0a48b9710445a9e899b5e516eb000f93b10",
+  "page_count": 14,
+  "compilation_record_sha256": "ec55401d704f4f2027defa5d2847e4df6fe41e65d934e86910ed79c49134aee8",
+  "review_actor": "Codex assistant using direct visual inspection of all final page rasters; not a claim of human-author review",
+  "render_dpi": 140,
+  "pages": [
+    {
+      "page": 1,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-01.png",
+      "sha256": "16940ab0d27913e6acaf46f16eac8f3939f89f9c3dbb274c43b2a1b4eb4e8d2c",
+      "findings": "标题、署名、Working draft、摘要和研究假设清楚；无裁切或重叠，计算设计与实验预期分开。"
+    },
+    {
+      "page": 2,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-02.png",
+      "sha256": "b9ec8961bbe94cdf3993d4f5a273a39ccd3572301e21cc2f9b3e72022059c966",
+      "findings": "版本化来源、库存未验证表述、标签方向、起止密码子、连接肽和酶对完整；段落与引用可读。"
+    },
+    {
+      "page": 3,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-03.png",
+      "sha256": "f3e35b77a0c17f41d8f2fcfb9daf4bfdfc677b7550f3c89c3c5dd3a24c24f895",
+      "findings": "表1两条克隆引物及分段、Tm/GC数值完整；表2和PCR程序清楚，表题与内容同页。"
+    },
+    {
+      "page": 4,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-04.png",
+      "sha256": "62f789fa8ce66fa7790d0865f0074db6c0ec6dc83595127a21e35d3b86712c83",
+      "findings": "纯化、B7024含SDS且6X至1X、后染、连接量公式及加热用途完整；没有孤立表题。"
+    },
+    {
+      "page": 5,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-05.png",
+      "sha256": "171d72842178275447c304090b165276a2e34a5944a44f2d496d44500783c2e9",
+      "findings": "表3酶切与连接两部分同页，列对齐且单位完整；转化和筛选正文无越界。"
+    },
+    {
+      "page": 6,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-06.png",
+      "sha256": "c104f146a6a52669d945bf4a28e8bc60199ab756251c4806f21164d78aa0aea3",
+      "findings": "测序服务目标与模型说明可读；表4全部十行引物在同一页，末行未孤立，序列及窗口未裁切。"
+    },
+    {
+      "page": 7,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-07.png",
+      "sha256": "4930d852b0d31ac6b2522830c53a25f887811de7e118e6026c520c4f661120d6",
+      "findings": "602–2799目标、双向Q20、补测/混峰处理边界完整；A对照衔接和N/C公式未重叠。"
+    },
+    {
+      "page": 8,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-08.png",
+      "sha256": "02dd36d04ef0735eacbea3ae6828c6f435b9debcb0c1ecf93f167b4a23a9f34e",
+      "findings": "理论WB解释和全部B结果正文完整结束于本页；四种软件挑战及胶/Sanger局限保留，没有跨整页插图的尾句。"
+    },
+    {
+      "page": 9,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-09.png",
+      "sha256": "cc85bb18a17ddad5f0bf94622721997f5456535c41a0649456ebd055884d50ef",
+      "findings": "质粒图的23个注释与两切口标签清楚；623/2062和识别位点的区别在图注中明确，表5完整。"
+    },
+    {
+      "page": 10,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-10.png",
+      "sha256": "b7b9c10200a56b5da36ea977db7e22276b8001b37a3d6440fa2d5eb60d387fd4",
+      "findings": "ImageGen七步流程图及控制框、箭头和图注清楚；无峰图，双向箭头覆盖目标；示意而非实测说明明确。"
+    },
+    {
+      "page": 11,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-11.png",
+      "sha256": "99e2e022c158df0842a4a5f79a1c517015978ce95f2c87016b53f1b96d607ca5",
+      "findings": "四个预测条带面板、marker、泳道和短片段说明清楚；500/517共迁移与三碱基差异限制明确，图注完整。"
+    },
+    {
+      "page": 12,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-12.png",
+      "sha256": "4aaa3afd1adf953c2bc1eb8ea507c36860944d3477ad26cba2923c102b0a61d4",
+      "findings": "A预期、讨论、计划贡献和AI声明可读；无实测结果或已完成人类复核的虚构断言。"
+    },
+    {
+      "page": 13,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-13.png",
+      "sha256": "d27b4e9f80100220794aa74a2199bd9bb2d3f053349188fff4915c72658bd50e",
+      "findings": "AI声明自然续接后进入参考文献1–18；URL换行没有越界、遮挡或缺字。"
+    },
+    {
+      "page": 14,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-14.png",
+      "sha256": "12b2fd619f082182118c3aad9dac7ddcd2c7c11be6a30b83a7c68e0ecbbcb979",
+      "findings": "参考文献19–27完整，末页没有正文/图表丢失；余白属于文献列表正常收尾。"
+    }
+  ],
+  "resolved_layout_issues": [
+    "Sanger table isolated final row",
+    "Digestion/ligation table orphan caption",
+    "B-R01: three-line text-only page between full-page figures"
+  ],
+  "remaining_visual_issues": [],
+  "limitations": [
+    "Visual review does not establish experimental success",
+    "Independent part-A parameters and author confirmation remain outstanding",
+    "Ignored page rasters are local evidence; the final PDF and compact review records are retained"
+  ]
+}

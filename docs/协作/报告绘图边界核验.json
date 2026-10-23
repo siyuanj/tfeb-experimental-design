@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "synthetic drawing geometry and reference-strand cut labels only",
+  "checks": [
+    "positive origin join",
+    "reverse origin join",
+    "internal gap preserved",
+    "mixed-strand join rejected",
+    "recognition start distinguished from cut",
+    "explicit non-directional origin note respected after GenBank round-trip"
+  ],
+  "does_not_validate": "TFEB design, biological function, or experimental cleavage"
+}

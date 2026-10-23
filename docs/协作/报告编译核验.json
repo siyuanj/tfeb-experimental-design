@@ -1,0 +1,330 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-23T14:11:50.345890-04:00",
+  "scope": "Compilation and artifact binding only; visual review is separate",
+  "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/compile_report.py'",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic",
+        "--version"
+      ],
+      "command": "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic --version",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:50.376117-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:50.389022-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext",
+        "-v"
+      ],
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext -v",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:50.389126-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:50.399928-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm",
+        "-v"
+      ],
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm -v",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:50.400056-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:50.410466-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo",
+        "-v"
+      ],
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo -v",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:50.410681-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:50.420137-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic",
+        "-X",
+        "compile",
+        "--keep-logs",
+        "--keep-intermediates",
+        "main.tex"
+      ],
+      "command": "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic -X compile --keep-logs --keep-intermediates main.tex",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:50.420202-04:00",
+      "output_path": "报告/build/tectonic-output.txt",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:55.835345-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext",
+        "-layout",
+        "/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf",
+        "/Volumes/Work/课程/TFEB综合实验设计/报告/build/main.txt"
+      ],
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext -layout '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf' '/Volumes/Work/课程/TFEB综合实验设计/报告/build/main.txt'",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:55.836044-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:55.860544-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm",
+        "-png",
+        "-r",
+        "140",
+        "/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf",
+        "/Volumes/Work/课程/TFEB综合实验设计/报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page"
+      ],
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm -png -r 140 '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf' '/Volumes/Work/课程/TFEB综合实验设计/报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page'",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:55.860863-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:59.590217-04:00"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo",
+        "/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf"
+      ],
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf'",
+      "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
+      "started_at": "2026-10-23T14:11:59.590290-04:00",
+      "returncode": 0,
+      "completed_at": "2026-10-23T14:11:59.603650-04:00"
+    }
+  ],
+  "inputs": {
+    "报告/elegantpaper.cls": "29370455a0cdf0af94039a6483ba1433f5b067666771b0f96c4cca0159830173",
+    "报告/images/B/cloning-workflow-imagegen-v1.png": "a3fb8b624bdca7e111eb6c590857500555d3e460a4ac011ebdf3c95755a5e9d5",
+    "报告/images/B/cloning-workflow-imagegen-v2.png": "228791286e04758a25870953c2c93ba74166690f79a3c19b0faf2a9ad0f6e78c",
+    "报告/images/B/cloning-workflow.pdf": "1b5ae75db0d79e7c8cec486920dc6aa67a6363f205a8720098f357fbb9b8021c",
+    "报告/images/B/cloning-workflow.png": "4d104c776df040f3fbd40f44b5254117f1b68edca825838c41ca2bb805767b8c",
+    "报告/images/B/cloning-workflow.svg": "ac82a27723585ce854d1d299e248d2bf85781babc234586373d73169ce30adb8",
+    "报告/images/B/imagegen-workflow.json": "3e504a37a4b0e9670774f718ae293e7acd099ea62a48f0a904b05e8108208e15",
+    "报告/images/B/pipeline-figures.json": "a006c252f7f7f3a313bd81e38d494e181c02daf7af1226f08a2185a5dc678a10",
+    "报告/images/B/plasmid-map.json": "358a693123405454163cc560db6b2a9dfb607438246a97b08a7f6efdb8960e25",
+    "报告/images/B/plasmid-map.pdf": "b1cd1bfac9a1bb917c492710f7e97ef2a2ff42bdc22e7c1ff68e3005ba868f4f",
+    "报告/images/B/plasmid-map.png": "19787623e3af1ff1accabcafbe9b48c67941c27aa62af5040df9d5747732744a",
+    "报告/images/B/plasmid-map.svg": "39a9ca518b00071213ace4f6fb36c3f0b0878f050bfce9c6902439b5e6bc0726",
+    "报告/images/B/predicted-bands.pdf": "73ba0504de0b119326415a5b50c2cc27a8a84c3e2c0b185b50dddfc47eaf3b47",
+    "报告/images/B/predicted-bands.png": "7e54b5519c822b6baa0a848623c1c04937d0e7e8930ce1e500e68d153d3ecf52",
+    "报告/images/B/predicted-bands.svg": "c028de51082fda018ab9511be6297f67099103038ff902e637c60a478d251105",
+    "报告/main.tex": "4c26ecf54b5864ac2758bf52eef0be4d7f5974a2c47c484dd2d04c93c10331d4",
+    "报告/references.bib": "8169ecfb4d8c46488c7e95130a02bd23e9fffade2f17d6c62cf812be11248702",
+    "报告/sections/abstract.tex": "4824195f888bb1693ab67fe49e6212bbadece1df919cd37436d815ea131a0bf6",
+    "报告/sections/background.tex": "f0d795e4fdf51a71495c6021031c703b50763df64eb0b65b15b903532ddb23ad",
+    "报告/sections/construct-values.tex": "0c532eae821598e1760bd78a01fcdb4e80295fac8bc03936cbbc98c14fadd285",
+    "报告/sections/declarations.tex": "dbb63c5bdd787618fea86239546336ad713eb040b6549c80e28ee4f6ab1e9b16",
+    "报告/sections/design.tex": "c8c21c7aa21ac0a4eac5ee827f38e4d2d2c9af4c50192da976853c35eacc02e0",
+    "报告/sections/discussion.tex": "9baa12447fb7b254d0de9efd80a44c55cd19bf85d522e27adb573932831e55f1",
+    "报告/sections/expected-results.tex": "6dfd1515842cd8003e22a63d25aab2cddf64512de619f101a6b076e5cf2af43b",
+    "报告/sections/methods-cell.tex": "1178f12eeada4e2e5e323d39bcb3cf8911ca04b3799a831669ac3cf99c7c70a0",
+    "报告/sections/methods-cloning.tex": "494aa767fff1947ff9d2d1e3b8721a5a7b37ac4b2b73c62b7cb372e1ede8db49",
+    "报告/sections/results-cell.tex": "7f59c85db2eec62ffc61319323b0f255ade656759cf01c841a19496b7e968c8d",
+    "报告/sections/results-cloning.tex": "430327b12f1420f33ef889a1b32afd87fba80937ee620e336e24c10f21943620",
+    "报告/sections/screening-results.tex": "57d6784bc3bc95db88378f99ccb3cc80c5a786183c26d9b963dd3c001179b32c"
+  },
+  "sequence_gate": {
+    "path": "docs/协作/sequence-ready.json",
+    "sha256": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde",
+    "files": {
+      "设计/construct_spec.json": "395881bd325bc92798e3b97de46ad5adf2d1c4fd6387e2aa5329cb784d416e5b",
+      "资料/序列/TFEB_reference.gb": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+      "资料/序列/TFEB_NM_007162.2.gb": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+      "资料/序列/TFEB_NP_009093.1.gp": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+      "资料/序列/pEGFP-N1_U55762.1.gb": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+      "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+      "设计/construct.fasta": "2db5e19b5aa860ea1cec25821473b1753e4b72708a1b620e4f8eda88cea02b55",
+      "设计/fusion_protein.fasta": "66c927ec01732a07cde049aa6d4b5e858fae7f458785b64a2dd490f3208cb7ba",
+      "设计/fusion_orf.fasta": "a953cdeaf9a6ea24f140b0bf846167251df978c7496b514d3a0ec301b6023908",
+      "设计/PCR_product.fasta": "6d71e7a6592305cf55895603576dfb647f769cd5e2aae7b4f138363820003b73",
+      "设计/primers.tsv": "e2e07b361a59defbc1b506b999da920c65dfc08e8661d34f91cbbaa6bd5f19d2",
+      "设计/construct_features.tsv": "5d55af8a9a1b5086570439c9d18529983dbd16cfd086fc7f6beed89cbfe5371f",
+      "设计/junctions.tsv": "6a1712e5b225e55ee5c637d4920af32c9a5655f252bd28ca20ffdfb424a58672",
+      "设计/construct_metrics.json": "06956a37332a45c117c1f7369aaf3529e2d31d533b6f49432296283dee8e6cd9",
+      "设计/primer_checks.json": "82cc14c43877347398cf2fc4b81248daf26cc446d4b547e3283bdc49d9f86bdd",
+      "scripts/B-sequence/build_construct.py": "4b42095125f2bbf8d7498171b1e90d4221828a4a4f0f3ad28edb8585ba0df7d2",
+      "scripts/B-sequence/prepare_spec.py": "1451f654d3a5b9efb0a780e705c20da301c54af9330445c824750c3812ef1891",
+      "资料/序列/TFEB_cds.fasta": "75d58c3b36cdf65b8d25f2f78595301c6703e4b28c0d02d261bb2616ebf687bc",
+      "设计/verification_summary.json": "1da2b7af68326c07b2fba042819096b27f65f917eca190322a398242c6fc05fa",
+      "设计/independent_verification.json": "0043b02a288a2519c7142bf0a8477c1d0bb9257f04ac8a13eade8fb1d68b302f",
+      "设计/reference_verification.json": "133bc6489e4cf61d5268619a5e16415fd5a4c05c13ed4f5d0c6face4c2b6bb2e",
+      "设计/environment.json": "2c750e0af5103e6354322efaec9cbbe7dee6e49ff2f6db75d85085e40810225a",
+      "scripts/B-sequence/independent_verify.py": "bb7e40fec664f145997d49aa276e129619bfbb745a027568936d6fc69e692f70",
+      "资料/序列/TFEB_protein.fasta": "8f82f67a06b0e2a00e6bca6888ae250f5a7637f764af5a94edc4bea7e16c93a9",
+      "资料/序列/TFEB_cds_no_stop.fasta": "0cf6cf32a43c001521e65ab1cfdf29688d7cbd9f5ba3bceb7f3354425821475e",
+      "资料/序列/pEGFP-N1_U55762.1.fasta": "60b64c3181db52561fa971b58190734a34914cff73f93cb9b48ff090c58acee1"
+    }
+  },
+  "methods_gate": {
+    "path": "docs/协作/methods-ready.json",
+    "sha256": "69d662cd49460d4047b42f35f6ebdd6da5f5c0cab1f502d131cea0f2bb26425b",
+    "files": {
+      "设计/expected_fragments.tsv": "002ca45026a7236fd97c476ced2af326e6e762e1b1ac1ea4b33b1cb14d7abfbe",
+      "设计/sanger_primers.tsv": "f5c3e1c88d929049a7c8e6d34d214c8d5009d1c2bd6dc82a7fc2fd46dac46f85",
+      "设计/sanger_coverage.tsv": "25c0e55eb5481806e189a6f509a2012298454899feac42b0ad52104aa68aaff5",
+      "设计/methods_parameters.json": "9eacf2114c3993d6511795852ee54c4e652ebf560b0f6159eea1b844b071e32c",
+      "docs/协作/方法正文.md": "3ca95c743543417cea81dabb501fcc0112b81851231822cead82670f5d15af0f",
+      "docs/协作/方法来源.tsv": "a9b668c6f7583cae8d777d5f0ac6e20e0415f7c77d53a3b8887d47328eab2f41",
+      "docs/协作/方法独立核验.json": "895b8316ed187ec50b0d21cc3c5b93a8907f474b94da0838b887f73b69eef2ca",
+      "docs/协作/方法交叉核验.json": "a5fd90dde458a3427408df2b2b2bdcd8a9b193a33af44040a8f89a732b17ff0c",
+      "docs/协作/方法验收.md": "9333d69b69d16a9fc548ed1f7f7a8692405b76dadeb7c7249565c88e736a5d9f",
+      "docs/协作/方法进度.md": "4a17bbf4067e4a8fecc30f7c0323edfabddc3941d77dcb4792845333c2e44349",
+      "docs/协作/方法问题.md": "61f78b5cbc0a4966b81cfd353a85e1f738a139cb79c73696b006b9c2b90c648e",
+      "scripts/B-methods/build_methods.py": "69139afa33c4fb011d540d5d0236c484f23aaac9df68f58f6ab084bf39ffa192",
+      "scripts/B-methods/finalize_methods.py": "444ffc1eaffb9aa47cd4040a12aca8eb9e90be3f6de63658074fd0cd4517baad",
+      "scripts/B-methods/independent_review.py": "6072ee4ecd95cb4616d40e7ac998307287b6dbc23d021e2ad99885a02eb6b96c",
+      "scripts/B-methods/sequence_checks.py": "90bb56d2a16abf964ab9ac41d4d65757660556a61d2538dc0dd34369cee242ca",
+      "scripts/B-methods/write_methods_text.py": "aed96895c1014f2afee87262b2ba0f5e49509ca698cae8159fbdd9d98c101d9f",
+      "设计/construct_spec.json": "395881bd325bc92798e3b97de46ad5adf2d1c4fd6387e2aa5329cb784d416e5b",
+      "资料/序列/TFEB_reference.gb": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+      "资料/序列/TFEB_NM_007162.2.gb": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+      "资料/序列/TFEB_NP_009093.1.gp": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+      "资料/序列/pEGFP-N1_U55762.1.gb": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+      "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+      "设计/construct.fasta": "2db5e19b5aa860ea1cec25821473b1753e4b72708a1b620e4f8eda88cea02b55",
+      "设计/fusion_protein.fasta": "66c927ec01732a07cde049aa6d4b5e858fae7f458785b64a2dd490f3208cb7ba",
+      "设计/fusion_orf.fasta": "a953cdeaf9a6ea24f140b0bf846167251df978c7496b514d3a0ec301b6023908",
+      "设计/PCR_product.fasta": "6d71e7a6592305cf55895603576dfb647f769cd5e2aae7b4f138363820003b73",
+      "设计/primers.tsv": "e2e07b361a59defbc1b506b999da920c65dfc08e8661d34f91cbbaa6bd5f19d2",
+      "设计/construct_features.tsv": "5d55af8a9a1b5086570439c9d18529983dbd16cfd086fc7f6beed89cbfe5371f",
+      "设计/junctions.tsv": "6a1712e5b225e55ee5c637d4920af32c9a5655f252bd28ca20ffdfb424a58672",
+      "设计/construct_metrics.json": "06956a37332a45c117c1f7369aaf3529e2d31d533b6f49432296283dee8e6cd9",
+      "设计/primer_checks.json": "82cc14c43877347398cf2fc4b81248daf26cc446d4b547e3283bdc49d9f86bdd",
+      "scripts/B-sequence/build_construct.py": "4b42095125f2bbf8d7498171b1e90d4221828a4a4f0f3ad28edb8585ba0df7d2",
+      "scripts/B-sequence/prepare_spec.py": "1451f654d3a5b9efb0a780e705c20da301c54af9330445c824750c3812ef1891",
+      "资料/序列/TFEB_cds.fasta": "75d58c3b36cdf65b8d25f2f78595301c6703e4b28c0d02d261bb2616ebf687bc",
+      "设计/verification_summary.json": "1da2b7af68326c07b2fba042819096b27f65f917eca190322a398242c6fc05fa",
+      "设计/independent_verification.json": "0043b02a288a2519c7142bf0a8477c1d0bb9257f04ac8a13eade8fb1d68b302f",
+      "设计/reference_verification.json": "133bc6489e4cf61d5268619a5e16415fd5a4c05c13ed4f5d0c6face4c2b6bb2e",
+      "设计/environment.json": "2c750e0af5103e6354322efaec9cbbe7dee6e49ff2f6db75d85085e40810225a",
+      "scripts/B-sequence/independent_verify.py": "bb7e40fec664f145997d49aa276e129619bfbb745a027568936d6fc69e692f70",
+      "资料/序列/TFEB_protein.fasta": "8f82f67a06b0e2a00e6bca6888ae250f5a7637f764af5a94edc4bea7e16c93a9",
+      "资料/序列/TFEB_cds_no_stop.fasta": "0cf6cf32a43c001521e65ab1cfdf29688d7cbd9f5ba3bceb7f3354425821475e",
+      "资料/序列/pEGFP-N1_U55762.1.fasta": "60b64c3181db52561fa971b58190734a34914cff73f93cb9b48ff090c58acee1",
+      "docs/协作/sequence-ready.json": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde"
+    }
+  },
+  "script_sha256": "0c9fc0599e8bb41ce3ff242958b03f07278f8c81cc4d7535064e0b157138237b",
+  "tools": {
+    "tectonic": {
+      "path": "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic",
+      "version_output": "Tectonic 0.17.0"
+    },
+    "pdftotext": {
+      "path": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext",
+      "version_output": "pdftotext version 26.10.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+    },
+    "pdftoppm": {
+      "path": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm",
+      "version_output": "pdftoppm version 26.10.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+    },
+    "pdfinfo": {
+      "path": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo",
+      "version_output": "pdfinfo version 26.10.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+    }
+  },
+  "completed_at": "2026-10-23T14:11:59.612641-04:00",
+  "pdf": {
+    "path": "报告/main.pdf",
+    "sha256": "a3d7ba452ccd8ad7c474b2a6b088f0a48b9710445a9e899b5e516eb000f93b10",
+    "pages": 14
+  },
+  "pdf_text": {
+    "path": "报告/build/main.txt",
+    "sha256": "5ccdb86c26ad061b0e058bacc8cfb88487a77632216b2b2ad7d4c0efa348f24c"
+  },
+  "compiler_log": {
+    "path": "报告/build/tectonic-output.txt",
+    "sha256": "cb663232c318af93b06e8e8aa73cabae69511cc31b13c51da0941fcf6506ae73"
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-01.png",
+      "sha256": "16940ab0d27913e6acaf46f16eac8f3939f89f9c3dbb274c43b2a1b4eb4e8d2c"
+    },
+    {
+      "page": 2,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-02.png",
+      "sha256": "b9ec8961bbe94cdf3993d4f5a273a39ccd3572301e21cc2f9b3e72022059c966"
+    },
+    {
+      "page": 3,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-03.png",
+      "sha256": "f3e35b77a0c17f41d8f2fcfb9daf4bfdfc677b7550f3c89c3c5dd3a24c24f895"
+    },
+    {
+      "page": 4,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-04.png",
+      "sha256": "62f789fa8ce66fa7790d0865f0074db6c0ec6dc83595127a21e35d3b86712c83"
+    },
+    {
+      "page": 5,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-05.png",
+      "sha256": "171d72842178275447c304090b165276a2e34a5944a44f2d496d44500783c2e9"
+    },
+    {
+      "page": 6,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-06.png",
+      "sha256": "c104f146a6a52669d945bf4a28e8bc60199ab756251c4806f21164d78aa0aea3"
+    },
+    {
+      "page": 7,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-07.png",
+      "sha256": "4930d852b0d31ac6b2522830c53a25f887811de7e118e6026c520c4f661120d6"
+    },
+    {
+      "page": 8,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-08.png",
+      "sha256": "02dd36d04ef0735eacbea3ae6828c6f435b9debcb0c1ecf93f167b4a23a9f34e"
+    },
+    {
+      "page": 9,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-09.png",
+      "sha256": "cc85bb18a17ddad5f0bf94622721997f5456535c41a0649456ebd055884d50ef"
+    },
+    {
+      "page": 10,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-10.png",
+      "sha256": "b7b9c10200a56b5da36ea977db7e22276b8001b37a3d6440fa2d5eb60d387fd4"
+    },
+    {
+      "page": 11,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-11.png",
+      "sha256": "99e2e022c158df0842a4a5f79a1c517015978ce95f2c87016b53f1b96d607ca5"
+    },
+    {
+      "page": 12,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-12.png",
+      "sha256": "4aaa3afd1adf953c2bc1eb8ea507c36860944d3477ad26cba2923c102b0a61d4"
+    },
+    {
+      "page": 13,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-13.png",
+      "sha256": "d27b4e9f80100220794aa74a2199bd9bb2d3f053349188fff4915c72658bd50e"
+    },
+    {
+      "page": 14,
+      "path": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-14.png",
+      "sha256": "12b2fd619f082182118c3aad9dac7ddcd2c7c11be6a30b83a7c68e0ecbbcb979"
+    }
+  ],
+  "limitations": [
+    "Does not inspect scientific content or compiler warnings",
+    "Does not perform per-page visual review",
+    "External TeX packages and fonts are not vendored by this record",
+    "Page rasters and build intermediates remain local project evidence"
+  ]
+}

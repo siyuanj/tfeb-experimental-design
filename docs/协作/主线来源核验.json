@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-23T18:25:42.555406+00:00",
+  "scope": "Local files explicitly hashed in the source ledger; no URL-only source re-fetch or scientific regeneration",
+  "ledger": {
+    "path": "资料/B来源索引.tsv",
+    "sha256": "7fcfa2f12fe3f7340e5812969bb86962fb81105f32e86ba43b901f08cf95b980",
+    "rows": 34
+  },
+  "local_sources_checked": [
+    {
+      "source_id": "S01",
+      "path": "资料/序列/TFEB_reference.gb",
+      "sha256": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594"
+    },
+    {
+      "source_id": "S02",
+      "path": "资料/序列/TFEB_NM_007162.2.gb",
+      "sha256": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb"
+    },
+    {
+      "source_id": "S03",
+      "path": "资料/序列/TFEB_NP_009093.1.gp",
+      "sha256": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f"
+    },
+    {
+      "source_id": "S04",
+      "path": "资料/序列/pEGFP-N1_U55762.1.gb",
+      "sha256": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d"
+    },
+    {
+      "source_id": "S05",
+      "path": "docs/核查/B/sources/Clontech_PT3027-5_PR93634.pdf",
+      "sha256": "72a9efa6ac142c6c979d427fdc7a8f16109a367b6784f9b2c06ff563487b5830"
+    },
+    {
+      "source_id": "S06",
+      "path": "docs/核查/B/sources/RoczniakFerguson2012_ScienceSignaling.txt",
+      "sha256": "156427806ed0ae9443022f36c707560bbf044cc117d2deffbb127c6a0a94ef22"
+    },
+    {
+      "source_id": "S14",
+      "path": "docs/10-23 课程要求与待办.md",
+      "sha256": "ad44ddb4fb5434de4aa7cd0fe9d968853f5d874ad9807d1a220c7342b66f6daf"
+    }
+  ],
+  "url_only_sources_not_refetched": 27,
+  "S002": {
+    "status": "closed",
+    "source_id": "S14",
+    "historical_commit": "8bdd898",
+    "historical_sha256": "d3800629bfe0f3a80f55f1e4e86be9e9b5915e7d5e2f275ecb416690cdd78843",
+    "current_sha256": "ad44ddb4fb5434de4aa7cd0fe9d968853f5d874ad9807d1a220c7342b66f6daf",
+    "requirements_summary_unchanged": true,
+    "change_scope": "Work scope, final construct selection and five B checklist items; requirement-source section unchanged"
+  },
+  "unchanged_ready_files": {
+    "docs/协作/sequence-ready.json": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde",
+    "docs/协作/methods-ready.json": "69d662cd49460d4047b42f35f6ebdd6da5f5c0cab1f502d131cea0f2bb26425b",
+    "docs/协作/report-ready.json": "fc22d48c82078dd0d44b1b134b3df1625c8e3ba3d5afe8203d83eecb52c1e6b5"
+  },
+  "files": {
+    "资料/B来源索引.tsv": "7fcfa2f12fe3f7340e5812969bb86962fb81105f32e86ba43b901f08cf95b980",
+    "资料/序列/TFEB_reference.gb": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+    "资料/序列/TFEB_NM_007162.2.gb": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+    "资料/序列/TFEB_NP_009093.1.gp": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+    "资料/序列/pEGFP-N1_U55762.1.gb": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+    "docs/核查/B/sources/Clontech_PT3027-5_PR93634.pdf": "72a9efa6ac142c6c979d427fdc7a8f16109a367b6784f9b2c06ff563487b5830",
+    "docs/核查/B/sources/RoczniakFerguson2012_ScienceSignaling.txt": "156427806ed0ae9443022f36c707560bbf044cc117d2deffbb127c6a0a94ef22",
+    "docs/10-23 课程要求与待办.md": "ad44ddb4fb5434de4aa7cd0fe9d968853f5d874ad9807d1a220c7342b66f6daf",
+    "docs/协作/sequence-ready.json": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde",
+    "docs/协作/methods-ready.json": "69d662cd49460d4047b42f35f6ebdd6da5f5c0cab1f502d131cea0f2bb26425b",
+    "docs/协作/report-ready.json": "fc22d48c82078dd0d44b1b134b3df1625c8e3ba3d5afe8203d83eecb52c1e6b5"
+  },
+  "script_sha256": "fd9eac05baab17ab2c82ee723341bc263e899de360cd8dc2030613c910a6f153",
+  "limitations": [
+    "S05/S06 full sources remain local and ignored; not redistributed",
+    "Does not certify wet experiments, final course submission or all external URLs"
+  ]
+}

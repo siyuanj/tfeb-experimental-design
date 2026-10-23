@@ -1,5 +1,31 @@
-% Owner B: Siyuan Jiang.
-\subsection{Molecular Cloning}
-PCR is expected to produce an amplicon matching the finalized TFEB insert design, with no corresponding product in the no-template control. Colony PCR and diagnostic digestion should yield the predicted fragment pattern. Exact amplicon and restriction-fragment lengths will be recorded with the completed sequence design.
+% Part B: accepted computational design and explicitly predicted experiments.
+\subsection{Computed Construct and Experimental Predictions}
+The in-silico \ConstructName{} (\ConstructBp{} bp; Figure~\ref{fig:plasmid}) encodes a \FusionAa{}-residue TFEB--EGFP fusion: \TFEBAa{} TFEB residues, the seven-residue \LinkerPeptide{} junction, and \EGFPAa{} EGFP residues. The native TFEB stop is absent; EGFP supplies the final TAA. The calculated unmodified average mass is \FusionMassKDa{} kDa.
 
-The decisive criterion is Sanger confirmation of the complete intended fusion construct. Successful cloning requires correct insert identity and orientation, both junctions, the continuous open reading frame, and the intended termination codon. The final report will include a plasmid map, a cloning workflow, and explicitly labeled schematic predictions for the gel patterns.
+The reconstruction and an independent standard-library audit agreed on sequence, reading frame, junctions, terminal stop and fragment geometry. Corresponding checks rejected four software challenges: reversed TFEB, a one-base frameshift, restored native TFEB stop, and an internal HindIII site. These are not experimental clones or a measured success rate.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{images/B/plasmid-map.pdf}
+\caption{Predicted annotation map of \ConstructName{} (\ConstructBp{} bp), rendered from the accepted GenBank sequence. The complete fusion ORF overlaps its TFEB, linker and EGFP components intentionally. HindIII 623 and BamHI 2062 denote the first reference-strand nucleotide after cleavage; their recognition sequences begin at 622 and 2061, respectively. Poly(A) annotations are signal motifs, not complete processing regions. KanR applies to bacteria and Neo/G418 to mammalian selection. The pUC and SV40 origins are shown without an inferred directional arrow. No experimental observation is represented.}
+\label{fig:plasmid}
+\end{figure}
+
+Cloning PCR predicts a \PCRBp{} bp product. HindIII/BamHI digestion yields a \InsertBp{} nt insert and \BackboneBp{} nt backbone by the cut-to-cut single-strand convention. Their pydna duplex spans are 1,443 and 4,699 bp, including four-base overhangs; gel sizes use the nominal single-strand lengths. Because the empty vector loses a \RemovedMCSBp{} nt MCS segment, the final length is not the intact vector length plus the undigested amplicon.
+
+\input{sections/screening-results}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\textwidth,height=0.77\textheight,keepaspectratio]{images/B/cloning-workflow-imagegen-v2.png}
+\caption{Proposed cloning workflow and control checkpoints. AI-assisted illustrations are symbolic, not exact molecular geometry, plasmid coordinates or experimental data. The full-length paired arrows summarize the intended bidirectional sequencing coverage, not observed reads. Each operation is planned; measured DNA concentrations and actual sequence quality are required before clone acceptance.}
+\label{fig:workflow}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{images/B/predicted-bands.pdf}
+\caption{Predicted DNA-band positions, drawn as a schematic rather than an experimental gel. M: NEB N3232 ladder; PCR: tailed insert amplicon; I: digested insert; NTC: no-template control; E: empty vector; C: intended construct; R: hypothetical reverse-TFEB model; S: hypothetical retained-stop model. The 500/517 bp marker pair is not resolved~\cite{MethodM16}. The 7, 11 and 38 nt fragments fall below the displayed range. Three-base differences between C and S are not expected to resolve on the proposed 1\% gel. An empty NTC schematic means no specific product is predicted, not a guarantee of a clean experimental lane. Uncut circular DNA mobility and band intensity are not predicted.}
+\label{fig:bands}
+\end{figure}
+\FloatBarrier

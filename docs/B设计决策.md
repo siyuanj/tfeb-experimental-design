@@ -1,58 +1,41 @@
-# B 设计决策：TFEB、载体与融合方向
+# B 设计决策与证据边界
 
-日期：2026-10-23。当前范围：基础方案的参考选择；不是完整克隆设计验收。
+日期：2026-10-23；版本 B-v1。以下技术取舍为我的判断，按用户已授权的 TFEB/HeLa、基础克隆设计范围执行；不是用户逐项指定，也不是湿实验结论。
 
-## 已选定的主方案
+## 唯一参考、模板和构型
 
-**人野生型 TFEB isoform 1（NM_007162.3 / NP_009093.1）＋ pEGFP-N1（U55762.1）＋ C 端 EGFP，即 TFEB–EGFP。**
+- TFEB：人 `NM_007162.3`，CDS 303–1733（1-based，+链），1431 nt含TGA；`NP_009093.1`，476 aa。与旧文献 `.2` 的CDS/蛋白相同；mRNA只有末端10A差异。未声称这是当前MANE Select。原始记录、下载URL及哈希在 `资料/序列/source_manifest.json`，翻译校验在 `设计/reference_verification.json`。
+- PCR模板：拟订制与上述CDS一致的1431nt线性dsDNA、不做密码子优化；采购例为IDT gBlocks HiFi（产品使用序列确认的克隆中间体，仍不保证本项目每个分子无错误）。不预设HeLa表达哪个转录本，不声称已获得cDNA或已测浓度。下单可行性/QC需将来核验；最终克隆须全覆盖测序。
+- 空载体：NCBI Clontech直接提交 `U55762.1`，4733bp环状pEGFP-N1。该记录是完整设计参考，厂家说明其由公开资料及部分测序汇编，不能冒充本次实物全长测序。使用前需核实空载体身份。
+- 方向：TFEB–EGFP（C端EGFP），与Roczniak-Ferguson 2012的HeLa饥饿/Torin1定位先例最直接一致。Park2021有N端EGFP先例；Martina2013显示N端调控重要，但两者不证明N端标签一定失活，也不构成标签方向的直接优劣实验。
+- 命名解释：pEGFP-N1 将目标 TFEB 接在 EGFP 的 N 侧，因此 EGFP 实际位于 TFEB 的 C 端；与参考选择线的命名说明一致。
+- native TFEB ATG保留；TFEB原TGA移除；EGFP的ATG成为内部Met，最终由EGFP TAA终止。整个蛋白必须从最终质粒翻译核验。
 
-用户决定保持基础方案，不增加必须完成的突变体或创新实验。上述具体构建选择由本轮文献与序列核对作出。后续计算读取 [construct_spec.json](../设计/construct_spec.json)；实测核查见 [reference_verification.json](../设计/reference_verification.json)。
+## 酶对、接头及引物
 
-| 项目 | 固定选择 | 核查结果或边界 |
-|---|---|---|
-| 物种、基因、蛋白 | Homo sapiens，TFEB，wild-type isoform 1 | 不使用小鼠、截短体、S211A 或双突变体 |
-| 转录本 | NCBI RefSeq **NM_007162.3**，transcript variant 1 | 本轮下载完整 2,354 nt mRNA；不把整条 mRNA 当插入片段 |
-| 蛋白 | **NP_009093.1，476 aa** | CDS 翻译与独立蛋白记录逐字一致 |
-| CDS | 转录本正向 **303–1733**，1-based、包含两端 | 1,431 nt，含起始 ATG 和末端 TGA |
-| TFEB 编码部分 | **1,428 nt，不含末端 TGA** | 保留完整 476 aa；不是最终带尾 PCR 产物长度 |
-| 空载体参考 | **pEGFP-N1，GenBank U55762.1** | 厂商提交的完整 4,733 bp 环状参考序列 |
-| 标签位置 | **TFEB–EGFP，EGFP 在 TFEB 的 C 端** | N→C 顺序为 TFEB、接头、EGFP |
-| 表达及选择 | CMV 驱动；细菌 KanR；哺乳动物 Neo/G418 | G418 不用于细菌筛选；暂不为瞬时表达增加稳定筛选实验 |
-| 文献构建 | **pEGFP-N1-TFEB，Addgene #38119** | 作为已发表架构参照，不声称已取得或逐碱基复刻成品质粒 |
+- 使用HindIII-HF/BamHI-HF：两位点在空载体唯一、TFEB内不存在，均为不同的5′黏端（AGCT/GATC）。XhoI在TFEB内部出现，弃选。HindIII/KpnI虽可用且有历史先例，本设计用更靠近EGFP的BamHI缩短MCS残余片段；不声称重建Addgene #38119原序列。
+- 两引物各6nt保护区，是参照NEB末端切割表的保守选择；表中3–5bp已达+++，其意义为50–100%，不是本PCR片段切割率实测。
+- 正向尾部 `ACTGAC|AAGCTT|ACC`；反向尾部 `TATGAC|GGATCC|CC`；最后CC是coding-strand GG的反向互补。`GG`与载体残余19nt组成21nt linker `GGGGATCCACCGGTCGCCACC`，编码GDPPVAT。
+- 曾检查GCCACC起始尾部，完整正向寡核苷酸模型发卡Tm为66.001°C，超过本设计55°C筛选阈值。改用ACC，保留−3 A及+4 G；并未改变TFEB蛋白。候选及完整结构结果在 `设计/primer_checks.json`。
+- 主引物退火区各22nt。Tm模型为Primer3/SantaLucia（50mM单价盐假设、2mM Mg、总dNTP0.8mM、每引物500nM）；显式区分Q5厂商未公开的完整缓冲配方。65°C及62/65/68°C梯度为拟优化起点，不是实测条件。5′非退火尾巴不用于初期退火Tm。
+- 特异性核查仅针对已定义合成模板的完整退火区和末端12mer两链精确匹配；没有做转录组/基因组级特异性声称。
 
-序列原始记录：[NM_007162.3](https://www.ncbi.nlm.nih.gov/nuccore/NM_007162.3)、[NP_009093.1](https://www.ncbi.nlm.nih.gov/protein/NP_009093.1)、[U55762.1](https://www.ncbi.nlm.nih.gov/nuccore/U55762.1)。表达、标签及选择信息由 [Addgene #38119](https://www.addgene.org/38119/) 支持。
+## 片段、坐标与功能注释
 
-## 为什么选这个 TFEB 版本
+- pydna执行带尾PCR、实际错位黏端酶切、兼容端连接、环化。独立核查路径不调用主线构建函数，检查字面重建、密码子翻译及故意错误。
+- 胶图和连接质量换算采用标称cut-to-cut单链长度；pydna全跨度另列，不能混用：insert1439nt/1443跨度，backbone4695nt/4699跨度，最终6134bp。
+- TFEB631–2058；linker2059–2079；EGFP2080–2799（含stop）；完整ORF631–2799。TFEB476 + linker7 + EGFP239 = 722aa，理论未修饰平均质量80.425kDa。Western迁移、剪切和磷酸化可能使表观条带不同。
+- 元件来源为U55762.1 CDS与Clontech PT3027-5 p2，按插入造成的偏移映射并核对其序列未变。polyA标注是信号基序；SV40早期启动子列离散元件，非推测的完整连续边界。原MCS被切开，保留两部分分别注明。
 
-Addgene #38119 指向历史 **NM_007162.2**。本轮实际取得 `.2`、`.3` 两版 GenBank 和独立 `NP_009093.1` 蛋白记录后比较：两版 CDS 坐标均为 303–1733，核酸编码区和 476 aa 蛋白完全相同；`.2` 的 2,364 nt 转录本等于 `.3` 的全部 2,354 nt 加末端 10 个 A。因此采用当前 `.3` 可保持与该历史编码序列一致，不引入蛋白改变。不是只根据 accession 名称或长度推定一致。
+## 自审与尚未验证
 
-选择 variant 1 是为对齐既有构建的编码序列，不主张它是唯一合理的 TFEB 转录本，也不称它为 MANE Select。它与长 N 端 isoform 2 必须区分；新旧记录均明确标注 isoform 1。
+- 写后执行前审查了脚本的版本/哈希、正反引物、0/1-based边界、片段选择、环化原点及特征偏移。发现并修正：不可用会在`python -O`消失的assert作为来源校验；不为非方向性origin猜箭头；源模板FASTA必须与GenBank CDS再比较。
+- 首次主路径实际成功，未出现构建失败；随后独立P5核查6组通过，4类错误注入按预期原因拒绝。输入/脚本哈希回查后已发布sequence-ready；不将此计算验收称为实验验证。
+- 未做湿实验、供应商合成可行性审核、真实库存验证、实际Sanger或细胞表达。标签对定位的影响需细胞对照核验；定位改变不能证明自噬通量增加。
 
-## 为什么选 pEGFP-N1 和 C 端 EGFP
+## 关键来源
 
-[Roczniak-Ferguson et al., 2012](https://doi.org/10.1126/scisignal.2002790) 的 *Cell Culture and Transfection* 方法记载 TFEB cDNA 亚克隆进 pEGFP-N1，使用 HindIII/KpnI；Figure 3 直接展示 HeLa 中 TFEB–GFP 对饥饿和 Torin1 的定位响应。[Addgene #38119](https://www.addgene.org/38119/) 明确写 EGFP 位于 insert 的 C 端，并注明删除 TFEB stop codon。
-
-因此，本次沿用有直接 HeLa 定位依据的架构，便于解释和对照已有研究。原稿的 pEGFP-C1 / EGFP–TFEB 不再作为主方案；这不表示 N 端标签一定不可用，也没有证明 C 端标签完全不干扰 TFEB。过表达与标签本身仍是报告中的限制。
-
-**名称容易混淆：pEGFP-N1 用于将目标蛋白接在 EGFP 的 N 侧，所以本项目中 EGFP 实际位于 TFEB 的 C 端。** 最终报告统一写 TFEB–EGFP，避免只写“GFP–TFEB”而让读者误解顺序。
-
-## 参考空载体与成品质粒分开
-
-- **U55762.1** 是 Clontech 于 1996 年提交的 pEGFP-N1 空载体参考，4,733 bp；原记录说明它综合数据库、文献及部分测序信息。它不是本实验室实物库存的测序结果，旧记录中的订购说明不代表今天仍有库存。
-- **#38119** 已含 TFEB。官方序列页的下载/复制需要登录；本轮没有获取其完整序列。因此不把官方网页的成品质粒总长度当成本项目最终构建长度，也不承诺连接区与该成品完全相同。
-- 当前作业保留“TFEB PCR → 空载体克隆 → 筛选 → Sanger”的设计内容；现成成品仅作文献参照。
-- 当前空载体 GenBank 主要注释 EGFP 和 neomycin phosphotransferase 两个 CDS；完整 promoter、MCS、复制起点、poly(A) 等特征坐标仍须结合厂商资料补齐，不能把稀疏原注释称为完整质粒图。
-
-## 模板与连接规则
-
-为让后续 PCR 有一个明确输入，设计假定使用**按 NM_007162.3 CDS 合成、保留天然末端 TGA 的人 TFEB cDNA 模板克隆**。这是拟获取材料，不是已经采购或测序的样品；实际投入实验前须以供应商序列及测序核对。模板采用天然编码序列，不作密码子优化。
-
-拟定表达顺序为 `CMV → TFEB 编码区（1,428 nt，含起始 ATG、不含末端 TGA）→ 待核查接头 → EGFP → 最终 stop`。TFEB 的 ATG 用作融合蛋白起始，不在 1,428 nt 之外额外添加一次；TFEB 末端 TGA 不进入融合构建。计划保留完整 EGFP 编码区及其末端 TAA，EGFP 的 ATG 在融合中编码内部 Met。翻译起始环境与接头碱基在引物设计阶段固定；不能仅凭此顺序就声称读框通过。
-
-HindIII/KpnI 目前只是文献优先候选酶对；本轮未验证其内部位点、切割与连接后读框，也未设计引物。最终 TFEB–EGFP 的氨基酸数、理论分子量和质粒长度需在接头确定后计算，不能简单把参考长度相加。
-
-## 本轮验证和下一步
-
-本地 Python 3.12.15 / Biopython 1.88 实际检查：版本标识、CDS 翻译、终止、旧版一致性、独立蛋白一致性、载体环状和长度、载体 EGFP 翻译；均通过。脚本先自审并经独立静态审阅，无需 UF。两个参考的序列及文件 SHA-256 在 JSON 中分别保存，注释文件更新不等于序列改变。
-
-下一步只推进基础克隆设计：补齐骨架特征，确定两端接头及酶对，设计引物，再重建和翻译完整构建。未核验实物模板、实物空载体、完整成品质粒、实际 PCR、表达或定位；本轮不能标为整个 B 已完成。
+- NCBI原始版本记录与来源索引：`资料/B来源索引.tsv`。
+- Roczniak-Ferguson 2012：doi:10.1126/scisignal.2002790，Methods / Fig.3；Addgene38119标签/版本/克隆信息。
+- Clontech PT3027-5 PR93634，1999-03-19，第2页坐标、第3页序列限制；原件仅本地保存 `docs/核查/B/sources/Clontech_PT3027-5_PR93634.pdf`。
+- 厂家反应条件与服务指南：`docs/协作/方法来源.tsv`，由主线汇入总索引，未使用候选条件冒充定稿。

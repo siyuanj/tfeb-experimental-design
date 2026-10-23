@@ -1,0 +1,18 @@
+Use case: scientific-educational.
+Asset type: a publication-style illustrated cloning workflow for an English molecular biology course proposal; schematic only, no experimental results.
+Primary request: create a clean, restrained, high-resolution portrait infographic with exactly seven numbered stages in a single top-to-bottom column, each linked only to the next by one clear downward arrow. White background, dark navy type, blue and teal accents, subtle flat line illustrations of DNA/tubes/petri dishes/read alignment. Generous whitespace, legible typography. Do not create photoreal laboratory results, electrophoresis gels, chromatograms, or precise plasmid coordinate maps.
+Title, verbatim: "PROPOSED TFEB–EGFP CLONING WORKFLOW"
+Subtitle, verbatim: "Schematic • No experimental data"
+Seven cards in this exact order, with these exact headings and one short supporting line each:
+"1  Define the template" / "Native TFEB synthetic dsDNA; pEGFP-N1 vector"
+"2  Amplify TFEB" / "Q5 PCR; exclude the native TFEB stop"
+"3  Digest and purify" / "HindIII-HF + BamHI-HF; prepare insert and backbone"
+"4  Ligate directionally" / "T4 DNA ligase; 3:1 insert:vector"
+"5  Transform and select" / "NEB 5-alpha; kanamycin selection"
+"6  Screen candidate clones" / "Colony PCR, miniprep and diagnostic digestion"
+"7  Verify before cell assays" / "Bidirectional Sanger across the complete target"
+Add a slim clearly separated footer headed "CONTROL CHECKPOINTS" with this exact text:
+"PCR: no-template control • Ligation: vector-only control"
+"Transformation: no-DNA and separate pUC19 competence controls"
+"Acceptance: correct sequence and concordant high-quality reads"
+Constraints: seven steps only; no branching or omitted steps; no claim of cloning success, purchased material, actual data or validation. Illustrations are symbolic. Do not depict the EGFP tag at the TFEB N terminus. No logos, watermarks, extra numerical measurements, invented nucleotide sequences, ornamental scientific graphs or realistic gel lanes. Text must be verbatim and readable when reproduced on an A4 report page.

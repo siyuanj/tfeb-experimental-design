@@ -1,0 +1,11 @@
+primer_id	direction	binding_start_1based	binding_end_1based	usable_start_1based	usable_end_1based	target_overlap_start_1based	target_overlap_end_1based	target_overlap_nt	planning_assumption
+S-F1	+	418	437	488	1087	602	1087	486	extended offsets51-650;600nt;not observed reads
+S-F2	+	930	951	1002	1601	1002	1601	600	extended offsets51-650;600nt;not observed reads
+S-F3	+	1456	1477	1528	2127	1528	2127	600	extended offsets51-650;600nt;not observed reads
+S-F4	+	1971	1995	2046	2645	2046	2645	600	extended offsets51-650;600nt;not observed reads
+S-F5	+	2502	2526	2577	3176	2577	2799	223	extended offsets51-650;600nt;not observed reads
+S-R1	-	2998	3022	2348	2947	2348	2799	452	extended offsets51-650;600nt;not observed reads
+S-R2	-	2466	2487	1816	2415	1816	2415	600	extended offsets51-650;600nt;not observed reads
+S-R3	-	1967	1991	1317	1916	1317	1916	600	extended offsets51-650;600nt;not observed reads
+S-R4	-	1457	1479	807	1406	807	1406	600	extended offsets51-650;600nt;not observed reads
+S-R5	-	932	955	282	881	602	881	280	extended offsets51-650;600nt;not observed reads

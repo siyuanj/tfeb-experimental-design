@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-23T17:33:45.322432+00:00",
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/Volumes/Work/\u8bfe\u7a0b/10-18 \u5206\u5b50\u751f\u7269\u5b66\u5b9e\u9a8c/.venv-plasmid/bin/python",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "packages": {
+    "pydna": "5.5.16",
+    "biopython": "1.88",
+    "primer3-py": "2.4.0",
+    "dna-features-viewer": "3.1.5",
+    "matplotlib": "3.11.2",
+    "opencloning": "2.0.1"
+  },
+  "execution_scope": "Local small CPU only; no UF connections or resources",
+  "tectonic": "Tectonic 0.17.0"
+}

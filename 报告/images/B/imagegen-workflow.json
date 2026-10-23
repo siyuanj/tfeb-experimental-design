@@ -1,0 +1,37 @@
+{
+  "status": "visually_reviewed_and_selected",
+  "reviewed_at": "2026-10-23T13:57:58.989773-04:00",
+  "tool": "built-in image_gen.imagegen; no CLI or API key used",
+  "inputs": {
+    "docs/协作/sequence-ready.json": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde",
+    "docs/协作/methods-ready.json": "69d662cd49460d4047b42f35f6ebdd6da5f5c0cab1f502d131cea0f2bb26425b"
+  },
+  "files": {
+    "报告/images/B/cloning-workflow-imagegen-v1.png": "a3fb8b624bdca7e111eb6c590857500555d3e460a4ac011ebdf3c95755a5e9d5",
+    "报告/images/B/cloning-workflow-imagegen-v2.png": "228791286e04758a25870953c2c93ba74166690f79a3c19b0faf2a9ad0f6e78c",
+    "docs/协作/报告ImageGen提示词.txt": "cd6a01b755773b717f50059fd5b07c3780be54236025365f33486142f90d9775",
+    "docs/协作/报告ImageGen修订提示词.txt": "dfb1fa1e406084887906c7c18442befca03d3073873b27dc0e890de36c7d504c"
+  },
+  "selected": "报告/images/B/cloning-workflow-imagegen-v2.png",
+  "original_tool_outputs": [
+    "exec-ca8ceed4-4f46-4058-91c8-5be07b307c7f.png",
+    "exec-48df6a7d-752f-4c35-b30b-3d4ce2763ce5.png"
+  ],
+  "review": {
+    "seven_steps_in_correct_order": true,
+    "arrows_connect_each_step_to_the_next": true,
+    "Q5_HindIIIHF_BamHIHF_T4_3to1_5alpha_kanamycin_labels_checked": true,
+    "TFEB_before_EGFP_order_checked": true,
+    "controls_match_proposal": true,
+    "schematic_and_no_experimental_data_visible": true,
+    "no_chromatogram_or_gel_data_in_selected_image": true,
+    "paired_arrows_span_combined_target": true
+  },
+  "comparison": "Selected v2 for clearer visual progression and symbolic material transitions. The code-rendered workflow remains as a reproducible detailed companion. V1 was rejected because unrequested schematic peak traces could be mistaken for sequencing data; the edit removes all such traces.",
+  "limits": [
+    "Symbolic DNA ends and circular icons do not encode exact geometry or coordinates",
+    "Two arrows summarize intended full-target bidirectional coverage, not single read lengths or actual coverage",
+    "Generated pixels are not deterministically reproducible; original output, prompts, and hashes are retained",
+    "Final A4 legibility is reviewed separately in final PDF pages"
+  ]
+}

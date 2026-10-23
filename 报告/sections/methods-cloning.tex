@@ -1,20 +1,142 @@
-% Owner B: Siyuan Jiang. References fixed; cloning junctions remain pending.
-\subsection{Construct Strategy and Materials}
-The selected reporter is wild-type human TFEB isoform 1 fused to C-terminal EGFP (TFEB--EGFP), expressed from pEGFP-N1 under the CMV promoter. This architecture follows the HeLa localization study of Roczniak-Ferguson et al. and its deposited construct, pEGFP-N1-TFEB (Addgene \#38119) \cite{RoczniakFerguson2012,Addgene38119}. It replaces the initial outline's provisional pEGFP-C1 strategy. The choice follows a directly relevant experimental precedent; it does not establish that fluorescent tagging leaves endogenous TFEB regulation unchanged.
+% B-v1 method integration from hash-verified P5 and P6 handoffs.
+% All laboratory procedures are proposed; computational outputs are identified explicitly.
+\subsection{Sequence-Defined Construct and Materials}
+The proposed construct, \ConstructName{}, will express human TFEB followed by a C-terminal EGFP tag under the CMV promoter. The reference will be TFEB transcript variant 1, NM\_007162.3, whose CDS at transcript positions 303--1733 encodes NP\_009093.1 (\TFEBAa{} amino acids). A native, intron-free \TFEBReferenceNt{}-nt CDS containing its original \oligo{TGA} will be ordered as linear double-stranded DNA without codon optimization, for example through the gBlocks HiFi synthesis service. This defined template will avoid uncertainty about the TFEB isoform in a cellular cDNA preparation. The synthesis feasibility, supplier QC and physical material identity will be checked before use; physical template and vector stocks have not been experimentally verified in this project~\cite{TFEBRef,IDTTemplate}.
 
-The TFEB reference is RefSeq NM\_007162.3, encoding NP\_009093.1 (476 amino acids). Its CDS occupies transcript positions 303--1733 (1-based, inclusive): 1,431 nucleotides including the terminal TGA, or 1,428 nucleotides without that stop codon \cite{TFEBRefSeq}. Computational comparison confirmed that its CDS and protein are identical to historical NM\_007162.2, the accession listed for Addgene \#38119. The older transcript has ten additional terminal adenines outside the CDS. The independently retrieved NP\_009093.1 protein matches the translated CDS.
+The empty backbone will be pEGFP-N1, GenBank U55762.1 (\EmptyVectorBp{} bp). Its bacterial kanamycin resistance and mammalian neomycin/G418 selection have different uses. The reference map includes the CMV promoter, EGFP, polyadenylation signals and replication origins, but the manufacturer's reference sequence does not certify a physical stock~\cite{VectorRef,VectorManual}. C-terminal EGFP has a precedent in TFEB localization experiments; the present HindIII/BamHI design is not claimed to be sequence-identical to Addgene \#38119 or its historical HindIII/KpnI construction~\cite{RoczniakFerguson2012,Addgene38119}.
 
-The empty-vector sequence is fixed to GenBank U55762.1, a 4,733-bp circular pEGFP-N1 reference submitted by Clontech \cite{pEGFPN1Reference}. The published plasmid is a construct precedent, whereas this assignment retains PCR and cloning into the empty backbone. We have not obtained or verified the complete sequence of Addgene \#38119 or a physical vector stock. Kanamycin is the bacterial selection marker; neomycin/G418 is the mammalian selection marker. Stable mammalian selection is not required for the planned transient-expression assay.
+The accepted \textit{in silico} design is \ConstructBp{} bp (Figure~\ref{fig:plasmid}). It retains the native TFEB start codon, removes the TFEB stop through reverse-primer placement, and connects TFEB to EGFP through the seven-residue \oligo{\LinkerPeptide{}} linker. EGFP's \oligo{ATG} remains an internal methionine codon, and its terminal \oligo{TAA} ends the \FusionAa{}-residue fusion. The forward primer adds \oligo{ACC} immediately before TFEB's start, giving an A at position $-3$ and G at $+4$. Reverse-primer \oligo{CC} contributes coding-strand \oligo{GG} to preserve the reading frame. Removing a stop alone would not establish this frame; both junctions and the entire fusion were checked computationally.
 
-For the design, a synthetic cDNA template clone matching the native NM\_007162.3 CDS, including its stop codon and without codon optimization, is proposed. No material has been purchased or experimentally verified. The fusion insert will retain the TFEB initiation ATG but omit its terminal TGA. The complete EGFP coding region is intended to follow in frame and retain its terminal TAA; its ATG will encode an internal methionine. The initiation context and junction sequence still require explicit design and validation. The 1,428-nt TFEB coding portion is not the final tailed amplicon or complete fusion length.
+The proposed laboratory workflow (Figure~\ref{fig:workflow}) will use Q5 High-Fidelity $2\times$ Master Mix (NEB M0492) for cloning PCR, HindIII-HF R3104 and BamHI-HF R3136 in rCutSmart, Monarch cleanup and gel-extraction kits, T4 DNA Ligase M0202, NEB 5-alpha C2987 competent \textit{E. coli} (a DH5$\alpha$ derivative), Monarch T1110 minipreps and Sanger primer walking. OneTaq M0482 will be used only for screening; its products will not enter the construct.
 
-The remaining materials are high-fidelity DNA polymerase, two compatible restriction enzymes, DNA ligase, competent \textit{Escherichia coli} DH5$\alpha$, and kanamycin-containing selection medium. A final plasmid map will be generated after the junctions and all relevant vector features have been verified.
+\subsection{Cloning Primers and High-Fidelity PCR}
+Table~\ref{tab:cloning-primers} gives the complete oligonucleotides and their functional parts. The forward annealing segment matches CDS positions 1--22; the reverse segment is the reverse complement of CDS positions 1407--1428, excluding the native stop. HindIII and BamHI have no internal sites in the selected TFEB coding segment and provide distinct 5$'$ cohesive ends. Six protective bases per primer are a conservative choice: the manufacturer's end-cleavage table assigns both enzymes its highest category at three flanking base pairs, but that category represents 50--100\% cleavage under the stated oligonucleotide assay conditions, not guaranteed complete digestion of this amplicon~\cite{MethodM02,MethodM04,MethodM19}.
 
-\subsection{Sequence Retrieval and Primer Design}
-The versioned TFEB and empty-vector records, extracted CDS and protein, input hashes, and reference-verification script are archived with the project. HindIII/KpnI is the published cloning pair and will be evaluated first \cite{RoczniakFerguson2012,Addgene38119}; it is not yet a validated pair for the designed junctions. Each cloning primer will be reported in the 5$'$ to 3$'$ direction and annotated by protective bases, restriction site, any frame-adjustment or linker bases, and template-annealing sequence. The selected pair must cut the intended backbone without cutting the TFEB insert internally. Primer sequences, annealing-region melting temperatures, final junctions, and the complete fusion translation remain to be determined.
+\begingroup\small
+\begin{longtable}{@{}L{0.22\linewidth}L{0.73\linewidth}@{}}
+\caption{Complete cloning primers and sequence-derived properties. Every sequence is written 5$'$ to 3$'$. In the partitioned lines, the order is protective bases, recognition site, deliberate addition, and template-annealing segment.}\label{tab:cloning-primers}\\
+\toprule
+Primer & Sequence and properties\\
+\midrule
+\endfirsthead
+\toprule Primer & Sequence and properties\\\midrule
+\endhead
+\bottomrule\endfoot
+TFEB-HindIII-F & \oligo{ACTGACAAGCTTACCATGGCGTCACGCATAGGGTTGC}\\
+& Parts: \oligo{ACTGAC}\enspace|\enspace\oligo{AAGCTT}\enspace|\enspace\oligo{ACC}\enspace|\enspace\oligo{ATGGCGTCACGCATAGGGTTGC}\\
+& Full: 37 nt, 54.054\% GC; annealing segment: 22 nt, 59.091\% GC, $T_m=69.498\,^{\circ}$C. Full-oligo $T_m=77.238\,^{\circ}$C, not used for initial annealing.\\[3pt]
+TFEB-BamHI-R & \oligo{TATGACGGATCCCCCAGCACATCGCCCTCCTCCATG}\\
+& Parts: \oligo{TATGAC}\enspace|\enspace\oligo{GGATCC}\enspace|\enspace\oligo{CC}\enspace|\enspace\oligo{CAGCACATCGCCCTCCTCCATG}\\
+& Full: 36 nt, 61.111\% GC; annealing segment: 22 nt, 63.636\% GC, $T_m=69.050\,^{\circ}$C. Full-oligo $T_m=78.896\,^{\circ}$C, not used for initial annealing.\\
+\end{longtable}
+\endgroup
 
-\subsection{PCR Amplification and Restriction Cloning}
-The TFEB insert will be amplified with a high-fidelity polymerase. A no-template control and an appropriate amplification control will accompany the reaction. The intended amplicon will be purified, and both insert and vector will be digested and purified before ligation. An initial insert-to-vector molar ratio of approximately 3:1 is proposed. The ligation will be transformed into competent DH5$\alpha$ cells, followed by selection using the backbone's confirmed antibiotic marker. The reaction composition, thermal program, digestion conditions, and transformation details remain to be specified for the selected reagents.
+The reported estimates use Primer3-py 2.4.0 with SantaLucia thermodynamics and salt correction, 50 mM monovalent ions, 2.0 mM Mg$^{2+}$, 0.8 mM total dNTP and 500 nM primer. The monovalent-ion concentration is a modeling assumption, not a claim about Q5's proprietary buffer. The complete annealing segments and their terminal 12-mers each have one exact site in the defined template. Full-oligo hairpin and dimer screening passed the prespecified $55\,^{\circ}$C cutoff. These checks do not establish transcriptome-wide specificity or experimental amplification performance~\cite{Primer3API}. Only template-complementary segments will guide initial PCR annealing, because the added tails do not bind the original template.
 
-\subsection{Clone Screening and Sequence Verification}
-Candidate colonies will be screened by colony PCR and diagnostic restriction digestion. Plasmid DNA from positive clones will be purified for Sanger sequencing with vector-flanking and, where necessary, internal primers. A construct will be accepted only when the complete TFEB insert, both junctions, fusion reading frame, and terminal stop codon match the intended sequence without unintended substitutions, insertions, or deletions. An expected-size band alone will not establish sequence identity.
+Reactions will be assembled on ice using Table~\ref{tab:q5-reaction}. The 1 ng template input is a design target for the synthetic linear template; the working dilution will be calculated from measured concentration. A no-template control will replace the template with water~\cite{MethodM01}.
+
+\begingroup\small
+\begin{longtable}{@{}L{0.42\linewidth}L{0.18\linewidth}L{0.34\linewidth}@{}}
+\caption{Proposed Q5 cloning PCR, 50.0 $\mu$L total. Stock targets are not measured concentrations.}\label{tab:q5-reaction}\\
+\toprule Component & Volume & Final concentration or input\\\midrule
+\endfirsthead
+\toprule Component & Volume & Final concentration or input\\\midrule
+\endhead
+\bottomrule\endfoot
+Q5 M0492 $2\times$ Master Mix & 25.0 $\mu$L & $1\times$; Mg$^{2+}$ 2.0 mM; each dNTP 200 $\mu$M\\
+TFEB-HindIII-F, 10 $\mu$M & 2.5 $\mu$L & 0.5 $\mu$M\\
+TFEB-BamHI-R, 10 $\mu$M & 2.5 $\mu$L & 0.5 $\mu$M\\
+Synthetic template, target 1 ng/$\mu$L & 1.0 $\mu$L & 1 ng total\\
+Nuclease-free water & 19.0 $\mu$L & To 50.0 $\mu$L\\
+\end{longtable}
+\endgroup
+
+The initial program will be $98\,^{\circ}$C for 30 s; 30 cycles of $98\,^{\circ}$C for 10 s, $65\,^{\circ}$C for 20 s and $72\,^{\circ}$C for 45 s; then $72\,^{\circ}$C for 2 min. The 45 s extension rounds the expected \PCRBp{}-bp product upward at 30 s/kb. Initial annealing at $65\,^{\circ}$C and a $62/65/68\,^{\circ}$C optimization gradient are design choices, not Q5-calculator outputs or measured optima~\cite{MethodM01}.
+
+\subsection{Product Assessment, Restriction Digestion and Ligation}
+A 5 $\mu$L PCR aliquot will be analyzed on 1.0\% agarose in $1\times$ TAE with $1\times$ loading dye, a compatible DNA stain and 0.5 $\mu$g NEB N3232 1 kb ladder. An initial field of 5 V/cm of electrode separation is a design choice; electrophoresis will stop after the relevant bands separate and before the tracking front exits. The ladder's 500/517 bp pair is expected to co-migrate. Uncut plasmids will not be sized by comparison with linear DNA, and illumination of DNA intended for cloning will be minimized~\cite{MethodM16}.
+
+A single \PCRBp{}-bp PCR product will be purified with Monarch Spin PCR \& DNA Cleanup T1130: 20--100 $\mu$L sample, five sample volumes of prepared BZ, an S1A column, two 200 $\mu$L WZ washes, and 20 $\mu$L EY elution after a 1 min wait. Centrifugation will follow the current kit protocol at $16{,}000\times g$ and room temperature. If additional bands occur, the target band will be excised and purified with T1120 using four gel-slice volumes of BY, dissolution near $50\,^{\circ}$C, an S1A column, two 200 $\mu$L WZ washes and 20 $\mu$L EY elution. Alcohol-containing buffers will be prepared according to their current bottle labels. Recovered DNA will be measured; no yield or recovery fraction is assumed~\cite{MethodM09,MethodM10}.
+
+PCR product and empty vector will be digested separately with the common recipe in Table~\ref{tab:digest-ligation}, at $37\,^{\circ}$C for 60 min. Both enzymes have full listed activity in rCutSmart; the proposed enzyme volumes contribute 2\% glycerol. Actual DNA and water volumes will be recalculated from measured concentrations. Insufficient material will prompt repeat or scaled preparation. Uncut and single-digest analytical controls will be included when troubleshooting incomplete digestion. BamHI-HF cannot be heat-inactivated, so digestion products will be purified before ligation~\cite{MethodM02,MethodM05,MethodM19}.
+
+For direct preparative or diagnostic gel loading of unpurified BamHI-HF digests, SDS-containing Purple Gel Loading Dye B7024 ($6\times$) will be diluted to $1\times$ by adding one volume of dye to five volumes of sample. This will dissociate residual enzyme-bound DNA; the no-SDS B7025 product will not substitute for it. Dye will be added only to gel samples. If SYBR Safe or GelRed is used, staining will occur after electrophoresis as directed for B7024~\cite{MethodM19,MethodM20}.
+
+The \BackboneBp{}-bp backbone will be gel-purified to separate residual circular vector and the excised \RemovedMCSBp{}-nt MCS. The digested insert will be purified with T1130. Its nominal retained length is \InsertBp{} nt; the discarded top-strand terminal pieces are 7 and 11 nt. These short pieces and the 38-nt MCS will not be expected to resolve usefully on the proposed gel. Both retained fragments have equal strand lengths; their pydna duplex spans are 4,699 and 1,443 bases because of staggered ends. Gel sizes will use the nominal top-strand cut-to-cut lengths, and molarity will use mean strand lengths, which equal those nominal lengths for the selected ends. Distinct 5$'$ \oligo{AGCT} and \oligo{GATC} overhangs will support directional ligation. Routine dephosphorylation will be omitted; vector-only background will be used to assess incomplete digestion or circular-vector carryover.
+
+The initial ligation will contain 20 fmol backbone and 60 fmol insert (3:1 insert:vector). With mean strand length $L$, the mass conversion is
+\[
+m\;\mathrm{(ng)}=n\;\mathrm{(fmol)}\times L\;\mathrm{(nt)}\times0.00066.
+\]
+The calculated inputs are 61.974 ng backbone and 56.9844 ng insert. Table~\ref{tab:digest-ligation} gives a practical recipe rounded to 0.01 $\mu$L. The unrounded total DNA concentration is 5.948 ng/$\mu$L, within the manufacturer's 1--10 ng/$\mu$L starting range. Fully thawed ATP-containing ligase buffer will be mixed before use. Ligation will proceed at $20$--$25\,^{\circ}$C for 10 min, followed by $65\,^{\circ}$C for 10 min. This last treatment terminates the ligation reaction; it does not replace purification of the preceding BamHI-HF digests. A matched vector-only ligation will replace the insert volume with water. No polynucleotide kinase is needed after the planned restriction digestion~\cite{MethodM06}.
+
+\begingroup\small
+\Needspace{22\baselineskip}
+\begin{longtable}{@{}L{0.47\linewidth}L{0.17\linewidth}L{0.30\linewidth}@{}}
+\caption{Proposed digestion and ligation mixtures. DNA stock concentrations are preparation targets to be adjusted using measurements.}\label{tab:digest-ligation}\\
+\toprule Component & Volume & Amount or final condition\\\midrule
+\endfirsthead
+\toprule Component & Volume & Amount or final condition\\\midrule
+\endhead
+\bottomrule\endfoot
+\multicolumn{3}{@{}l}{\textbf{Each separate digestion: 50.0 $\mu$L}}\\
+DNA, target 50 ng/$\mu$L & 10.0 $\mu$L & 500 ng\\
+$10\times$ rCutSmart & 5.0 $\mu$L & $1\times$\\
+HindIII-HF, 20 U/$\mu$L & 1.0 $\mu$L & 20 U\\
+BamHI-HF, 20 U/$\mu$L & 1.0 $\mu$L & 20 U\\
+Water & 33.0 $\mu$L & To 50.0 $\mu$L\\[3pt]
+\multicolumn{3}{@{}l}{\textbf{Ligation: 20.00 $\mu$L}}\\
+Backbone, target 20 ng/$\mu$L & 3.10 $\mu$L & Approximately 20 fmol\\
+Insert, target 10 ng/$\mu$L & 5.70 $\mu$L & Approximately 60 fmol\\
+$10\times$ T4 DNA Ligase Buffer & 2.00 $\mu$L & $1\times$\\
+T4 DNA Ligase M0202, 400 U/$\mu$L & 1.00 $\mu$L & 400 U\\
+Water & 8.20 $\mu$L & To 20.00 $\mu$L\\
+\end{longtable}
+\endgroup
+
+\subsection{Transformation, Screening and Plasmid Preparation}
+For each transformation, 2 $\mu$L ligation will be added to 50 $\mu$L NEB 5-alpha C2987 cells. Cells will remain on ice for 30 min, undergo heat shock at $42\,^{\circ}$C for 30 s, return to ice for 5 min, and receive 950 $\mu$L SOC. Recovery will proceed at $37\,^{\circ}$C and 250 rpm for 60 min. Then 100 $\mu$L each of undiluted recovery and 1:10 and 1:100 SOC dilutions will be plated on LB-kanamycin and incubated at $37\,^{\circ}$C overnight. Kanamycin will be 30 $\mu$g/mL in bacterial plates and liquid cultures; G418 will not be used for bacterial cloning~\cite{MethodM07,MethodM08}.
+
+Vector-only ligation, a no-DNA control and the supplied pUC19 transformation control will be processed in parallel. pUC19 will be selected on ampicillin at 100 $\mu$g/mL. These controls will assess backbone background, contamination or selection failure, and competent-cell handling, respectively. The pUC19 control will not test kanamycin resistance or the ligation itself. No transformation efficiency or fraction of correct clones is assumed~\cite{MethodM08}.
+
+Eight isolated colonies will initially be screened while numbered patches are retained. Each 25 $\mu$L OneTaq M0482 reaction will receive trace colony material, 12.5 $\mu$L $2\times$ mix, 0.5 $\mu$L of each 10 $\mu$M diagnostic primer and 11.5 $\mu$L water; final primer concentrations will be 0.2 $\mu$M. Colony lysis will be $94\,^{\circ}$C for 5 min, followed by 30 cycles of $94\,^{\circ}$C for 30 s, $58\,^{\circ}$C for 30 s and $68\,^{\circ}$C for 160 s, then $68\,^{\circ}$C for 5 min. The 160 s extension covers the longest modeled 2,608-bp product at at least 1 min/kb. An initial $58\,^{\circ}$C annealing step and $55/58/61\,^{\circ}$C gradient are design choices~\cite{MethodM12}.
+
+S-F1/S-R1 will flank the insert, while S-F2/S-R1 will combine an internal TFEB primer with a downstream vector primer to test orientation (sequences and sites in Table~\ref{tab:sanger}). Their model $T_m$ values are $60.04/62.55\,^{\circ}$C and $66.09/62.55\,^{\circ}$C, respectively, using 50 mM monovalent ions, 1.8 mM Mg$^{2+}$, 0.8 mM total dNTP and 200 nM primer. This is separate from the Sanger-primer model below~\cite{Primer3API}. The correct-construct predictions are 2,605 bp for flanking PCR and 2,093 bp for orientation PCR; an empty vector predicts 1,204 bp for flanking PCR and no specific orientation product. Empty-vector and no-template controls will accompany screening. A missing orientation band will remain provisional without a functioning positive control: in the first construction round, flanking-positive minipreps will proceed to sequencing if all orientation assays are negative. A sequence-accepted clone may provide the positive control in later rounds.
+
+Up to three screening-positive colonies will be grown independently in 3 mL LB-kanamycin at $37\,^{\circ}$C for 12--16 h with aeration; if fewer are recovered, those available will be analyzed. For each T1110 miniprep, 1.5 mL culture will be processed with 200 $\mu$L RNase-containing B1, 200 $\mu$L B2 for 1 min with gentle inversion, then 400 $\mu$L B3 for 2 min. After clarification, DNA will bind to an S2D column, receive 200 $\mu$L BZ and 400 $\mu$L WZ washes, and elute in at least 30 $\mu$L EY. For DNA intended for transfection, the manufacturer's additional 5 min BZ incubation will be used; this is not an endotoxin-free certification. Yield and purity will be measured~\cite{MethodM11,MethodM18}.
+
+A 500-ng miniprep aliquot will undergo the defined 50-$\mu$L HindIII/BamHI digestion and gel analysis with the B7024 handling above. Gross agreement with \BackboneBp{}- and \InsertBp{}-bp fragments will support the insert/backbone sizes, but will not exclude reversed insert models, short indels or substitutions. A three-base retained-stop difference will not be resolved reliably on the proposed gel. Complete target sequencing will be the acceptance gate.
+
+\subsection{Sanger Primer Walking and Acceptance Criteria}
+Each candidate will be sequenced with the ten primers in Table~\ref{tab:sanger}, in separate reactions. For Eurofins Standard Read purified-plasmid submissions, this construct falls in the 150--250 ng/$\mu$L stock range. A target of 200 ng/$\mu$L and 55 $\mu$L DNA per clone will support ten reads in the separate-template format ($10+9\times5$ $\mu$L). If needed, independently prepared aliquots from the same single-colony culture will be pooled and measured or concentrated; different clones will not be pooled. Each primer will be supplied separately at 10 $\mu$M, with at least 10 $\mu$L for its first read and 5 $\mu$L per additional use. These are submission targets, not claimed miniprep yields; current service requirements will be rechecked before ordering~\cite{MethodM13}.
+
+Sanger-primer estimates use Primer3/SantaLucia with 50 mM monovalent ions, no added Mg$^{2+}$ or dNTP, and 50 nM oligo. This reproducible comparison is not the sequencing service's proprietary chemistry. Selection required 18--25 nt, 35--60\% GC, $T_m$ of $50$--$62\,^{\circ}$C, no four-base homopolymer, a terminal G/C without three consecutive terminal G/C bases, and modeled hairpin/homodimer $T_m<40\,^{\circ}$C. Each oligo has one exact full-length binding site in the final construct; genome-wide specificity has not been tested~\cite{Primer3API,MethodM13}.
+
+\begingroup\small
+\renewcommand{\arraystretch}{1.0}
+\begin{longtable}{@{}L{0.09\linewidth}L{0.34\linewidth}L{0.15\linewidth}L{0.16\linewidth}L{0.16\linewidth}@{}}
+\caption{Sanger and diagnostic primers. Coordinates are 1-based inclusive on \ConstructName{}. A plus/minus sign denotes the extension direction; every oligonucleotide is written 5$'$ to 3$'$. Windows are predictions, not measured reads.}\label{tab:sanger}\\
+\toprule ID & Complete sequence & nt; GC\%; $T_m$ ($^{\circ}$C) & Binding site (strand) & Planned usable window\\\midrule
+\endfirsthead
+\toprule ID & Complete sequence & nt; GC\%; $T_m$ ($^{\circ}$C) & Binding site (strand) & Planned usable window\\\midrule
+\endhead
+\bottomrule\endfoot
+S-F1 & \oligo{GGGATTTCCAAGTCTCCACC} & 20; 55.00; 52.03 & 418--437 ($+$) & 488--1087\\
+S-F2 & \oligo{TGGGAACAAGTTTGCTGCCCAC} & 22; 54.55; 58.13 & 930--951 ($+$) & 1002--1601\\
+S-F3 & \oligo{ACCATCCTCAAGGCCTCTGTGG} & 22; 59.09; 57.96 & 1456--1477 ($+$) & 1528--2127\\
+S-F4 & \oligo{TGATCCACTTCTGTCCACCATGTCC} & 25; 52.00; 58.23 & 1971--1995 ($+$) & 2046--2645\\
+S-F5 & \oligo{GCTGGAGTACAACTACAACAGCCAC} & 25; 52.00; 57.83 & 2502--2526 ($+$) & 2577--3176\\
+S-R1 & \oligo{GACAAACCACAACTAGAATGCAGTG} & 25; 44.00; 54.94 & 2998--3022 ($-$) & 2348--2947\\
+S-R2 & \oligo{GTTGCCGTCCTCCTTGAAGTCG} & 22; 59.09; 57.87 & 2466--2487 ($-$) & 1816--2415\\
+S-R3 & \oligo{ATGGTGGACAGAAGTGGATCAGAGG} & 25; 52.00; 57.76 & 1967--1991 ($-$) & 1317--1916\\
+S-R4 & \oligo{ATCCACAGAGGCCTTGAGGATGG} & 23; 56.52; 57.86 & 1457--1479 ($-$) & 807--1406\\
+S-R5 & \oligo{TGATGTGGGCAGCAAACTTGTTCC} & 24; 50.00; 58.35 & 932--955 ($-$) & 282--881\\
+\end{longtable}
+\endgroup
+
+The conservative planning window comprises extended bases 51--650 after each primer's 3$'$ end (600 usable bases), excluding the early low-quality region and remaining within a standard-read length. Adjacent planned windows overlap by at least 50 nt. The acceptance target is positions 602--2799 (2,198 nt): 20 upstream vector bases, the 5$'$ junction and initiation context, and the full \FusionORFNt{}-nt fusion ORF through its final stop. The computational coverage check gives every target base at least one forward and one reverse read; primer-binding bases within this target are covered by other primers. The outer S-F1 and S-R1 sites lie outside the acceptance target. This plan does not establish bidirectional sequencing of those external sites or of the complete vector backbone~\cite{MethodM13,MethodM14}.
+
+A clone will be accepted only after actual quality-trimmed chromatograms provide unambiguous, concordant Q20-or-better calls in both directions across the entire target, no unexpected nucleotide changes, and the predicted restriction pattern. Reads will be aligned to the exact B-v1 reference, with manual inspection of junctions and all mismatches. Q20 is a per-base error-probability metric, not a guarantee that a molecule is error-free~\cite{MethodM15}. Low-quality regions, single-strand gaps and ambiguous peaks will trigger additional reads or primers. Reproducible mixed peaks will prompt single-colony re-isolation and a fresh preparation. A clear unwanted coding or junction mutation will reject that clone; a shared error across independent clones will prompt investigation of template and design. Predicted coverage will never substitute for observed trace quality.
+
+\subsection{Troubleshooting and Experimental Boundary}
+No cloning-PCR band will prompt checks of template identity, dilution, primer matching and annealing conditions; additional bands will prompt the planned gradient and target-band purification. High vector-only background will prompt checks for incomplete digestion and residual circular DNA. Absence of colonies in both the test and positive transformation control will point to handling or selection problems before failed ligation is inferred. An apparently correct gel pattern with sequence disagreement will fail acceptance. Only sequence-accepted plasmid will enter the proposed HeLa experiment; expression, localization and biological behavior will still require cellular validation.

@@ -1,0 +1,20 @@
+% Values transcribed from the P6-accepted expected_fragments.tsv.
+Table~\ref{tab:screening} and Figure~\ref{fig:bands} summarize screening. Flanking PCR distinguishes insert-bearing candidates from empty vector. Interpret a negative orientation assay only with an amplification-positive control. If all orientation assays are negative in the first round, sequence flanking-positive candidates. Reverse TFEB is a hypothetical challenge, not an expected product of incompatible-end directional ligation.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Predicted screening products. All sizes are nominal bp; ``none'' means no specific product is predicted. R and S are hypothetical challenge sequences.}
+\label{tab:screening}
+\begin{tabularx}{\textwidth}{@{}L{3.2cm}YYY@{}}
+\toprule
+Sample & Flanking PCR (S-F1/S-R1) & Orientation PCR (S-F2/S-R1) & HindIII/BamHI digest \\
+\midrule
+Intended construct (C) & 2,605 & 2,093 & 4,695 + 1,439 \\
+Empty vector (E) & 1,204 & none & 4,695 + 38 \\
+Reverse TFEB (R) & 2,605 & none & 4,695 + 1,439 \\
+Retained TFEB stop (S) & 2,608 & 2,096 & 4,695 + 1,442 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Flanking PCR and HindIII/BamHI digestion cannot exclude reversed TFEB; the proposed gel cannot resolve three-base retained-stop differences. Acceptance requires the expected digest and actual, unambiguous, concordant bidirectional sequence across 602--2799 (2,198 nt), including both junctions, the complete fusion ORF and terminal stop. Ten primers predict usable coverage in both directions at every target base, not experimental coverage or whole-backbone verification. Resolve low-quality calls, mixed peaks, gaps and unexpected target changes under the Sanger acceptance procedure before cell assays. Figure~\ref{fig:workflow} summarizes the planned workflow and controls.

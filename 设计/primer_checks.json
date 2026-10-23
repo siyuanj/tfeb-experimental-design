@@ -1,0 +1,105 @@
+{
+  "parameters": {
+    "mv_conc_mM": 50.0,
+    "dv_conc_mM": 2.0,
+    "dntp_conc_mM_total": 0.8,
+    "dna_conc_nM": 500.0,
+    "structure_temperature_C": 65.0,
+    "tm_method": "santalucia",
+    "salt_corrections_method": "santalucia",
+    "scope": "Primer3 explicit model; 50 mM monovalent salt is a modeling assumption, not Q5 proprietary buffer composition",
+    "acceptance": {
+      "annealing_tm_difference_max_C": 2.0,
+      "full_oligo_hairpin_tm_max_C": 55.0,
+      "dimer_tm_max_C": 55.0,
+      "terminal_12mer_unique_in_defined_template": true
+    },
+    "initial_PCR_Ta_C": 65,
+    "optimization_gradient_C": [
+      62,
+      65,
+      68
+    ],
+    "wet_lab_optimized": false
+  },
+  "primers": [
+    {
+      "primer": "TFEB-HindIII-F",
+      "full_oligo": {
+        "hairpin": {
+          "structure_found": false,
+          "ascii_structure": null,
+          "tm": 0.0,
+          "dg": 0.0,
+          "dh": 0.0,
+          "ds": 0.0
+        },
+        "homodimer": {
+          "structure_found": true,
+          "ascii_structure": null,
+          "tm": 35.62321196544332,
+          "dg": -1166.9237743230353,
+          "dh": -100000.0,
+          "ds": -292.2758427493035
+        }
+      },
+      "unique_full_annealing_site_in_template": true,
+      "unique_terminal_12mer_in_template": true
+    },
+    {
+      "primer": "TFEB-BamHI-R",
+      "full_oligo": {
+        "hairpin": {
+          "structure_found": false,
+          "ascii_structure": null,
+          "tm": 0.0,
+          "dg": 0.0,
+          "dh": 0.0,
+          "ds": 0.0
+        },
+        "homodimer": {
+          "structure_found": true,
+          "ascii_structure": null,
+          "tm": 13.30043616469203,
+          "dg": -1187.5280375759962,
+          "dh": -52600.0,
+          "ds": -152.04043164993053
+        }
+      },
+      "unique_full_annealing_site_in_template": true,
+      "unique_terminal_12mer_in_template": true
+    }
+  ],
+  "heterodimer": {
+    "structure_found": true,
+    "ascii_structure": null,
+    "tm": 20.816231738466172,
+    "dg": 2680.906978267131,
+    "dh": -88900.0,
+    "ds": -270.82923843935276
+  },
+  "directional_3prime_end_stability": [
+    {
+      "structure_found": true,
+      "ascii_structure": null,
+      "tm": 16.241519613857463,
+      "dg": 4786.076424854758,
+      "dh": -91800.0,
+      "ds": -285.630863299881
+    },
+    {
+      "structure_found": true,
+      "ascii_structure": null,
+      "tm": 12.952795203103904,
+      "dg": 2362.552032365234,
+      "dh": -71700.0,
+      "ds": -219.02277696988094
+    }
+  ],
+  "rejected_candidate": {
+    "forward_context": "GCCACC",
+    "full_oligo_hairpin_Tm_C": 66.00093070254206,
+    "reason": "66 C short hairpin above prespecified 55 C screening cutoff; select ACC context with -3 A and +4 G"
+  },
+  "specificity_scope": "Exact matches and terminal 12mer against the specified synthetic template, both strands; not genome/transcriptome validation"
+}
