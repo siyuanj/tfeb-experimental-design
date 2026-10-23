@@ -15,7 +15,7 @@
 - 保存并回读 6 份官方正文 HTML，字节数与 SHA-256 见 `文献调研/检索记录.md`；原文与提取文本位于 `docs/核查/TFEB文献调研/`，不纳入公开 Git。
 - 静态检查确认 6 个调研 Markdown 文件、R01–R19 连续唯一、目录内相对链接均可解析、6 份来源哈希与清单一致。
 - 交叉审阅修正了“文献均用 DAPI”的潜在误读，并区分固定细胞分时采样与同一细胞轨迹；已回读确认现行 LaTeX 在迁移时修正了原 Word 的引文、终止密码子及统计单位问题。
-- 与 B 计划工作并发，调研使用独立 `codex/tfeb-literature-review` 分支和 `.worktrees/literature-review` 工作区；起点 `6166816`。仅本次原创文档拟同步 GitHub，推送和合并结果以本分支提交/PR 回查为准。
+- 与 B 计划工作并发，调研使用独立 `codex/tfeb-literature-review` 分支和 `.worktrees/literature-review` 工作区；起点 `6166816`。内容提交 `5dca966` 已推送，本轮同步入口为 [PR #2](https://github.com/siyuanj/tfeb-experimental-design/pull/2)。远端回查为 8 个相关文件，含 6 个调研文档；PR 可合并，仓库没有返回 CI 检查项，最终合并状态与提交号可从该 PR 直接回查。GitHub 插件写权限不足，实际推送和 PR 创建通过已登录的 git/gh 完成。
 
 ### 卡在哪
 
