@@ -1,0 +1,399 @@
+LOCUS       NM_007162               2354 bp    mRNA    linear   PRI 30-APR-2025
+DEFINITION  Homo sapiens transcription factor EB (TFEB), transcript variant 1,
+            mRNA.
+ACCESSION   NM_007162
+VERSION     NM_007162.3
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2354)
+  AUTHORS   Huang,Y., Luo,G., Peng,K., Song,Y., Wang,Y., Zhang,H., Li,J.,
+            Qiu,X., Pu,M., Liu,X., Peng,C., Neculai,D., Sun,Q., Zhou,T.,
+            Huang,P. and Liu,W.
+  TITLE     Lactylation stabilizes TFEB to elevate autophagy and lysosomal
+            activity
+  JOURNAL   J Cell Biol 223 (11) (2024)
+   PUBMED   39196068
+  REMARK    GeneRIF: Lactylation stabilizes TFEB to elevate autophagy and
+            lysosomal activity.
+REFERENCE   2  (bases 1 to 2354)
+  AUTHORS   Ren,J., Li,J., Tang,H., Hao,L. and Yang,K.
+  TITLE     TFEB alleviates periodontitis by activating autophagy and
+            inhibiting inflammation
+  JOURNAL   Transl Res 273, 127-136 (2024)
+   PUBMED   39181195
+  REMARK    GeneRIF: TFEB alleviates periodontitis by activating autophagy and
+            inhibiting inflammation.
+REFERENCE   3  (bases 1 to 2354)
+  AUTHORS   Duan,Y., Liu,S., Wang,J., Yang,K., Xu,J., Wang,Q., Liu,J., Hao,J.,
+            Cui,X., Tan,Y., Wang,H. and Li,L.
+  TITLE     Overexpression of RBM4 promotes acute myeloid leukemia cell
+            differentiation by regulating alternative splicing of TFEB
+  JOURNAL   J Biol Chem 300 (10), 107729 (2024)
+   PUBMED   39214303
+  REMARK    GeneRIF: Overexpression of RBM4 promotes acute myeloid leukemia
+            cell differentiation by regulating alternative splicing of TFEB.
+REFERENCE   4  (bases 1 to 2354)
+  AUTHORS   Patel,A.A., Kim,H., Ramesh,R., Marquez,A., Faraj,M.M.,
+            Antikainen,H., Lee,A.S., Torres,A., Khawaja,I.M., Heffernan,C.,
+            Bonder,E.M., Maurel,P., Svaren,J., Son,Y.J., Dobrowolski,R. and
+            Kim,H.A.
+  TITLE     TFEB/3 Govern Repair Schwann Cell Generation and Function Following
+            Peripheral Nerve Injury
+  JOURNAL   J Neurosci 44 (35), e0198242024 (2024)
+   PUBMED   39054068
+  REMARK    GeneRIF: TFEB/3 Govern Repair Schwann Cell Generation and Function
+            Following Peripheral Nerve Injury.
+REFERENCE   5  (bases 1 to 2354)
+  AUTHORS   Zheng,W., Zhang,Y., Xu,P., Wang,Z., Shao,X., Chen,C., Cai,H.,
+            Wang,Y., Sun,M.A., Deng,W., Liu,F., Lu,J., Zhang,X., Cheng,D.,
+            Mysorekar,I.U., Wang,H., Wang,Y.L., Hu,X. and Cao,B.
+  TITLE     TFEB safeguards trophoblast syncytialization in humans and mice
+  JOURNAL   Proc Natl Acad Sci U S A 121 (28), e2404062121 (2024)
+   PUBMED   38968109
+  REMARK    GeneRIF: TFEB safeguards trophoblast syncytialization in humans and
+            mice.
+REFERENCE   6  (bases 1 to 2354)
+  AUTHORS   Davis,I.J., Hsi,B.L., Arroyo,J.D., Vargas,S.O., Yeh,Y.A.,
+            Motyckova,G., Valencia,P., Perez-Atayde,A.R., Argani,P.,
+            Ladanyi,M., Fletcher,J.A. and Fisher,D.E.
+  TITLE     Cloning of an Alpha-TFEB fusion in renal tumors harboring the
+            t(6;11)(p21;q13) chromosome translocation
+  JOURNAL   Proc Natl Acad Sci U S A 100 (10), 6051-6056 (2003)
+   PUBMED   12719541
+  REMARK    GeneRIF: This gene fuses with an intronless gene in renal tumors
+            harboring the t(6;11)(p21;q13) chromosome translocation.
+REFERENCE   7  (bases 1 to 2354)
+  AUTHORS   Verastegui,C., Bertolotto,C., Bille,K., Abbe,P., Ortonne,J.P. and
+            Ballotti,R.
+  TITLE     TFE3, a transcription factor homologous to microphthalmia, is a
+            potential transcriptional activator of tyrosinase and TyrpI genes
+  JOURNAL   Mol Endocrinol 14 (3), 449-456 (2000)
+   PUBMED   10707962
+REFERENCE   8  (bases 1 to 2354)
+  AUTHORS   Steingrimsson,E., Tessarollo,L., Reid,S.W., Jenkins,N.A. and
+            Copeland,N.G.
+  TITLE     The bHLH-Zip transcription factor Tfeb is essential for placental
+            vascularization
+  JOURNAL   Development 125 (23), 4607-4616 (1998)
+   PUBMED   9806910
+REFERENCE   9  (bases 1 to 2354)
+  AUTHORS   Steingrimsson,E., Sawadogo,M., Gilbert,D.J., Zervos,A.S., Brent,R.,
+            Blanar,M.A., Fisher,D.E., Copeland,N.G. and Jenkins,N.A.
+  TITLE     Murine chromosomal location of five bHLH-Zip transcription factor
+            genes
+  JOURNAL   Genomics 28 (2), 179-183 (1995)
+   PUBMED   8530024
+REFERENCE   10 (bases 1 to 2354)
+  AUTHORS   Carr,C.S. and Sharp,P.A.
+  TITLE     A helix-loop-helix protein related to the immunoglobulin E
+            box-binding proteins
+  JOURNAL   Mol Cell Biol 10 (8), 4384-4388 (1990)
+   PUBMED   2115126
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            BC032448.1.
+            
+            On Aug 13, 2020 this sequence version replaced NM_007162.2.
+            
+            Transcript Variant: This variant (1) contains an alternate 5'
+            sequence, which results in a downstream AUG start codon, compared
+            to variant 2. The resulting isoform (1) has a shorter N-terminus,
+            compared to isoform 2. Variants 1, 3 and 4 encode the same isoform
+            1.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: BC032448.1 [ECO:0000332]
+            RNAseq introns              :: partial sample support SAMEA1965299,
+                                           SAMEA1966682 [ECO:0000350]
+            ##Evidence-Data-END##
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-2354              BC032448.1         1-2354
+FEATURES             Location/Qualifiers
+     source          1..2354
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="6"
+                     /map="6p21.1"
+     gene            1..2354
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="transcription factor EB"
+                     /db_xref="GeneID:7942"
+                     /db_xref="HGNC:HGNC:11753"
+                     /db_xref="MIM:600744"
+     exon            1..161
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            162..280
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    204..206
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="upstream in-frame stop codon"
+     exon            281..515
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             303..1733
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="isoform 1 is encoded by transcript variant 1;
+                     T-cell transcription factor EB; class E basic
+                     helix-loop-helix protein 35"
+                     /codon_start=1
+                     /product="transcription factor EB isoform 1"
+                     /protein_id="NP_009093.1"
+                     /db_xref="CCDS:CCDS4858.1"
+                     /db_xref="GeneID:7942"
+                     /db_xref="HGNC:HGNC:11753"
+                     /db_xref="MIM:600744"
+                     /translation="MASRIGLRMQLMREQAQQEEQRERMQQQAVMHYMQQQQQQQQQQ
+                     LGGPPTPAINTPVHFQSPPPVPGEVLKVQSYLENPTSYHLQQSQHQKVREYLSETYGN
+                     KFAAHISPAQGSPKPPPAASPGVRAGHVLSSSAGNSAPNSPMAMLHIGSNPERELDDV
+                     IDNIMRLDDVLGYINPEMQMPNTLPLSSSHLNVYSSDPQVTASLVGVTSSSCPADLTQ
+                     KRELTDAESRALAKERQKKDNHNLIERRRRFNINDRIKELGMLIPKANDLDVRWNKGT
+                     ILKASVDYIRRMQKDLQKSRELENHSRRLEMTNKQLWLRIQELEMQARVHGLPTTSPS
+                     GMNMAELAQQVVKQELPSEEGPGEALMLGAEVPDPEPLPALPPQAPLPLPTQPPSPFH
+                     HLDFSHSLSFGGREDEGPPGYPEPLAPGHGSPFPSLSKKDLDLMLLDDSLLPLASDPL
+                     LSTMSPEASKASSRRSSFSMEEGDVL"
+     misc_feature    303..803
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Interaction with ACSS2.
+                     /evidence=ECO:0000269|PubMed:28552616"
+     misc_feature    303..500
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    480..485
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="(Microbial infection) Cleavage, by Coxsackievirus
+                     B3 protease 3C. /evidence=ECO:0000269|PubMed:23434374;
+                     propagated from UniProtKB/Swiss-Prot (P19484.3); other
+                     site"
+     misc_feature    621..728
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    627..629
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000250|UniProtKB:Q9R210; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    642..644
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000250|UniProtKB:Q9R210; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    666..668
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:20068231,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    708..761
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Nuclear export signal.
+                     /evidence=ECO:0000269|PubMed:30120233"
+     misc_feature    714..716
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:30120233,
+                     ECO:0007744|PubMed:18669648, ECO:0007744|PubMed:20068231;
+                     propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     phosphorylation site"
+     misc_feature    726..728
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine, by MTOR.
+                     /evidence=ECO:0000269|PubMed:21617040,
+                     ECO:0000269|PubMed:22343943, ECO:0000269|PubMed:30120233,
+                     ECO:0007744|PubMed:18669648, ECO:0007744|PubMed:20068231;
+                     propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     phosphorylation site"
+     misc_feature    768..797
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Strong transcription activation domain.
+                     /evidence=ECO:0000255"
+     misc_feature    849..851
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:20068231; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    933..935
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine, by MTOR.
+                     /evidence=ECO:0000269|PubMed:22576015,
+                     ECO:0000269|PubMed:22692423, ECO:0000269|PubMed:23401004,
+                     ECO:0000269|PubMed:24081491, ECO:0000269|PubMed:25720963,
+                     ECO:0000269|PubMed:30120233, ECO:0000269|PubMed:32753672,
+                     ECO:0000269|PubMed:35662396, ECO:0000269|PubMed:36697823;
+                     propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     phosphorylation site"
+     misc_feature    1035..1046
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Nuclear localization signal.
+                     /evidence=ECO:0000269|PubMed:23401004,
+                     ECO:0000269|PubMed:36697823"
+     misc_feature    1194..1259
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Leucine-zipper"
+     misc_feature    1296..1298
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:21617040; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    1347..1592
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1569..1571
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000269|PubMed:21617040,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    1623..1625
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:20068231; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    1641..1730
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="propagated from UniProtKB/Swiss-Prot (P19484.3);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1698..1700
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000250|UniProtKB:Q9R210; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    1701..1703
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:19690332,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     misc_feature    1707..1709
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000250|UniProtKB:Q9R210; propagated from
+                     UniProtKB/Swiss-Prot (P19484.3); phosphorylation site"
+     exon            516..770
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            771..851
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            852..972
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            973..1029
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1030..1105
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1106..1253
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1254..2354
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      2335..2340
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="hexamer: AGTAAA"
+     polyA_site      2354
+                     /gene="TFEB"
+                     /gene_synonym="ALPHATFEB; BHLHE35; TCFEB"
+                     /note="major polyA site"
+ORIGIN      
+        1 ggccgggcgg gcatgggcct tcccggcccg gagctgggag tcgaaggggc gggaggcgtg
+       61 atggtgaact cgcaagaagt ttgagggacg cgcgggcccc gcgcccactc cccctccacc
+      121 ggacacggct ggggccggcg atgcctgaga gggggtcgga ggacgcagtg aacatatatg
+      181 catgtacagt gtggatcctc atctgagagg agggagatga aaacacaccc acctcacagg
+      241 ctgttgtgag gactaagggt gcggcagtgc ctggtacatg ggagccagcg ccggcagcca
+      301 ccatggcgtc acgcataggg ttgcgcatgc agctcatgcg ggagcaggcg cagcaggagg
+      361 agcagcggga gcgcatgcag caacaggctg tcatgcatta catgcagcag cagcagcagc
+      421 agcaacagca gcagctcgga gggccgccca ccccggccat caataccccc gtccacttcc
+      481 agtcgccacc acctgtgcct ggggaggtgt tgaaggtgca gtcctacctg gagaatccca
+      541 catcctacca tctgcagcag tcgcagcatc agaaggtgcg ggagtacctg tccgagacct
+      601 atgggaacaa gtttgctgcc cacatcagcc cagcccaggg ctctccgaaa cccccaccag
+      661 ccgcctcccc aggggtgcga gctggacacg tgctgtcctc ctccgctggc aacagtgctc
+      721 ccaatagccc catggccatg ctgcacattg gctccaaccc tgagagggag ttggatgatg
+      781 tcattgacaa cattatgcgt ctggacgatg tccttggcta catcaatcct gaaatgcaga
+      841 tgcccaacac gctacccctg tccagcagcc acctgaatgt gtacagcagc gacccccagg
+      901 tcacagcctc cctggtgggc gtcaccagca gctcctgccc tgcggacctg acccagaagc
+      961 gagagctcac agatgctgag agcagggccc tggccaagga gcggcagaag aaagacaatc
+     1021 acaacttaat tgaaaggaga cgaaggttca acatcaatga ccgcatcaag gagttgggaa
+     1081 tgctgatccc caaggccaat gacctggacg tgcgctggaa caagggcacc atcctcaagg
+     1141 cctctgtgga ttacatccgg aggatgcaga aggacctgca aaagtccagg gagctggaga
+     1201 accactctcg ccgcctggag atgaccaaca agcagctctg gctccgtatc caggagctgg
+     1261 agatgcaggc tcgagtgcac ggcctcccta ccacctcccc gtccggcatg aacatggctg
+     1321 agctggccca gcaggtggtg aagcaggagc tgcctagcga agagggccca ggggaggccc
+     1381 tgatgctggg ggctgaggtc cctgaccctg agccactgcc agctctgccc ccgcaagccc
+     1441 cgctgcccct gcccacccag ccaccatccc cattccatca cctggacttc agccacagcc
+     1501 tgagctttgg gggcagggag gacgagggtc ccccgggcta ccccgaaccc ctggcgccgg
+     1561 ggcatggctc cccattcccc agcctgtcca agaaggatct ggacctcatg ctcctggacg
+     1621 actcactgct accgctggcc tctgatccac ttctgtccac catgtccccc gaggcctcca
+     1681 aggccagcag ccgccggagc agcttcagca tggaggaggg cgatgtgctg tgaccctggc
+     1741 tgcccctgtg ccagggaaca ggggccggcc tgggggctgg gagggccagg ggcacctccc
+     1801 tcccaccctt caggctgcac tgtgtgtgaa gtagccacct gccctgcctc cctcctcccc
+     1861 gttggcccct gtttggactt agtgcctgtc tggcagcctg tggggtcagg agaagcaccc
+     1921 ccagggcagc cctcttgact ggcgcagtgg gaagaggcct tcagcccctc tcccggagat
+     1981 ggaatcgcgg ggcagggagg ggcagggtgt tctagaggtg agaagagggc ctggtggaga
+     2041 ttccctgtct tctgagcccg agcccctcat taccagtgaa ggacatgctt gaggggttcg
+     2101 ggaagctcct catctgaggc aactggtcct gggggtgctc aggcctgcct ttttgggact
+     2161 cagatggcag gaggtccacc ccgcagcctg gtcctcggct ctcccacagg tgggcacccc
+     2221 ccactttggt gctaatagct ctccaccagg tggtgtgagc gcgggggctg ccagaagcgg
+     2281 gaggggtcac tgccggaaga gcagctgccc tccgacccct cactttgtgc ctttagtaaa
+     2341 cactgtgctt tgta
+//
+

@@ -3,3 +3,6 @@ third_party/ElegantPaper/* -whitespace
 报告/elegantpaper.cls -whitespace
 *.pdf binary
 *.docx binary
+# Preserve downloaded GenBank/GenPept records, including source whitespace.
+资料/序列/*.gb -text -whitespace
+资料/序列/*.gp -text -whitespace
