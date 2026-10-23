@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "reference_selection_complete; junctions_and_final_construct_pending",
+  "design_name": "human WT TFEB-EGFP in pEGFP-N1",
+  "reference_inputs": [
+    {
+      "path": "资料/序列/TFEB_reference.gb",
+      "accession_version": "NM_007162.3",
+      "file_sha256": "b5224b01c9f0eeca9ea7b05c5af8021f686a657099a18a62d1989eadefad0594",
+      "sequence_sha256": "0702312ceb2a00b30cc060d1ba809bfeeef5105c132be49512818041cc26e70e",
+      "length": 2354
+    },
+    {
+      "path": "资料/序列/TFEB_NM_007162.2.gb",
+      "accession_version": "NM_007162.2",
+      "file_sha256": "9e341fd03b3df402d2e06ab6130dc16d7952ea95761629e3a190b7880900f8cb",
+      "sequence_sha256": "080f92f539ae5015adefc68de1865d8ead5371931c5eb14cfbc9a955c1fb1a0f",
+      "length": 2364
+    },
+    {
+      "path": "资料/序列/TFEB_NP_009093.1.gp",
+      "accession_version": "NP_009093.1",
+      "file_sha256": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+      "sequence_sha256": "84f910f982077df035fe31d4dc4baa3731c043c6efb3682ed2fac9cd807a0ae9",
+      "length": 476
+    },
+    {
+      "path": "资料/序列/pEGFP-N1_U55762.1.gb",
+      "accession_version": "U55762.1",
+      "file_sha256": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+      "sequence_sha256": "63918e4dcae6eed7f21a2d430f8b24a7172acc9a174e307d933550034189efde",
+      "length": 4733
+    }
+  ],
+  "tfeb": {
+    "transcript": "NM_007162.3",
+    "protein": "NP_009093.1",
+    "cds_start_1based": 303,
+    "cds_end_1based_inclusive": 1733,
+    "strand": "+",
+    "cds_length_including_stop_nt": 1431,
+    "coding_length_excluding_stop_nt": 1428,
+    "start_codon": "ATG",
+    "native_stop": "TGA",
+    "protein_length_aa": 476,
+    "cds_sha256": "df96a3360fb0e7886f42964481c1918c04b80363fcbae10a9659854154ef7f21",
+    "protein_sha256": "84f910f982077df035fe31d4dc4baa3731c043c6efb3682ed2fac9cd807a0ae9",
+    "historical_cds_identical": true,
+    "historical_protein_identical": true,
+    "historical_mrna_difference": "NM_007162.2 has 10 additional terminal A bases"
+  },
+  "vector": {
+    "accession": "U55762.1",
+    "length_bp": 4733,
+    "topology": "circular",
+    "egfp_cds_start_1based": 679,
+    "egfp_cds_end_1based_inclusive": 1398,
+    "egfp_length_aa": 239,
+    "egfp_stop": "TAA",
+    "egfp_translation_matches_annotation": true,
+    "annotation_limit": "Original GenBank annotates CDSs, not a complete vector feature map"
+  },
+  "orientation": "N-terminus:TFEB -> junction -> EGFP:C-terminus",
+  "template_plan": {
+    "type": "sequence-matched synthetic cDNA clone",
+    "cds": "NM_007162.3:303..1733",
+    "native_stop_retained_in_template": true,
+    "codon_optimization": false,
+    "physical_material_acquired": false
+  },
+  "fusion_rules": {
+    "tfeb_start_atg": "retain as translation start",
+    "tfeb_terminal_tga": "omit",
+    "egfp_atg": "plan to retain as internal Met",
+    "egfp_terminal_taa": "plan to retain as final stop",
+    "start_context": null,
+    "junction_sequence": null,
+    "linker_amino_acids": null
+  },
+  "expression": {
+    "promoter": "CMV",
+    "bacterial_selection": "kanamycin",
+    "mammalian_selection_marker": "Neo/G418",
+    "matched_empty_vector": "pEGFP-N1"
+  },
+  "cloning": {
+    "literature_candidate_sites": [
+      "HindIII",
+      "KpnI"
+    ],
+    "chosen_sites": null,
+    "primers": null,
+    "internal_site_and_frame_validation": "pending"
+  },
+  "final_construct": {
+    "length_bp": null,
+    "protein_length_aa": null,
+    "molecular_weight_da": null,
+    "sequence_file": null
+  },
+  "literature_anchor": {
+    "doi": "10.1126/scisignal.2002790",
+    "addgene": 38119,
+    "full_addgene_sequence_verified": false
+  },
+  "scope": "Basic cloning, HeLa expression and localization. No required mutants or dynamics."
+}
