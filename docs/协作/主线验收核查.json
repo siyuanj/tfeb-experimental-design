@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Read-only final structural/hash/reference audit; manual science and page review are recorded separately in docs/B验收记录.md.",
-  "checked_at_utc": "2026-10-23T18:14:38.216399+00:00",
+  "checked_at_utc": "2026-10-23T18:18:56.445820+00:00",
   "gate_file_counts": {
     "docs/协作/sequence-ready.json": 26,
     "docs/协作/methods-ready.json": 16,
