@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-25T04:24:43.384998-04:00",
+  "checks": {
+    "unique_condition_ids_and_campaigns": true,
+    "all_research_and_required_control_arms_complete_in_both_campaigns": true,
+    "primary_contrast_available_in_both_campaigns_and_vehicle_cancels": true,
+    "culture_well_counts_include_controls_and_two_separate_campaigns": true
+  },
+  "inputs": {
+    "设计/research-v3/condition-plan.tsv": "a4937f4fcb11d4e2863a015c2b5212e2355e9949a52315abb86fe42833296c7c",
+    "设计/research-v3/condition-plan.json": "5016d01b6e4c2d3c1962697103dd76be7db704ecb74b83f7d7f3363352c3db58",
+    "报告/sections/research-extension.tex": "6beaa8e6bf712a24a299f0600806cee56aac63297f86546d3daad6367569de4b",
+    "scripts/B-audit/check_research_condition_plan.py": "a8f72d8e85f465dc8b23710051af10d307f333dabe0005cb3a3e69aabf1437e6"
+  },
+  "conditions": {
+    "primary": 45,
+    "confirmation": 39
+  },
+  "minimum_wells_per_assay_endpoint": 1008,
+  "primary_nonzero_coefficients": [
+    {
+      "genotype": "3A",
+      "architecture": "linker_EGFP",
+      "stimulus": "MK8722",
+      "weight": 1
+    },
+    {
+      "genotype": "3A",
+      "architecture": "linker_EGFP",
+      "stimulus": "Torin1",
+      "weight": -1
+    },
+    {
+      "genotype": "3A",
+      "architecture": "untagged",
+      "stimulus": "MK8722",
+      "weight": -1
+    },
+    {
+      "genotype": "3A",
+      "architecture": "untagged",
+      "stimulus": "Torin1",
+      "weight": 1
+    },
+    {
+      "genotype": "WT",
+      "architecture": "linker_EGFP",
+      "stimulus": "MK8722",
+      "weight": -1
+    },
+    {
+      "genotype": "WT",
+      "architecture": "linker_EGFP",
+      "stimulus": "Torin1",
+      "weight": 1
+    },
+    {
+      "genotype": "WT",
+      "architecture": "untagged",
+      "stimulus": "MK8722",
+      "weight": 1
+    },
+    {
+      "genotype": "WT",
+      "architecture": "untagged",
+      "stimulus": "Torin1",
+      "weight": -1
+    }
+  ],
+  "limitations": [
+    "Counts and algebra only; no power calculation or experimental validation",
+    "Does not evaluate whether prose controls will work in cells"
+  ]
+}

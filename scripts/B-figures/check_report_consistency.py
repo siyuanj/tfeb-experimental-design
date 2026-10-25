@@ -76,6 +76,11 @@ def main():
         assert sha256(ROOT/row['source']) == row['source_sha256']
         assert sha256(ROOT/row['display_file']) == row['display_sha256']
     checks['five_research_constructs_and_ten_native_map_inputs_match_audits'] = True
+    condition_audit = json.loads((ROOT/'docs/协作/报告研究条件核验.json').read_text())
+    assert condition_audit['status'] == 'passed' and all(condition_audit['checks'].values())
+    for relative, expected in condition_audit['inputs'].items():
+        assert sha256(ROOT/relative) == expected, relative
+    checks['research_control_inventory_workload_and_contrast_algebra_are_current'] = True
     imagegen = json.loads((ROOT/'报告/images/B/imagegen-flow-v3.json').read_text())
     for relative, expected in {**imagegen['sources'], **imagegen['outputs']}.items():
         assert sha256(ROOT/relative) == expected,relative

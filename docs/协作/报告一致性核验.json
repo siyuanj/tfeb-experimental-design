@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-25T07:42:25.095691+00:00",
+  "checked_at_utc": "2026-10-25T08:25:04.181102+00:00",
   "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/check_report_consistency.py'",
   "scope": "report consistency only; manual page review is separate",
   "checks": {
@@ -8,6 +8,7 @@
     "figure_input_and_output_hashes": true,
     "native_maps_publication_figures_and_mutants_match_verified_inputs": true,
     "five_research_constructs_and_ten_native_map_inputs_match_audits": true,
+    "research_control_inventory_workload_and_contrast_algebra_are_current": true,
     "ImageGen_vector_paths_and_editable_labels_match_bound_sources": true,
     "all_feature_intervals_and_displayed_strands_match_accepted_table": true,
     "cleavage_labels_distinguished_from_recognition_starts": true,
@@ -98,18 +99,18 @@
   },
   "compilation_record": {
     "path": "docs/协作/报告编译核验.json",
-    "sha256": "f37a30c795f1ebd73506a9470d0a4ff3ac9611426facdf263b0ec3767422c171"
+    "sha256": "c8d427617cc49079774dd5f60133cebd72e7acac3ffa078bf0999bdfc925cb84"
   },
   "pdf": {
     "path": "报告/main.pdf",
-    "sha256": "45d91e88ba8e854231dc7d9f3660c886082abd03e86eba8faa77305e3e24fb1a",
-    "pages": 27
+    "sha256": "9ea8012c80885695d6019e2042e7bf530d9cb926ab21b9a9190c59be5aed66a0",
+    "pages": 32
   },
   "pdf_text": {
     "path": "报告/build/main.txt",
-    "sha256": "a62ee909df913a39c6b886e541ffce76ce7f5e593b8d4f66fad10598678e4b7d"
+    "sha256": "cfddd8ea1a7ecec1d1e4a1dd6e65b22242262f14e2566051b8375ce90afdeff6"
   },
-  "script_sha256": "a6effdb5e10c60de19ef8822782810a377b1512529637ce85391107a84a9779a",
+  "script_sha256": "968860ab76c4d0a8143099c056144f666739506215e034255401fb29ef1abe7b",
   "limitations": [
     "Does not revalidate all prose claims or calculations",
     "Does not establish experimental success or human author review",

@@ -10,6 +10,8 @@
 
 2026-10-25 扩展版包含十张 SnapGene Viewer 原生质粒图、十幅正文图、十一类核心对照问题，以及十二个核心模块和五个研究模块，统一使用 ggsci NPG/nrc 配色（受 Nature Reviews Cancer 启发，不是 Nature 强制配色）。核心五种条件为 EGFP-only、WT、S211A、S142A、S142A/S211A；研究扩展新增 3A/3T 融合及 WT/3A/3T 无标签构建，组成 18 条件的突变 × 标签 × 刺激比较。完整设计见 [对照扩展](docs/10-25%20对照实验与论文图版扩展.md)、[机制延伸与画图依据](docs/10-25%20机制延伸与流程图重绘.md)、`设计/controls-v2/`、`设计/research-v3/` 和最新 STATUS。所有细胞实验仍为拟开展；确切 siRNA/qPCR 设计、抗体性能与试剂 pilot 未完成。
 
+2026-10-25 审稿视角复查进一步补齐融合结构混杂、稳态 RNA/转录速率区别、TFE3 代偿、完整敲低/救援对照及统计规则。18 个研究条件加对照后主实验为 45 条件，第二条 siRNA 确认 39 条件；六天、每条件两培养孔的最低规模为每 assay/endpoint 1,008 孔，另计 pilot 和机制追加。详见 [审稿复查与修订](docs/10-25%20审稿视角复查与修订.md) 及 `设计/research-v3/condition-plan.tsv`。这些是计划量，未做湿实验。
+
 以下为已合并 B-v1 的历史基线；其独立验收不自动覆盖本次新增细胞方案。
 
 截至 2026-10-23，B 的 P0–P9 已完成并通过父会话独立总验收，[PR #4](https://github.com/siyuanj/tfeb-experimental-design/pull/4) 已合并到 `main`；交付见 [验收记录](docs/B验收记录.md)。B-v1 固定为人 TFEB `NM_007162.3` / `NP_009093.1`、pEGFP-N1 空载体 `U55762.1` 与 C 端 EGFP 融合。序列设计经本地独立路径验收：最终质粒 6134 bp，融合蛋白 722 aa，理论未修饰平均质量约 80.425 kDa；英文 PDF 为 14 页。阶段结果以 [B 执行进度](docs/B执行进度.md) 与 [STATUS](docs/STATUS.md) 的实际证据为准。

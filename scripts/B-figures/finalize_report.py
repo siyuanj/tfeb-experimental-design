@@ -63,7 +63,9 @@ def main():
     paths += [p for p in (ROOT / "报告/images/B").rglob('*') if p.suffix in (".pdf", ".svg", ".png", ".json")]
     paths += list((ROOT / "scripts/B-figures").glob("*.py"))
     paths += [ROOT / "scripts/B-figures/README.md", ROOT/'scripts/B-figures/requirements-publication.txt',
-              ROOT/'scripts/B-audit/check_control_panel.py',ROOT/'scripts/B-audit/check_research_panel.py']
+              ROOT/'scripts/B-audit/check_control_panel.py',ROOT/'scripts/B-audit/check_research_panel.py',
+              ROOT/'scripts/B-audit/check_research_condition_plan.py',
+              ROOT/'docs/10-25 审稿视角复查与修订.md']
     paths += [p for p in (ROOT/'设计/controls-v2').iterdir() if p.is_file()]
     paths += [p for p in (ROOT/'设计/research-v3').iterdir() if p.is_file()]
     paths += [p for p in (ROOT/'报告/质粒图-SnapGene').iterdir() if p.is_file()]

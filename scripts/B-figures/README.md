@@ -2,6 +2,8 @@
 
 These scripts use the existing local plasmid environment; they do not install dependencies or launch a web application. All drawings are predictions or schematics, never experimental images.
 
+For the reviewer-revised research plan, first run `scripts/B-audit/check_research_condition_plan.py` with the same interpreter. It verifies the 45/39-condition inventories, complete controls, primary contrast algebra and minimum culture-well counts, binding the condition files and research prose. Re-run it after changing those inputs, then compile and run report consistency checks. This audit does not establish power, biological efficacy or human peer review. The condition manifest is a planning inventory, not a physical plate map or experimental dataset.
+
 `render_plasmid_map.py` is adapted from the course renderer with original SHA-256 `e79564a42038eb9440236b2f09672de885f2ded1ba280d0b8a2ae3a31895b6c7`. It draws every located, non-omitted annotation from its actual coordinates. A multipart `join` is split into its real parts; only the last part in biological extraction order carries the terminal arrow. Mixed-strand joins, fuzzy positions, and unsupported location operators are rejected. Enzyme labels are the 1-based nucleotide immediately after reference-strand cleavage, not recognition-site starts.
 
 `check_renderer.py` checks positive/reverse origin-spanning joins, an internal gap, rejection of mixed-strand joins, and EcoRI cleavage-label conventions using small synthetic inputs. It does not validate TFEB sequence design. Run from the repository root:
