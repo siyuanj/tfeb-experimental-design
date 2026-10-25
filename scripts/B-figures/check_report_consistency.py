@@ -81,6 +81,18 @@ def main():
     for relative, expected in condition_audit['inputs'].items():
         assert sha256(ROOT/relative) == expected, relative
     checks['research_control_inventory_workload_and_contrast_algebra_are_current'] = True
+    linker_path = ROOT/'设计/linker-v4/manifest.json'
+    linker = json.loads(linker_path.read_text())
+    linker_audit = json.loads((linker_path.parent/'independent-verification.json').read_text())
+    assert linker_audit['status'] == 'passed' and all(linker_audit['checks'].values())
+    assert linker_audit['manifest_sha256'] == sha256(linker_path)
+    assert linker_audit['audit_script_sha256'] == sha256(ROOT/'scripts/B-audit/check_linker_controls.py')
+    for relative, expected in {**linker['inputs'], **linker['outputs']}.items():
+        assert sha256(ROOT / relative) == expected, relative
+    architecture = json.loads((ROOT/'报告/images/B/architecture-panel.json').read_text())
+    for relative, expected in {**architecture['sources'], **architecture['outputs'], **architecture['script']}.items():
+        assert sha256(ROOT / relative) == expected, relative
+    checks['linker_only_constructs_and_architecture_panel_match_independent_audit'] = True
     imagegen = json.loads((ROOT/'报告/images/B/imagegen-flow-v3.json').read_text())
     for relative, expected in {**imagegen['sources'], **imagegen['outputs']}.items():
         assert sha256(ROOT/relative) == expected,relative

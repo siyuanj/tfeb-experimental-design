@@ -1,0 +1,32 @@
+{
+  "status": "rendered; actual page review required",
+  "palette_source": "https://github.com/nanxstats/ggsci/blob/37b74f85e62680b9d4523b0b4c0d9bfa0403d299/R/palettes.R",
+  "sources": {
+    "设计/research-v3/TFEB-WT-untagged.fasta": "610e4876aca8d1aa0825f31852e4deae0a0637f229cf679d34dc8372c895e659",
+    "设计/linker-v4/TFEB-WT-linker.fasta": "c12b59955553e630613f3c5728e1edd3db5e6ef9a6ff9bc4912deb62b79e719a",
+    "设计/construct.fasta": "2db5e19b5aa860ea1cec25821473b1753e4b72708a1b620e4f8eda88cea02b55",
+    "设计/research-v3/TFEB-WT-untagged-protein.fasta": "9ab53ae3b686c27927b5df977d52436b854b5797167915667c0f43ecfdd8e4a2",
+    "设计/linker-v4/TFEB-WT-linker-protein.fasta": "9af9be47fbbf097c75666db0769efbbb0e3030e6f378363f0569553404931d4c",
+    "设计/fusion_protein.fasta": "66c927ec01732a07cde049aa6d4b5e858fae7f458785b64a2dd490f3208cb7ba"
+  },
+  "script": {
+    "scripts/B-figures/build_architecture_panel.py": "e4d94ad79516227b133e7c40fb2662c649749bed6838329a36046830e5c8993c"
+  },
+  "outputs": {
+    "报告/images/B/architecture-panel.pdf": "5d6e1e7566efaa950d4c2d5a9361e089c8371f959903a3e9b65034ba5bfc2461",
+    "报告/images/B/architecture-panel.svg": "69be999b68c5c5144788b02e067b1c1ff80d42bf421a6d6e03ff619bfb9c84dd",
+    "报告/images/B/architecture-panel.png": "c5ee52a0204be311df28cf7957a5bd8dd56c177065b019711e8fd75037d7aefe"
+  },
+  "values": {
+    "aa": {
+      "untagged": 476,
+      "linker": 483,
+      "EGFP": 722
+    },
+    "bp": {
+      "untagged": 5396,
+      "linker": 5417,
+      "EGFP": 6134
+    }
+  }
+}

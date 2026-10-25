@@ -1,31 +1,31 @@
 % Part B: accepted computational design and explicitly predicted experiments.
 \subsection{Computed Construct and Experimental Predictions}
-The in-silico \ConstructName{} (\ConstructBp{} bp; Figure~\ref{fig:plasmid}) encodes a \FusionAa{}-residue TFEB--EGFP fusion: \TFEBAa{} TFEB residues, the seven-residue \LinkerPeptide{} junction, and \EGFPAa{} EGFP residues. The native TFEB stop is absent; EGFP supplies the final TAA. The calculated unmodified average mass is \FusionMassKDa{} kDa.
+The in-silico \ConstructName{} (\ConstructBp{} bp; Figure~\ref{fig:plasmid}) encodes a \FusionAa{}-residue TFEB--EGFP fusion: \TFEBAa{} TFEB residues, the seven-residue \LinkerPeptide{} junction, and \EGFPAa{} EGFP residues. The native TFEB stop is absent, and EGFP supplies the final TAA. The calculated unmodified average mass is \FusionMassKDa{} kDa.
 
-The reconstruction and an independent standard-library audit agreed on sequence, reading frame, junctions, terminal stop and fragment geometry. Corresponding checks rejected four software challenges: reversed TFEB, a one-base frameshift, restored native TFEB stop, and an internal HindIII site. These are not experimental clones or a measured success rate.
+The reconstruction and an independent standard-library audit agreed on sequence, reading frame, junctions, terminal stop and fragment geometry. The audit rejected four software challenges: reversed TFEB, a one-base frameshift, restored native TFEB stop, and an internal HindIII site.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{images/B/fusion-cassettes.pdf}
-\caption{Aligned fusion-protein schematics for WT and three designed mutants. TFEB occupies residues 1--476, the GDPPVAT linker 477--483 and EGFP 484--722; rectangles are proportional to their encoded lengths. Red marks identify S-to-A substitutions. The accepted WT plasmid is \ConstructName{} (\ConstructBp{} bp). The full sequence retains HindIII and BamHI recognition starts at 622 and 2061; the first reference-strand bases after cleavage are 623 and 2062. Protein schematics do not show regulatory DNA or predict cellular activity.}
+\caption{Aligned fusion-protein schematics for WT and three designed mutants. TFEB occupies residues 1--476, the GDPPVAT linker 477--483 and EGFP 484--722; rectangles are proportional to their encoded lengths. Red marks identify S-to-A substitutions. The accepted WT plasmid is \ConstructName{} (\ConstructBp{} bp). The full sequence has HindIII and BamHI recognition starts at 622 and 2061; the first reference-strand bases after cleavage are 623 and 2062. Protein schematics omit regulatory DNA.}
 \label{fig:plasmid}
 \end{figure}
 
-Cloning PCR predicts a \PCRBp{} bp product. HindIII/BamHI digestion yields a \InsertBp{} nt insert and \BackboneBp{} nt backbone by the cut-to-cut single-strand convention. Their pydna duplex spans are 1,443 and 4,699 bp, including four-base overhangs; gel sizes use the nominal single-strand lengths. Because the empty vector loses a \RemovedMCSBp{} nt MCS segment, the final length is not the intact vector length plus the undigested amplicon.
+Cloning PCR predicts a \PCRBp{} bp product. HindIII/BamHI digestion yields a \InsertBp{} nt insert and \BackboneBp{} nt backbone by the cut-to-cut single-strand convention. Their pydna duplex spans are 1,443 and 4,699 bp, including four-base overhangs; gel sizes use the nominal single-strand lengths. Because the empty vector loses a \RemovedMCSBp{} nt MCS segment, the final length is shorter than the intact vector length plus the undigested amplicon.
 
 \input{sections/screening-results}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.92\textwidth,height=0.77\textheight,keepaspectratio]{images/B/cloning-workflow-imagegen-v3.pdf}
-\caption{Proposed cloning workflow. Check ordered-template identity before PCR; include a no-template control, vector-only ligation, no-DNA transformation and a separate competence control. Purify backbone and insert after separate digests. Flanking and orientation PCR plus diagnostic digestion screen gross identity but cannot exclude point substitutions or a retained stop. Final acceptance requires unambiguous, concordant bidirectional sequence across the target and both junctions; failed candidates are resequenced or replaced. Measured DNA concentrations determine actual reaction inputs.}
+\caption{Proposed cloning workflow. Ordered-template identity is checked before PCR; a no-template control, vector-only ligation, no-DNA transformation and a separate competence control accompany the reactions. Backbone and insert are purified after separate digests. Flanking and orientation PCR plus diagnostic digestion screen gross identity. Final acceptance requires unambiguous, concordant bidirectional sequence across the target and both junctions; failed candidates are resequenced or replaced. Measured DNA concentrations set the actual reaction inputs.}
 \label{fig:workflow}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{images/B/predicted-bands.pdf}
-\caption{Predicted DNA-band positions, drawn as a schematic rather than an experimental gel. M: NEB N3232 ladder; PCR: tailed insert amplicon; I: digested insert; NTC: no-template control; E: empty vector; C: intended construct; R: hypothetical reverse-TFEB model; S: hypothetical retained-stop model. The 500/517 bp marker pair is not resolved~\cite{MethodM16}. Panels B and C use the flanking and orientation primer pairs defined in the screening table. The 7, 11 and 38 nt fragments fall below the displayed range. Three-base differences between C and S are not expected to resolve on the proposed 1\% gel. An empty NTC schematic means no specific product is predicted, not a guarantee of a clean experimental lane. Uncut circular DNA mobility and band intensity are not predicted.}
+\includegraphics[width=0.86\textwidth]{images/B/predicted-bands.pdf}
+\caption{Predicted DNA-band positions, drawn as a schematic of the expected gel. M: NEB N3232 ladder; PCR: tailed insert amplicon; I: digested insert; NTC: no-template control; E: empty vector; C: intended construct; R: hypothetical reverse-TFEB model; S: hypothetical retained-stop model. The 500/517 bp marker pair co-migrates~\cite{MethodM16}. Panels B and C use the flanking and orientation primer pairs defined in the screening table. The 7, 11 and 38 nt fragments fall below the displayed range. The three-base difference between C and S falls below the resolution of the 1\% gel. The empty NTC schematic indicates that no specific product is predicted. Uncut circular DNA mobility and band intensity are not drawn.}
 \label{fig:bands}
 \end{figure}
 \FloatBarrier

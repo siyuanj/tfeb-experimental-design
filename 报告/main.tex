@@ -14,6 +14,8 @@
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcommand{\oligo}[1]{\texttt{#1}}
+% Float pages: top-aligned content, free space at the bottom (default centers floats vertically).
+\makeatletter\setlength{\@fptop}{0pt}\setlength{\@fpsep}{14pt}\setlength{\@fpbot}{0pt plus 1fil}\makeatother
 \addbibresource{references.bib}
 \title{Human TFEB in HeLa Cells: Controlled Replication and a Test of C-Terminal Regulation}
 \author{Siyuan Jiang \and Ziyan Song}

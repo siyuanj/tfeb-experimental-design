@@ -69,6 +69,13 @@ def main():
     assert len(nonzero) == 8 and all(abs(v) == 1 for v in nonzero.values())
     assert sum(nonzero.values()) == 0
     assert all(k[2] != 'vehicle' for k in nonzero)
+    # C must equal A_M - A_T with A_s = (3A-WT in E) - (3A-WT in U) at stimulus s.
+    combined = Counter()
+    for s, outer in (('MK8722', 1), ('Torin1', -1)):
+        for g, gsign in (('3A', 1), ('WT', -1)):
+            combined[(g, 'linker_EGFP', s)] += outer * gsign
+            combined[(g, 'untagged', s)] -= outer * gsign
+    assert {k: v for k, v in combined.items() if v} == nonzero
     for campaign in counts:
         available = {(r['genotype'], r['architecture'], r['stimulus']) for r in rows
                      if r['campaign'] == campaign and r['arm'] == 'research'}
@@ -83,6 +90,11 @@ def main():
         assert plan[campaign + '_minimum_wells'] == counts[campaign] * n * wells
     assert sum(counts.values()) * n * wells == plan['combined_minimum_wells_per_assay_endpoint'] == 1008
     checks['culture_well_counts_include_controls_and_two_separate_campaigns'] = True
+    r06 = plan['R06']
+    assert r06['added_conditions_per_day'] == len(['WT', '3A']) * len(stimuli) == 6
+    assert counts['primary'] + r06['added_conditions_per_day'] == r06['conditions_per_day'] == 51
+    assert r06['conditions_per_day'] * n * wells == r06['minimum_wells_per_assay_endpoint'] == 612
+    checks['R06_added_conditions_and_wells_and_C_equals_A_M_minus_A_T'] = True
     for p, h in inputs.items():
         assert sha(ROOT / p) == h, p
     result = {'status': 'passed', 'checked_at': datetime.now(ZoneInfo('America/New_York')).isoformat(),

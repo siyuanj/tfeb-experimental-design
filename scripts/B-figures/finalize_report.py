@@ -68,6 +68,8 @@ def main():
               ROOT/'docs/10-25 审稿视角复查与修订.md']
     paths += [p for p in (ROOT/'设计/controls-v2').iterdir() if p.is_file()]
     paths += [p for p in (ROOT/'设计/research-v3').iterdir() if p.is_file()]
+    paths += [p for p in (ROOT/'设计/linker-v4').iterdir() if p.is_file()]
+    paths += [ROOT/'scripts/B-audit/check_linker_controls.py', ROOT/'docs/10-25 Claude独立审稿复查与措辞修订.md']
     paths += [p for p in (ROOT/'报告/质粒图-SnapGene').iterdir() if p.is_file()]
     paths += [p for p in (ROOT / "docs/协作").glob("报告*") if p.is_file()]
     paths += [ROOT/'docs/协作/流程图ImageGen提示词-v3.json']
