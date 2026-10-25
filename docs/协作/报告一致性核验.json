@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-25T19:04:02.217347+00:00",
+  "checked_at_utc": "2026-10-25T19:05:59.268453+00:00",
   "actual_command": "/Library/Developer/CommandLineTools/usr/bin/python3 '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/check_report_consistency.py'",
   "scope": "report consistency only; manual page review is separate",
   "checks": {
