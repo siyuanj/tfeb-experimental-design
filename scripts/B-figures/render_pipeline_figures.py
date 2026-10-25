@@ -47,14 +47,14 @@ def main():
             lane("NTC", "cloning_PCR", "no_template_control"),
             lane("I", "preparative_digest", "PCR_product", f"{metrics['digested_insert_nominal_nt']:,} bp; terminal pieces omitted")
         ]},
-        {"title": f"B  Flanking colony PCR ({flank_pair})", "lanes": [
+        {"title": "B  Flanking colony PCR", "lanes": [
             lane("E", "colony_flanking", "empty_vector"),
             lane("C", "colony_flanking", "correct_construct"),
             lane("R", "colony_flanking", "reverse_TFEB_model"),
             lane("S", "colony_flanking", "retained_stop_model"),
             lane("NTC", "colony_flanking", "no_template_control"),
         ]},
-        {"title": f"C  Orientation PCR ({orientation_pair})", "lanes": [
+        {"title": "C  Orientation PCR", "lanes": [
             lane("E", "colony_orientation", "empty_vector"),
             lane("C", "colony_orientation", "correct_construct"),
             lane("R", "colony_orientation", "reverse_TFEB_model"),
@@ -119,7 +119,8 @@ def main():
         "workflow": {"nodes": flow_nodes, "control_notes": controls},
         "scripts": {str(path.relative_to(ROOT)): sha256(path) for path in [
             ROOT / "scripts/B-figures/render_pipeline_figures.py", ROOT / "scripts/B-figures/figure_layouts.py",
-            ROOT / "scripts/B-figures/handoff.py"]},
+            ROOT / "scripts/B-figures/handoff.py", ROOT / "scripts/B-figures/publication_style.py",
+            ROOT / "scripts/B-figures/scientific_schematics.py"]},
         "outputs": outputs,
     }
     for snapshot in (seq_snapshot, meth_snapshot):

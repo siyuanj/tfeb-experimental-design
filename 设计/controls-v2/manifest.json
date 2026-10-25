@@ -1,0 +1,330 @@
+{
+  "status": "computed; independent audit and visual inspection required",
+  "created_at": "2026-10-25T02:54:17.509958-04:00",
+  "design_version": "controls-v2",
+  "source_inputs": {
+    "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+    "设计/PCR_product.fasta": "6d71e7a6592305cf55895603576dfb647f769cd5e2aae7b4f138363820003b73",
+    "资料/序列/pEGFP-N1_U55762.1.gb": "bf6a633fce38b828ed369628f45bed5755db623fac938772bcf9efd3f5f2481d",
+    "设计/construct_spec.json": "395881bd325bc92798e3b97de46ad5adf2d1c4fd6387e2aa5329cb784d416e5b",
+    "资料/序列/TFEB_NP_009093.1.gp": "dc58c087ea0dc09f7b9f0b70cf0571121edae4aed84370ab48002b0eae09640f",
+    "scripts/B-figures/build_control_panel.py": "e94984db0f660f4d44ddc8467abf805440e465e882074f8d446100fa74f8257d",
+    "scripts/B-figures/publication_style.py": "1b1aaa144d0da17be4e3729fa2795c4358e2d44286871284126922cd0ca18234"
+  },
+  "sequence_gate": "a4e279688d8179a91ff5dfe7d6e1e1df7df06915d95f14dc3e9633ba08ac9cde",
+  "mutations": [
+    {
+      "variant": "S211A",
+      "substitution": "S211A",
+      "residue_1based": 211,
+      "WT_codon": "TCC",
+      "mutant_codon": "GCC",
+      "plasmid_codon_start_1based": 1261,
+      "plasmid_codon_end_1based": 1263,
+      "changed_bases_1based": [
+        1261
+      ]
+    },
+    {
+      "variant": "S142A",
+      "substitution": "S142A",
+      "residue_1based": 142,
+      "WT_codon": "AGC",
+      "mutant_codon": "GCC",
+      "plasmid_codon_start_1based": 1054,
+      "plasmid_codon_end_1based": 1056,
+      "changed_bases_1based": [
+        1054,
+        1055
+      ]
+    },
+    {
+      "variant": "S142A-S211A",
+      "substitution": "S142A",
+      "residue_1based": 142,
+      "WT_codon": "AGC",
+      "mutant_codon": "GCC",
+      "plasmid_codon_start_1based": 1054,
+      "plasmid_codon_end_1based": 1056,
+      "changed_bases_1based": [
+        1054,
+        1055
+      ]
+    },
+    {
+      "variant": "S142A-S211A",
+      "substitution": "S211A",
+      "residue_1based": 211,
+      "WT_codon": "TCC",
+      "mutant_codon": "GCC",
+      "plasmid_codon_start_1based": 1261,
+      "plasmid_codon_end_1based": 1263,
+      "changed_bases_1based": [
+        1261
+      ]
+    }
+  ],
+  "displayed_features": {
+    "empty": [
+      {
+        "name": "CMV promoter",
+        "start_1based": 1,
+        "end_1based": 589,
+        "strand": 1,
+        "color": "#3C5488"
+      },
+      {
+        "name": "f1 origin",
+        "start_1based": 1649,
+        "end_1based": 2104,
+        "strand": -1,
+        "color": "#7E6148"
+      },
+      {
+        "name": "KanR/NeoR",
+        "start_1based": 2629,
+        "end_1based": 3423,
+        "strand": 1,
+        "color": "#8491B4"
+      },
+      {
+        "name": "pUC origin",
+        "start_1based": 4008,
+        "end_1based": 4651,
+        "strand": 0,
+        "color": "#B09C85"
+      },
+      {
+        "name": "EGFP",
+        "start_1based": 679,
+        "end_1based": 1398,
+        "strand": 1,
+        "color": "#4DBBD5"
+      }
+    ],
+    "WT": [
+      {
+        "name": "CMV promoter",
+        "start_1based": 1,
+        "end_1based": 589,
+        "strand": 1,
+        "color": "#3C5488"
+      },
+      {
+        "name": "f1 origin",
+        "start_1based": 3050,
+        "end_1based": 3505,
+        "strand": -1,
+        "color": "#7E6148"
+      },
+      {
+        "name": "KanR/NeoR",
+        "start_1based": 4030,
+        "end_1based": 4824,
+        "strand": 1,
+        "color": "#8491B4"
+      },
+      {
+        "name": "pUC origin",
+        "start_1based": 5409,
+        "end_1based": 6052,
+        "strand": 1,
+        "color": "#B09C85"
+      },
+      {
+        "name": "TFEB",
+        "start_1based": 631,
+        "end_1based": 2058,
+        "strand": 1,
+        "color": "#00A087"
+      },
+      {
+        "name": "linker GDPPVAT",
+        "start_1based": 2059,
+        "end_1based": 2079,
+        "strand": 1,
+        "color": "#F39B7F"
+      },
+      {
+        "name": "EGFP",
+        "start_1based": 2080,
+        "end_1based": 2799,
+        "strand": 1,
+        "color": "#4DBBD5"
+      }
+    ],
+    "S211A": [
+      {
+        "name": "CMV promoter",
+        "start_1based": 1,
+        "end_1based": 589,
+        "strand": 1,
+        "color": "#3C5488"
+      },
+      {
+        "name": "f1 origin",
+        "start_1based": 3050,
+        "end_1based": 3505,
+        "strand": -1,
+        "color": "#7E6148"
+      },
+      {
+        "name": "KanR/NeoR",
+        "start_1based": 4030,
+        "end_1based": 4824,
+        "strand": 1,
+        "color": "#8491B4"
+      },
+      {
+        "name": "pUC origin",
+        "start_1based": 5409,
+        "end_1based": 6052,
+        "strand": 1,
+        "color": "#B09C85"
+      },
+      {
+        "name": "TFEB",
+        "start_1based": 631,
+        "end_1based": 2058,
+        "strand": 1,
+        "color": "#00A087"
+      },
+      {
+        "name": "linker GDPPVAT",
+        "start_1based": 2059,
+        "end_1based": 2079,
+        "strand": 1,
+        "color": "#F39B7F"
+      },
+      {
+        "name": "EGFP",
+        "start_1based": 2080,
+        "end_1based": 2799,
+        "strand": 1,
+        "color": "#4DBBD5"
+      }
+    ],
+    "S142A": [
+      {
+        "name": "CMV promoter",
+        "start_1based": 1,
+        "end_1based": 589,
+        "strand": 1,
+        "color": "#3C5488"
+      },
+      {
+        "name": "f1 origin",
+        "start_1based": 3050,
+        "end_1based": 3505,
+        "strand": -1,
+        "color": "#7E6148"
+      },
+      {
+        "name": "KanR/NeoR",
+        "start_1based": 4030,
+        "end_1based": 4824,
+        "strand": 1,
+        "color": "#8491B4"
+      },
+      {
+        "name": "pUC origin",
+        "start_1based": 5409,
+        "end_1based": 6052,
+        "strand": 1,
+        "color": "#B09C85"
+      },
+      {
+        "name": "TFEB",
+        "start_1based": 631,
+        "end_1based": 2058,
+        "strand": 1,
+        "color": "#00A087"
+      },
+      {
+        "name": "linker GDPPVAT",
+        "start_1based": 2059,
+        "end_1based": 2079,
+        "strand": 1,
+        "color": "#F39B7F"
+      },
+      {
+        "name": "EGFP",
+        "start_1based": 2080,
+        "end_1based": 2799,
+        "strand": 1,
+        "color": "#4DBBD5"
+      }
+    ],
+    "S142A-S211A": [
+      {
+        "name": "CMV promoter",
+        "start_1based": 1,
+        "end_1based": 589,
+        "strand": 1,
+        "color": "#3C5488"
+      },
+      {
+        "name": "f1 origin",
+        "start_1based": 3050,
+        "end_1based": 3505,
+        "strand": -1,
+        "color": "#7E6148"
+      },
+      {
+        "name": "KanR/NeoR",
+        "start_1based": 4030,
+        "end_1based": 4824,
+        "strand": 1,
+        "color": "#8491B4"
+      },
+      {
+        "name": "pUC origin",
+        "start_1based": 5409,
+        "end_1based": 6052,
+        "strand": 1,
+        "color": "#B09C85"
+      },
+      {
+        "name": "TFEB",
+        "start_1based": 631,
+        "end_1based": 2058,
+        "strand": 1,
+        "color": "#00A087"
+      },
+      {
+        "name": "linker GDPPVAT",
+        "start_1based": 2059,
+        "end_1based": 2079,
+        "strand": 1,
+        "color": "#F39B7F"
+      },
+      {
+        "name": "EGFP",
+        "start_1based": 2080,
+        "end_1based": 2799,
+        "strand": 1,
+        "color": "#4DBBD5"
+      }
+    ]
+  },
+  "outputs": {
+    "设计/controls-v2/TFEB-S211A-EGFP.gb": "67d8a716487788346628abc400c6279afa4657b0fccc22e8d7e34448c14e257f",
+    "设计/controls-v2/TFEB-S142A-S211A-EGFP.gb": "40b02e62e308983a9479af95686d9e05acf92ad83948b8f612b34147c1d1fd5e",
+    "设计/controls-v2/TFEB-WT-EGFP.gb": "7cf3f69387f04d4f8b13eb27843cb965470c01ba5d360527621f741f7863e64a",
+    "设计/controls-v2/TFEB-S142A-EGFP.gb": "ed1a4969b87c542d46fc723f1f8b90217d7266bb225b5d34bf26bbc22ce6b7d7",
+    "设计/controls-v2/pEGFP-N1-annotated.gb": "c88e45080640ce199ebf758292aacd53d3586ecf44a4fd8212c3efb0bc7b49de",
+    "设计/controls-v2/TFEB-S142A-EGFP.fasta": "a6d060798323252ec86ef2727529f67971168c3a6e6e89f9475e083fe35e765d",
+    "设计/controls-v2/donor-S142A.fasta": "3c8183ba39ed4eb1220da0052a790f17d2938253ab8a9122c685b9a9b3c3817c",
+    "设计/controls-v2/donor-S142A-S211A.fasta": "d7382f5e471104e1c4127a1080a805cf5021e4127f047b213be265f0fd051960",
+    "设计/controls-v2/TFEB-S142A-S211A-EGFP.fasta": "459003f8b6d94afba689eda20f9cf8ceeca875ae6ab762bc96bd410a7ab41db7",
+    "设计/controls-v2/donor-WT.fasta": "d7155acef6d7cea36611d0f33b35c8ab6ec087e4d53062d5abce8d431d5be3f7",
+    "设计/controls-v2/TFEB-S211A-EGFP.fasta": "6a455e054d27c119f41407fb64cd522c697238c1dc0f1b2b97bfe0862bfb4c42",
+    "设计/controls-v2/donor-S211A.fasta": "cac8d66648ede011cf5913977e29ff5a33132f4e08ef6e174c34b0be02bc424d",
+    "设计/controls-v2/TFEB-WT-EGFP.fasta": "bb4db5b9922adb06f4752165242778bc9b4befca81f95112735f103347ea78d6"
+  },
+  "limitations": [
+    "No wet-lab clone, phenotype or synthesis QC",
+    "New siRNA targets and qPCR primers are not sequence-finalized",
+    "Point mutants cannot be distinguished by ordinary HindIII/BamHI size checks"
+  ]
+}

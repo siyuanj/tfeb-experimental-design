@@ -1,7 +1,11 @@
 % !TeX program = xelatex
 \documentclass[a4paper,11pt,lang=en,math=cm,bibend=bibtex]{elegantpaper}
 \usepackage{array,tabularx,longtable,placeins,needspace}
-\hypersetup{hidelinks,pdftitle={Human TFEB Cloning and Nutrient-Dependent Localization},pdfauthor={Siyuan Jiang and Ziyan Song}}
+\special{pdf:minorversion 7}
+\hypersetup{hidelinks,pdftitle={Human TFEB: Controlled Replication and C-Terminal Regulation},pdfauthor={Siyuan Jiang and Ziyan Song}}
+\definecolor{winered}{HTML}{3C5488}
+\definecolor{commentcolor}{HTML}{00A087}
+\definecolor{frenchplum}{HTML}{E64B35}
 \linespread{1.15}
 \setlength{\emergencystretch}{2em}
 \setlength{\tabcolsep}{4pt}
@@ -11,17 +15,18 @@
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcommand{\oligo}[1]{\texttt{#1}}
 \addbibresource{references.bib}
-\title{Cloning of Human TFEB and Analysis of Its Nutrient-Dependent Subcellular Localization in HeLa Cells}
+\title{Human TFEB in HeLa Cells: Controlled Replication and a Test of C-Terminal Regulation}
 \author{Siyuan Jiang \and Ziyan Song}
 \institute{Molecular Biology Laboratory Course}
 \version{Working draft}
-\date{October 23, 2026}
+\date{October 25, 2026}
 \input{sections/construct-values}
 \begin{document}
 \maketitle
 \input{sections/abstract}
 \input{sections/background}
 \input{sections/design}
+\input{sections/research-extension}
 \input{sections/expected-results}
 \input{sections/discussion}
 \input{sections/declarations}

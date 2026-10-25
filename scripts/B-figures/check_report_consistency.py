@@ -49,13 +49,49 @@ def main():
             assert sha256(ROOT / relative) == expected, f"Changed figure source: {relative}"
     assert pipeline["methods_gate"]["sha256"] == methods["sha256"]
     checks["figure_input_and_output_hashes"] = True
-    illustrated = json.loads((ROOT / "报告/images/B/imagegen-workflow.json").read_text())
-    assert illustrated["status"] == "visually_reviewed_and_selected"
-    assert illustrated["inputs"][sequence["path"]] == sequence["sha256"]
-    assert illustrated["inputs"][methods["path"]] == methods["sha256"]
-    for relative, expected in illustrated["files"].items():
+    publication = json.loads((ROOT / '报告/images/B/publication-figures.json').read_text())
+    for relative, expected in {**publication['sources'], **publication['outputs']}.items():
         assert sha256(ROOT / relative) == expected, relative
-    checks["selected_ImageGen_illustration_matches_its_reviewed_snapshot"] = True
+    control_manifest = ROOT / '设计/controls-v2/manifest.json'
+    controls = json.loads(control_manifest.read_text())
+    control_audit = json.loads((control_manifest.parent/'independent-verification.json').read_text())
+    assert control_audit['status'] == 'passed'
+    assert control_audit['manifest_sha256'] == sha256(control_manifest)
+    assert control_audit['audit_script_sha256'] == sha256(ROOT/'scripts/B-audit/check_control_panel.py')
+    for relative, expected in {**controls['source_inputs'], **controls['outputs']}.items():
+        assert sha256(ROOT / relative) == expected, relative
+    checks['native_maps_publication_figures_and_mutants_match_verified_inputs'] = True
+    research_path = ROOT / '设计/research-v3/manifest.json'
+    research = json.loads(research_path.read_text())
+    research_audit = json.loads((research_path.parent/'independent-verification.json').read_text())
+    assert research_audit['status'] == 'passed' and all(research_audit['checks'].values())
+    assert research_audit['manifest_sha256'] == sha256(research_path)
+    assert research_audit['audit_script_sha256'] == sha256(ROOT/'scripts/B-audit/check_research_panel.py')
+    assert research_audit['translation_audit_sha256'] == sha256(ROOT/'scripts/B-audit/check_control_panel.py')
+    for relative, expected in {**research['inputs'], **research['outputs']}.items():
+        assert sha256(ROOT / relative) == expected, relative
+    display = json.loads((ROOT/'报告/质粒图-SnapGene/display-inputs.json').read_text())
+    assert len(display['records']) == 10
+    for row in display['records']:
+        assert sha256(ROOT/row['source']) == row['source_sha256']
+        assert sha256(ROOT/row['display_file']) == row['display_sha256']
+    checks['five_research_constructs_and_ten_native_map_inputs_match_audits'] = True
+    condition_audit = json.loads((ROOT/'docs/协作/报告研究条件核验.json').read_text())
+    assert condition_audit['status'] == 'passed' and all(condition_audit['checks'].values())
+    for relative, expected in condition_audit['inputs'].items():
+        assert sha256(ROOT/relative) == expected, relative
+    checks['research_control_inventory_workload_and_contrast_algebra_are_current'] = True
+    imagegen = json.loads((ROOT/'报告/images/B/imagegen-flow-v3.json').read_text())
+    for relative, expected in {**imagegen['sources'], **imagegen['outputs']}.items():
+        assert sha256(ROOT/relative) == expected,relative
+    import xml.etree.ElementTree as ET
+    for figure in imagegen['figures']:
+        svg = ROOT/'报告/images/B'/(figure['name']+'.svg')
+        xml = svg.read_text(); tree = ET.fromstring(xml)
+        assert '<image' not in xml and 'base64' not in xml and 'foreignObject' not in xml
+        assert len(list(tree.iter('{http://www.w3.org/2000/svg}text')))==figure['editable_text']
+        assert len(list(tree.iter('{http://www.w3.org/2000/svg}path')))>=figure['traced_paths']
+    checks['ImageGen_vector_paths_and_editable_labels_match_bound_sources'] = True
 
     features = table("设计/construct_features.tsv")
     shown = map_data["features_displayed"]

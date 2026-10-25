@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-25T02:54:17.598507-04:00",
+  "checks": {
+    "source_and_output_hashes": true,
+    "exact_DNA_and_protein_substitutions_only": true,
+    "donor_reassembly_from_original_vector": true,
+    "frame_stop_linker_EGFP_and_GenBank_translation": true,
+    "restriction_geometry_retained": true,
+    "empty_vector_sequence_unchanged": true,
+    "all_selected_map_intervals_match_GenBank": true
+  },
+  "constructs": [
+    {
+      "variant": "WT",
+      "bp": 6134,
+      "protein_aa": 722,
+      "changed_nt_1based": [],
+      "changed_aa_1based": [],
+      "donor_reassembly_matches": true,
+      "nominal_digest_nt": [
+        1439,
+        4695
+      ]
+    },
+    {
+      "variant": "S211A",
+      "bp": 6134,
+      "protein_aa": 722,
+      "changed_nt_1based": [
+        1261
+      ],
+      "changed_aa_1based": [
+        211
+      ],
+      "donor_reassembly_matches": true,
+      "nominal_digest_nt": [
+        1439,
+        4695
+      ]
+    },
+    {
+      "variant": "S142A",
+      "bp": 6134,
+      "protein_aa": 722,
+      "changed_nt_1based": [
+        1054,
+        1055
+      ],
+      "changed_aa_1based": [
+        142
+      ],
+      "donor_reassembly_matches": true,
+      "nominal_digest_nt": [
+        1439,
+        4695
+      ]
+    },
+    {
+      "variant": "S142A-S211A",
+      "bp": 6134,
+      "protein_aa": 722,
+      "changed_nt_1based": [
+        1054,
+        1055,
+        1261
+      ],
+      "changed_aa_1based": [
+        142,
+        211
+      ],
+      "donor_reassembly_matches": true,
+      "nominal_digest_nt": [
+        1439,
+        4695
+      ]
+    }
+  ],
+  "manifest_sha256": "e293763640d194e4d11b96a0cd59201604ad8c4a76016fee91aba08a719a0221",
+  "audit_script_sha256": "c8e7dd14ccf87179deb77e1b50824745c9da1be68007cc7930f46dd318d52080",
+  "limitations": [
+    "No experimental synthesis, sequencing or phenotypes",
+    "Only specified point mutants and donor joins tested; no siRNA/qPCR oligo validation"
+  ]
+}

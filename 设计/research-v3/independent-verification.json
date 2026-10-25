@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-25T03:28:35.788652-04:00",
+  "checks": {
+    "all_input_output_hashes": true,
+    "exact_full_DNA_sequence": true,
+    "native_residue_numbering_and_translation": true,
+    "terminal_stop_no_internal_stop": true,
+    "tag_removal_and_backbone_identity": true,
+    "restriction_changes_explicit": true,
+    "FASTA_GenBank_protein_agree": true,
+    "annotation_bounds_and_preserved_backbone_features": true
+  },
+  "constructs": [
+    {
+      "name": "TFEB-3A-EGFP",
+      "bp": 6134,
+      "protein_aa": 722,
+      "specific_edits_1based": {
+        "2026": "G",
+        "2027": "C",
+        "2029": "G",
+        "2030": "C",
+        "2035": "G",
+        "2036": "C"
+      },
+      "tag_removed": false,
+      "BamHI_site_count": 1
+    },
+    {
+      "name": "TFEB-3T-EGFP",
+      "bp": 6134,
+      "protein_aa": 722,
+      "specific_edits_1based": {
+        "2027": "C",
+        "2030": "C",
+        "2036": "C"
+      },
+      "tag_removed": false,
+      "BamHI_site_count": 1
+    },
+    {
+      "name": "TFEB-WT-untagged",
+      "bp": 5396,
+      "protein_aa": 476,
+      "specific_edits_1based": {},
+      "tag_removed": true,
+      "BamHI_site_count": 0
+    },
+    {
+      "name": "TFEB-3A-untagged",
+      "bp": 5396,
+      "protein_aa": 476,
+      "specific_edits_1based": {
+        "2026": "G",
+        "2027": "C",
+        "2029": "G",
+        "2030": "C",
+        "2035": "G",
+        "2036": "C"
+      },
+      "tag_removed": true,
+      "BamHI_site_count": 0
+    },
+    {
+      "name": "TFEB-3T-untagged",
+      "bp": 5396,
+      "protein_aa": 476,
+      "specific_edits_1based": {
+        "2027": "C",
+        "2030": "C",
+        "2036": "C"
+      },
+      "tag_removed": true,
+      "BamHI_site_count": 0
+    }
+  ],
+  "manifest_sha256": "81fb853dbb300d1d390fa65686402bcebfd8ac281c2458880a1a52a2a3a20a1d",
+  "audit_script_sha256": "891cc1bd5c250b2ef37c7980011e2595e877c9bbff5e0937a879f68781d406b0",
+  "translation_audit_sha256": "c8e7dd14ccf87179deb77e1b50824745c9da1be68007cc7930f46dd318d52080",
+  "limitations": [
+    "Independent exact-edit audit, not wet-lab or functional validation",
+    "No exact siRNA/qPCR oligo validation"
+  ]
+}

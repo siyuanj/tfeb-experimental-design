@@ -60,17 +60,24 @@ def main():
     paths = [ROOT / "报告/main.tex", ROOT / "报告/main.pdf", ROOT / "报告/references.bib",
              ROOT / "报告/elegantpaper.cls", ROOT / "docs/B交接给A.md"]
     paths += list((ROOT / "报告/sections").glob("*.tex"))
-    paths += [p for p in (ROOT / "报告/images/B").iterdir() if p.suffix in (".pdf", ".svg", ".png", ".json")]
+    paths += [p for p in (ROOT / "报告/images/B").rglob('*') if p.suffix in (".pdf", ".svg", ".png", ".json")]
     paths += list((ROOT / "scripts/B-figures").glob("*.py"))
-    paths += [ROOT / "scripts/B-figures/README.md"]
+    paths += [ROOT / "scripts/B-figures/README.md", ROOT/'scripts/B-figures/requirements-publication.txt',
+              ROOT/'scripts/B-audit/check_control_panel.py',ROOT/'scripts/B-audit/check_research_panel.py',
+              ROOT/'scripts/B-audit/check_research_condition_plan.py',
+              ROOT/'docs/10-25 审稿视角复查与修订.md']
+    paths += [p for p in (ROOT/'设计/controls-v2').iterdir() if p.is_file()]
+    paths += [p for p in (ROOT/'设计/research-v3').iterdir() if p.is_file()]
+    paths += [p for p in (ROOT/'报告/质粒图-SnapGene').iterdir() if p.is_file()]
     paths += [p for p in (ROOT / "docs/协作").glob("报告*") if p.is_file()]
+    paths += [ROOT/'docs/协作/流程图ImageGen提示词-v3.json']
     files = {str(p.relative_to(ROOT)): sha256(p) for p in sorted(set(paths))}
     assert_unchanged(sequence)
     assert_unchanged(methods)
     payload = {
-        "status": "ready", "stage": "P7/P8", "design_version": "B-v1",
+        "status": "ready", "stage": "research-v3 report", "design_version": "B-v1 plus controls-v2 and research-v3",
         "ready_at": datetime.now(ZoneInfo("America/New_York")).isoformat(),
-        "scope": "Report-line figures, B manuscript, necessary A interfaces, compilation and visual inspection; main-line P9 remains separate",
+        "scope": "Controlled replication plus C-terminal research extension, ten native SnapGene maps and ten main figures; historical P9 acceptance applies only to B-v1",
         "inputs": {sequence["path"]: sequence["sha256"], methods["path"]: methods["sha256"]},
         "files": files,
         "validation": {
@@ -83,10 +90,10 @@ def main():
             "compiler": "Tectonic 0.17.0", "pdf_tools": "Poppler 26.10.0",
             "actual_finalize_command": shlex.join([sys.executable, str(__file__)]),
         },
-        "necessary_A_changes": ["Construct and empty-vector identity", "Calculated fusion mass and WB interpretation", "Matched nutrient/vehicle controls", "Localization interpretation and limits", "Honest planned contributions and AI declaration"],
-        "remaining_independent_A": ["Cell culture/transfection/treatment parameters", "Imaging, sampling and statistics protocol", "Detailed immunoblot protocol", "Authors' actual contributions, identity and submission confirmation"],
+        "necessary_A_changes": ["Construct and empty-vector identity", "Calculated fusion mass and WB interpretation", "Matched nutrient/vehicle controls", "Localization interpretation and limits", "C-terminal genotype-tag-stimulus comparison and conditional follow-ups", "Honest planned contributions and AI declaration"],
+        "remaining_independent_A": ["Exact siRNA targets/qPCR oligos and pilot-validated reagent/dose settings", "Authors' actual contributions, identity and submission confirmation"],
         "unresolved_report_issues": [], "user_decisions_required_for_B_report": [],
-        "limitations": ["No wet-lab data or measured sequencing coverage", "Not the final complete course submission", "No author review or individual contribution is certified", "Main-line independent P9 and Git/PR delivery are not performed by this report line", "Ignored build intermediates and page rasters remain local evidence; regenerate for a new PDF"],
+        "limitations": ["No wet-lab data or measured sequencing coverage", "Not the final complete course submission", "No author review or individual contribution is certified", "Historical B-v1 P9 does not constitute independent acceptance of this expansion; new work is locally reviewed", "Ignored build intermediates and page rasters remain local evidence; regenerate for a new PDF"],
     }
     for relative, expected in files.items():
         assert sha256(ROOT / relative) == expected, relative
@@ -96,7 +103,7 @@ def main():
     assert_unchanged(sequence)
     assert_unchanged(methods)
     ready_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({"status": "ready", "stage": "P7/P8", "files": len(files), "pdf_pages": review["page_count"], "pdf_sha256": pdf_hash}))
+    print(json.dumps({"status": "ready", "stage": "research-v3 report", "files": len(files), "pdf_pages": review["page_count"], "pdf_sha256": pdf_hash}))
 
 
 if __name__ == "__main__":

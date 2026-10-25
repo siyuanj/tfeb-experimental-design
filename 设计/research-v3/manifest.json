@@ -1,0 +1,163 @@
+{
+  "status": "designed; independent audit required",
+  "records": [
+    {
+      "name": "TFEB-3A-EGFP",
+      "variant": "3A",
+      "tag": "EGFP",
+      "bp": 6134,
+      "protein_aa": 722,
+      "mutations": [
+        {
+          "residue": 466,
+          "from_codon": "AGC",
+          "to_codon": "GCC",
+          "codon_start_1based": 2026
+        },
+        {
+          "residue": 467,
+          "from_codon": "AGC",
+          "to_codon": "GCC",
+          "codon_start_1based": 2029
+        },
+        {
+          "residue": 469,
+          "from_codon": "AGC",
+          "to_codon": "GCC",
+          "codon_start_1based": 2035
+        }
+      ],
+      "orf_start_1based": 631,
+      "orf_end_1based": 2799
+    },
+    {
+      "name": "TFEB-3T-EGFP",
+      "variant": "3T",
+      "tag": "EGFP",
+      "bp": 6134,
+      "protein_aa": 722,
+      "mutations": [
+        {
+          "residue": 466,
+          "from_codon": "AGC",
+          "to_codon": "ACC",
+          "codon_start_1based": 2026
+        },
+        {
+          "residue": 467,
+          "from_codon": "AGC",
+          "to_codon": "ACC",
+          "codon_start_1based": 2029
+        },
+        {
+          "residue": 469,
+          "from_codon": "AGC",
+          "to_codon": "ACC",
+          "codon_start_1based": 2035
+        }
+      ],
+      "orf_start_1based": 631,
+      "orf_end_1based": 2799
+    },
+    {
+      "name": "TFEB-WT-untagged",
+      "variant": "WT",
+      "tag": "untagged",
+      "bp": 5396,
+      "protein_aa": 476,
+      "mutations": [],
+      "orf_start_1based": 631,
+      "orf_end_1based": 2061
+    },
+    {
+      "name": "TFEB-3A-untagged",
+      "variant": "3A",
+      "tag": "untagged",
+      "bp": 5396,
+      "protein_aa": 476,
+      "mutations": [
+        {
+          "residue": 466,
+          "from_codon": "AGC",
+          "to_codon": "GCC",
+          "codon_start_1based": 2026
+        },
+        {
+          "residue": 467,
+          "from_codon": "AGC",
+          "to_codon": "GCC",
+          "codon_start_1based": 2029
+        },
+        {
+          "residue": 469,
+          "from_codon": "AGC",
+          "to_codon": "GCC",
+          "codon_start_1based": 2035
+        }
+      ],
+      "orf_start_1based": 631,
+      "orf_end_1based": 2061
+    },
+    {
+      "name": "TFEB-3T-untagged",
+      "variant": "3T",
+      "tag": "untagged",
+      "bp": 5396,
+      "protein_aa": 476,
+      "mutations": [
+        {
+          "residue": 466,
+          "from_codon": "AGC",
+          "to_codon": "ACC",
+          "codon_start_1based": 2026
+        },
+        {
+          "residue": 467,
+          "from_codon": "AGC",
+          "to_codon": "ACC",
+          "codon_start_1based": 2029
+        },
+        {
+          "residue": 469,
+          "from_codon": "AGC",
+          "to_codon": "ACC",
+          "codon_start_1based": 2035
+        }
+      ],
+      "orf_start_1based": 631,
+      "orf_end_1based": 2061
+    }
+  ],
+  "inputs": {
+    "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+    "资料/序列/TFEB_cds.fasta": "75d58c3b36cdf65b8d25f2f78595301c6703e4b28c0d02d261bb2616ebf687bc",
+    "scripts/B-figures/build_research_panel.py": "c4d9eb9ff700f22f573853d20ad46d6097518c28fe7ea2d42eca73daf66910b7"
+  },
+  "outputs": {
+    "设计/research-v3/TFEB-3A-untagged-protein.fasta": "240d87a7c2ed5a2a89f8d67e27920aca56877ee7b98af5ce5f36b0d50e298dae",
+    "设计/research-v3/TFEB-WT-untagged.gb": "9cd8460b62e6b16082f1fb1cc811d9148e29ac7b91641065d74d742519a9fd3b",
+    "设计/research-v3/TFEB-WT-untagged.fasta": "610e4876aca8d1aa0825f31852e4deae0a0637f229cf679d34dc8372c895e659",
+    "设计/research-v3/TFEB-3A-EGFP-protein.fasta": "ee4b1071cd6777497c400c354a0ae03a619238436ef8d54aa5aa608b219f1998",
+    "设计/research-v3/TFEB-3T-untagged.gb": "aef4de9464ce54325bea0c20bdcd3ed1b6b7b13b65a4b2bdd953448543fe2da4",
+    "设计/research-v3/TFEB-WT-untagged-protein.fasta": "9ab53ae3b686c27927b5df977d52436b854b5797167915667c0f43ecfdd8e4a2",
+    "设计/research-v3/TFEB-3A-untagged.gb": "9ab9c01875853952173ae24fd400f06b55b8489d3e5bbd69a5e5b22a449eacf8",
+    "设计/research-v3/TFEB-3A-EGFP.fasta": "6505c823676e85526948e0dadac914b905f01a96f0651c512a3dcac1576dca9c",
+    "设计/research-v3/TFEB-3A-untagged.fasta": "576d50f3827ac78829b8f45945b013a246ea980c66288185406754c1af444efc",
+    "设计/research-v3/TFEB-3A-EGFP.gb": "b6316e83df6115b2f47f4bf4d7b46f6aca1c2ee79db017af5917160b800a6a4a",
+    "设计/research-v3/TFEB-3T-EGFP.gb": "e1ccaa57798e788cc4dc4b7474452fd44688f57c33b5e40d3883d1b9ebf84897",
+    "设计/research-v3/TFEB-3T-EGFP.fasta": "d2eef831773def638e9fc079699320eabb0a00bb3fbf02cee61b157b9327d94d",
+    "设计/research-v3/TFEB-3T-untagged.fasta": "3fd8e16b5592f2d6ec3a246d217a06efda7114614cca787f467789086d9cc23d",
+    "设计/research-v3/TFEB-3T-untagged-protein.fasta": "550a93b01bcb6298cfaf90bc97db0094cf4e5a549d310c577ac4aa2739bd9fff",
+    "设计/research-v3/TFEB-3T-EGFP-protein.fasta": "4e4c7eb0f3ff9fc9968f306f4968f66edbc89be801f5f12d7de5173effb8a552"
+  },
+  "design_choices": {
+    "A_codon": "GCC",
+    "T_codon": "ACC",
+    "untagged_replacement": "B-v1 2059..2799 replaced with native TGA; delta -738 bp"
+  },
+  "limitations": [
+    "No wet-lab validation",
+    "3T may be phosphorylated; neither 3T nor 3A establishes a physiological phosphorylation state",
+    "Untagged design uses whole-plasmid synthesis and sequencing; original BamHI/Sanger plan does not transfer"
+  ]
+}
