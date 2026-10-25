@@ -1,0 +1,570 @@
+{
+  "palette": "ggsci NPG nrc",
+  "palette_source": "https://github.com/nanxstats/ggsci/blob/37b74f85e62680b9d4523b0b4c0d9bfa0403d299/R/palettes.R",
+  "format_spec": "https://support.snapgene.com/hc/en-us/articles/10242682237588-What-is-Genbank-SnapGene-Format",
+  "scripts": {
+    "scripts/B-figures/prepare_snapgene_maps.py": "063c27d418fff1dbdd00ca0a8697898dff29442e63895127c5ca13ba700a2ef1",
+    "scripts/B-figures/publication_style.py": "1b1aaa144d0da17be4e3729fa2795c4358e2d44286871284126922cd0ca18234"
+  },
+  "records": [
+    {
+      "key": "empty",
+      "title": "pEGFP-N1",
+      "source": "设计/controls-v2/pEGFP-N1-annotated.gb",
+      "source_sha256": "c88e45080640ce199ebf758292aacd53d3586ecf44a4fd8212c3efb0bc7b49de",
+      "display_file": "报告/质粒图-SnapGene/pEGFP-N1.gb",
+      "display_sha256": "45dae16da2ef217b4294b213e646b0bfddcbbec8ef40c14dc965775196e33d1b",
+      "bp": 4733,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 1649,
+          "end_1based": 2104,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 2629,
+          "end_1based": 3423,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 4008,
+          "end_1based": 4651,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 679,
+          "end_1based": 1398,
+          "strand": 1,
+          "color": "#4DBBD5"
+        }
+      ]
+    },
+    {
+      "key": "WT",
+      "title": "TFEB-WT-EGFP",
+      "source": "设计/controls-v2/TFEB-WT-EGFP.gb",
+      "source_sha256": "7cf3f69387f04d4f8b13eb27843cb965470c01ba5d360527621f741f7863e64a",
+      "display_file": "报告/质粒图-SnapGene/TFEB-WT-EGFP.gb",
+      "display_sha256": "d999474c1ef07ff08b3bf977f9cacf62cac3d09714877978046d6908d9318364",
+      "bp": 6134,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 3050,
+          "end_1based": 3505,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 4030,
+          "end_1based": 4824,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 5409,
+          "end_1based": 6052,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 2080,
+          "end_1based": 2799,
+          "strand": 1,
+          "color": "#4DBBD5"
+        }
+      ]
+    },
+    {
+      "key": "S211A",
+      "title": "TFEB-S211A-EGFP",
+      "source": "设计/controls-v2/TFEB-S211A-EGFP.gb",
+      "source_sha256": "67d8a716487788346628abc400c6279afa4657b0fccc22e8d7e34448c14e257f",
+      "display_file": "报告/质粒图-SnapGene/TFEB-S211A-EGFP.gb",
+      "display_sha256": "09a904704f18ce850a4ee6c0a1befb091d7d8df45ff53072bdb16dc2e32d2efd",
+      "bp": 6134,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 3050,
+          "end_1based": 3505,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 4030,
+          "end_1based": 4824,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 5409,
+          "end_1based": 6052,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 2080,
+          "end_1based": 2799,
+          "strand": 1,
+          "color": "#4DBBD5"
+        },
+        {
+          "name": "S211A",
+          "start_1based": 1261,
+          "end_1based": 1263,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "S142A",
+      "title": "TFEB-S142A-EGFP",
+      "source": "设计/controls-v2/TFEB-S142A-EGFP.gb",
+      "source_sha256": "ed1a4969b87c542d46fc723f1f8b90217d7266bb225b5d34bf26bbc22ce6b7d7",
+      "display_file": "报告/质粒图-SnapGene/TFEB-S142A-EGFP.gb",
+      "display_sha256": "9be17e8421f07608bda58d4e699a72a2c4ded68d20b4c304ddc7273b76d80022",
+      "bp": 6134,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 3050,
+          "end_1based": 3505,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 4030,
+          "end_1based": 4824,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 5409,
+          "end_1based": 6052,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 2080,
+          "end_1based": 2799,
+          "strand": 1,
+          "color": "#4DBBD5"
+        },
+        {
+          "name": "S142A",
+          "start_1based": 1054,
+          "end_1based": 1056,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "S142A-S211A",
+      "title": "TFEB-S142A-S211A-EGFP",
+      "source": "设计/controls-v2/TFEB-S142A-S211A-EGFP.gb",
+      "source_sha256": "40b02e62e308983a9479af95686d9e05acf92ad83948b8f612b34147c1d1fd5e",
+      "display_file": "报告/质粒图-SnapGene/TFEB-S142A-S211A-EGFP.gb",
+      "display_sha256": "52b8af8de7e311a82b700f22f50986a05d68a1c99068d1320309b48dc9ac45ef",
+      "bp": 6134,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 3050,
+          "end_1based": 3505,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 4030,
+          "end_1based": 4824,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 5409,
+          "end_1based": 6052,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 2080,
+          "end_1based": 2799,
+          "strand": 1,
+          "color": "#4DBBD5"
+        },
+        {
+          "name": "S142A",
+          "start_1based": 1054,
+          "end_1based": 1056,
+          "strand": 1,
+          "color": "#E64B35"
+        },
+        {
+          "name": "S211A",
+          "start_1based": 1261,
+          "end_1based": 1263,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "TFEB-3A-EGFP",
+      "title": "TFEB-3A-EGFP",
+      "source": "设计/research-v3/TFEB-3A-EGFP.gb",
+      "source_sha256": "b6316e83df6115b2f47f4bf4d7b46f6aca1c2ee79db017af5917160b800a6a4a",
+      "display_file": "报告/质粒图-SnapGene/TFEB-3A-EGFP.gb",
+      "display_sha256": "849ba1f66c79338da2ecedb866c744a2f1f6de9e6d07eb721ed91616e8345eed",
+      "bp": 6134,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 3050,
+          "end_1based": 3505,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 4030,
+          "end_1based": 4824,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 5409,
+          "end_1based": 6052,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 2080,
+          "end_1based": 2799,
+          "strand": 1,
+          "color": "#4DBBD5"
+        },
+        {
+          "name": "3A",
+          "start_1based": 2026,
+          "end_1based": 2037,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "TFEB-3A-untagged",
+      "title": "TFEB-3A-untagged",
+      "source": "设计/research-v3/TFEB-3A-untagged.gb",
+      "source_sha256": "9ab9c01875853952173ae24fd400f06b55b8489d3e5bbd69a5e5b22a449eacf8",
+      "display_file": "报告/质粒图-SnapGene/TFEB-3A-untagged.gb",
+      "display_sha256": "6d428cbb8d1ec4870f9abed0c793a74efc12a4fd0fee90439e55b1c76ebf1757",
+      "bp": 5396,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 2312,
+          "end_1based": 2767,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 3292,
+          "end_1based": 4086,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 4671,
+          "end_1based": 5314,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "3A",
+          "start_1based": 2026,
+          "end_1based": 2037,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "TFEB-3T-EGFP",
+      "title": "TFEB-3T-EGFP",
+      "source": "设计/research-v3/TFEB-3T-EGFP.gb",
+      "source_sha256": "e1ccaa57798e788cc4dc4b7474452fd44688f57c33b5e40d3883d1b9ebf84897",
+      "display_file": "报告/质粒图-SnapGene/TFEB-3T-EGFP.gb",
+      "display_sha256": "861a1a5fcc3b49494787c293135537170ffa29de416582dc484d833fbc7b996e",
+      "bp": 6134,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 3050,
+          "end_1based": 3505,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 4030,
+          "end_1based": 4824,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 5409,
+          "end_1based": 6052,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "EGFP",
+          "start_1based": 2080,
+          "end_1based": 2799,
+          "strand": 1,
+          "color": "#4DBBD5"
+        },
+        {
+          "name": "3T",
+          "start_1based": 2026,
+          "end_1based": 2037,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "TFEB-3T-untagged",
+      "title": "TFEB-3T-untagged",
+      "source": "设计/research-v3/TFEB-3T-untagged.gb",
+      "source_sha256": "aef4de9464ce54325bea0c20bdcd3ed1b6b7b13b65a4b2bdd953448543fe2da4",
+      "display_file": "报告/质粒图-SnapGene/TFEB-3T-untagged.gb",
+      "display_sha256": "fd3c0e339dffeea5ba426553da6a7a6d737ea5d160469063b6d6c282ead641ec",
+      "bp": 5396,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 2312,
+          "end_1based": 2767,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 3292,
+          "end_1based": 4086,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 4671,
+          "end_1based": 5314,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        },
+        {
+          "name": "3T",
+          "start_1based": 2026,
+          "end_1based": 2037,
+          "strand": 1,
+          "color": "#E64B35"
+        }
+      ]
+    },
+    {
+      "key": "TFEB-WT-untagged",
+      "title": "TFEB-WT-untagged",
+      "source": "设计/research-v3/TFEB-WT-untagged.gb",
+      "source_sha256": "9cd8460b62e6b16082f1fb1cc811d9148e29ac7b91641065d74d742519a9fd3b",
+      "display_file": "报告/质粒图-SnapGene/TFEB-WT-untagged.gb",
+      "display_sha256": "1e6606434de855b755625b14ccead617520ff523552277591a49f65610ba0e8d",
+      "bp": 5396,
+      "features": [
+        {
+          "name": "CMV promoter",
+          "start_1based": 1,
+          "end_1based": 589,
+          "strand": 1,
+          "color": "#3C5488"
+        },
+        {
+          "name": "f1 origin",
+          "start_1based": 2312,
+          "end_1based": 2767,
+          "strand": -1,
+          "color": "#7E6148"
+        },
+        {
+          "name": "KanR/NeoR",
+          "start_1based": 3292,
+          "end_1based": 4086,
+          "strand": 1,
+          "color": "#8491B4"
+        },
+        {
+          "name": "pUC origin",
+          "start_1based": 4671,
+          "end_1based": 5314,
+          "strand": 1,
+          "color": "#B09C85"
+        },
+        {
+          "name": "TFEB",
+          "start_1based": 631,
+          "end_1based": 2058,
+          "strand": 1,
+          "color": "#00A087"
+        }
+      ]
+    }
+  ],
+  "rendering": "Native SnapGene Viewer GUI; export images separately, preserve vendor credit"
+}

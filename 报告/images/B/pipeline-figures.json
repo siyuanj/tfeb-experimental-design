@@ -1,6 +1,6 @@
 {
   "status": "rendered; visual review recorded separately",
-  "created_at_utc": "2026-10-23T17:53:30.117920+00:00",
+  "created_at_utc": "2026-10-25T07:28:37.516757+00:00",
   "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/render_pipeline_figures.py'",
   "sequence_gate": {
     "path": "docs/协作/sequence-ready.json",
@@ -118,7 +118,7 @@
         ]
       },
       {
-        "title": "B  Flanking colony PCR (S-F1 / S-R1)",
+        "title": "B  Flanking colony PCR",
         "lanes": [
           {
             "label": "E",
@@ -166,7 +166,7 @@
         ]
       },
       {
-        "title": "C  Orientation PCR (S-F2 / S-R1)",
+        "title": "C  Orientation PCR",
         "lanes": [
           {
             "label": "E",
@@ -330,16 +330,18 @@
     ]
   },
   "scripts": {
-    "scripts/B-figures/render_pipeline_figures.py": "bb58852d497495676cfb471ded9025f8bf95f6407d7f81a95944ff306b9cc394",
-    "scripts/B-figures/figure_layouts.py": "8e45fa91f0d92eb4f0cc6c69f43cf3e4637d10fc4e198ed892a1ba750242fbf4",
-    "scripts/B-figures/handoff.py": "23360abef2285abfa531f5817fd39cae15c24cc6a7c8270849f8231e383b56a6"
+    "scripts/B-figures/render_pipeline_figures.py": "b445b5d1b28d203ec61b3899729819eb8e481b992f54a134635307ce35583301",
+    "scripts/B-figures/figure_layouts.py": "7b84eb96f87eef07e9286c71ee8ac89b4f09ff052db28eb0b92ca68a0f27365d",
+    "scripts/B-figures/handoff.py": "23360abef2285abfa531f5817fd39cae15c24cc6a7c8270849f8231e383b56a6",
+    "scripts/B-figures/publication_style.py": "1b1aaa144d0da17be4e3729fa2795c4358e2d44286871284126922cd0ca18234",
+    "scripts/B-figures/scientific_schematics.py": "adc0f08d350ac90837e951b67ea418a9db9116ae65534e7bbfedead8eb3f6e11"
   },
   "outputs": {
-    "报告/images/B/predicted-bands.pdf": "73ba0504de0b119326415a5b50c2cc27a8a84c3e2c0b185b50dddfc47eaf3b47",
-    "报告/images/B/predicted-bands.svg": "c028de51082fda018ab9511be6297f67099103038ff902e637c60a478d251105",
-    "报告/images/B/predicted-bands.png": "7e54b5519c822b6baa0a848623c1c04937d0e7e8930ce1e500e68d153d3ecf52",
-    "报告/images/B/cloning-workflow.pdf": "1b5ae75db0d79e7c8cec486920dc6aa67a6363f205a8720098f357fbb9b8021c",
-    "报告/images/B/cloning-workflow.svg": "ac82a27723585ce854d1d299e248d2bf85781babc234586373d73169ce30adb8",
-    "报告/images/B/cloning-workflow.png": "4d104c776df040f3fbd40f44b5254117f1b68edca825838c41ca2bb805767b8c"
+    "报告/images/B/predicted-bands.pdf": "7ca1107fb984c42ec7b4dd6e6a1a885c713f9c27979ce4b80f93b8011ca309e4",
+    "报告/images/B/predicted-bands.svg": "1ba435a2ff69935917f27cb1865810290670366d35a2cab382cc7647db442eac",
+    "报告/images/B/predicted-bands.png": "8febbc896dbf06bf7262732daeb143495bcc3c43ad9f3159144cc380a820a323",
+    "报告/images/B/cloning-workflow.pdf": "ced840eed87300c70342b7dfc8c34865c28a19336463248b59b86474a2977303",
+    "报告/images/B/cloning-workflow.svg": "54e3b063527a3efee153746209f6fbddc0d5140fc4dafb6442ca7a8121e64bf2",
+    "报告/images/B/cloning-workflow.png": "bf9097ef5383482771591b10eecc2da35099c9a63c41f4f3ffc25fd94dc93898"
   }
 }

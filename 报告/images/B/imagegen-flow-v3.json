@@ -1,0 +1,70 @@
+{
+  "status": "vectorized; visual review required",
+  "created_at": "2026-10-25T03:40:00.688745-04:00",
+  "sources": {
+    "报告/images/B/imagegen-v3/cloning-source.png": "754cd50978c28074a1a4497e7ff66ee141410d0c470b9d1c3c7542912131597a",
+    "报告/images/B/imagegen-v3/evidence-source.png": "8f3ff5e143953443e36b7dbe1ed022b5f52930c5d036993649f41768d8d76413",
+    "docs/协作/流程图ImageGen提示词-v3.json": "18f71c3c0c34673d2c9de89d7a0ff6e5f465e8814d22d66955c12381fd62edef",
+    "scripts/B-figures/vectorize_imagegen_flows.py": "16ce1491f1ad4245c2bc50d015f38f74f10ef0a20f91383bc401044cb8328121",
+    "scripts/B-figures/publication_style.py": "1b1aaa144d0da17be4e3729fa2795c4358e2d44286871284126922cd0ca18234",
+    "scripts/B-figures/requirements-publication.txt": "0037c7f43cb117568255053e075bf13c639e218ca1e1fca522216b7ac19211b8"
+  },
+  "outputs": {
+    "报告/images/B/imagegen-v3/cloning-trace.svg": "5dda4b238abbb75862e738363cfaca5151566a23ee8aeb0fb11df3ba07c56f09",
+    "报告/images/B/cloning-workflow-imagegen-v3.svg": "7c686e2193264a8fb34f175bad374c93864e374f6fe6fcda62a6255ef839a4cf",
+    "报告/images/B/cloning-workflow-imagegen-v3.pdf": "9f9991387ca5c41aea36ea42e81883173855b31caa8aa28a30a95cfeea8728ee",
+    "报告/images/B/cloning-workflow-imagegen-v3.png": "5701595febd6ec84879204aa048b6735fb31994ebe444812bf6488f4720cb241",
+    "报告/images/B/imagegen-v3/evidence-trace.svg": "33b76118b91d0b578547725f4063ec28f73b85c5c4d462f47ec1ec8ac2284992",
+    "报告/images/B/evidence-design-imagegen-v3.svg": "0a703674314b7fdf16b6bcf2e79c7c61deb1d7be76b52a0762ea65329667fa31",
+    "报告/images/B/evidence-design-imagegen-v3.pdf": "4263fce9d205e8c9f915be287af379b46d3dea3c9336bc42f3acd8b008796a7d",
+    "报告/images/B/evidence-design-imagegen-v3.png": "91a2a068938acf994c72b52c970f9de87719999cab2ab130d52dc14772336121"
+  },
+  "figures": [
+    {
+      "name": "cloning-workflow-imagegen-v3",
+      "traced_paths": 116,
+      "editable_text": 12,
+      "embedded_rasters": 0,
+      "source_width": 2172.0,
+      "source_height": 724.0
+    },
+    {
+      "name": "evidence-design-imagegen-v3",
+      "traced_paths": 52,
+      "editable_text": 9,
+      "embedded_rasters": 0,
+      "source_width": 2172.0,
+      "source_height": 724.0
+    }
+  ],
+  "software": {
+    "vtracer": "0.6.15",
+    "CairoSVG": "2.8.2"
+  },
+  "trace_options": {
+    "colormode": "color",
+    "hierarchical": "stacked",
+    "mode": "spline",
+    "filter_speckle": 12,
+    "color_precision": 5,
+    "layer_difference": 48,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "path_precision": 2
+  },
+  "palette": [
+    "#3C5488",
+    "#00A087",
+    "#4DBBD5",
+    "#91D1C2",
+    "#FFFFFF"
+  ],
+  "method": "Built-in ImageGen originals -> VTracer spline paths -> NPG fill quantization -> editable SVG labels/arrows -> vector PDF",
+  "limitations": [
+    "Raster-to-vector tracing approximates contours; visual inspection is required",
+    "Conceptual illustrations only, not molecular geometry or measured data",
+    "Initial cloning source rejected for incomplete ladder motif; corrected with built-in ImageGen"
+  ]
+}

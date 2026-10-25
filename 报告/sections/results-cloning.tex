@@ -6,8 +6,8 @@ The reconstruction and an independent standard-library audit agreed on sequence,
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{images/B/plasmid-map.pdf}
-\caption{Predicted annotation map of \ConstructName{} (\ConstructBp{} bp), rendered from the accepted GenBank sequence. The complete fusion ORF overlaps its TFEB, linker and EGFP components intentionally. HindIII 623 and BamHI 2062 denote the first reference-strand nucleotide after cleavage; their recognition sequences begin at 622 and 2061, respectively. Poly(A) annotations are signal motifs, not complete processing regions. KanR applies to bacteria and Neo/G418 to mammalian selection. The pUC and SV40 origins are shown without an inferred directional arrow. No experimental observation is represented.}
+\includegraphics[width=\textwidth]{images/B/fusion-cassettes.pdf}
+\caption{Aligned fusion-protein schematics for WT and three designed mutants. TFEB occupies residues 1--476, the GDPPVAT linker 477--483 and EGFP 484--722; rectangles are proportional to their encoded lengths. Red marks identify S-to-A substitutions. The accepted WT plasmid is \ConstructName{} (\ConstructBp{} bp). The full sequence retains HindIII and BamHI recognition starts at 622 and 2061; the first reference-strand bases after cleavage are 623 and 2062. Protein schematics do not show regulatory DNA or predict cellular activity.}
 \label{fig:plasmid}
 \end{figure}
 
@@ -17,15 +17,15 @@ Cloning PCR predicts a \PCRBp{} bp product. HindIII/BamHI digestion yields a \In
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.92\textwidth,height=0.77\textheight,keepaspectratio]{images/B/cloning-workflow-imagegen-v2.png}
-\caption{Proposed cloning workflow and control checkpoints. AI-assisted illustrations are symbolic, not exact molecular geometry, plasmid coordinates or experimental data. The full-length paired arrows summarize the intended bidirectional sequencing coverage, not observed reads. Each operation is planned; measured DNA concentrations and actual sequence quality are required before clone acceptance.}
+\includegraphics[width=0.92\textwidth,height=0.77\textheight,keepaspectratio]{images/B/cloning-workflow-imagegen-v3.pdf}
+\caption{Proposed cloning workflow. Check ordered-template identity before PCR; include a no-template control, vector-only ligation, no-DNA transformation and a separate competence control. Purify backbone and insert after separate digests. Flanking and orientation PCR plus diagnostic digestion screen gross identity but cannot exclude point substitutions or a retained stop. Final acceptance requires unambiguous, concordant bidirectional sequence across the target and both junctions; failed candidates are resequenced or replaced. Measured DNA concentrations determine actual reaction inputs.}
 \label{fig:workflow}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{images/B/predicted-bands.pdf}
-\caption{Predicted DNA-band positions, drawn as a schematic rather than an experimental gel. M: NEB N3232 ladder; PCR: tailed insert amplicon; I: digested insert; NTC: no-template control; E: empty vector; C: intended construct; R: hypothetical reverse-TFEB model; S: hypothetical retained-stop model. The 500/517 bp marker pair is not resolved~\cite{MethodM16}. The 7, 11 and 38 nt fragments fall below the displayed range. Three-base differences between C and S are not expected to resolve on the proposed 1\% gel. An empty NTC schematic means no specific product is predicted, not a guarantee of a clean experimental lane. Uncut circular DNA mobility and band intensity are not predicted.}
+\caption{Predicted DNA-band positions, drawn as a schematic rather than an experimental gel. M: NEB N3232 ladder; PCR: tailed insert amplicon; I: digested insert; NTC: no-template control; E: empty vector; C: intended construct; R: hypothetical reverse-TFEB model; S: hypothetical retained-stop model. The 500/517 bp marker pair is not resolved~\cite{MethodM16}. Panels B and C use the flanking and orientation primer pairs defined in the screening table. The 7, 11 and 38 nt fragments fall below the displayed range. Three-base differences between C and S are not expected to resolve on the proposed 1\% gel. An empty NTC schematic means no specific product is predicted, not a guarantee of a clean experimental lane. Uncut circular DNA mobility and band intensity are not predicted.}
 \label{fig:bands}
 \end{figure}
 \FloatBarrier

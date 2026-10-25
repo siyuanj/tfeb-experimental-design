@@ -1,120 +1,250 @@
 {
   "status": "passed",
-  "reviewed_at": "2026-10-23T14:14:01.299202-04:00",
-  "reviewed_pdf_sha256": "a3d7ba452ccd8ad7c474b2a6b088f0a48b9710445a9e899b5e516eb000f93b10",
-  "page_count": 14,
-  "compilation_record_sha256": "ec55401d704f4f2027defa5d2847e4df6fe41e65d934e86910ed79c49134aee8",
-  "review_actor": "Codex assistant using direct visual inspection of all final page rasters; not a claim of human-author review",
+  "reviewed_at": "2026-10-25T03:45:03.862450-04:00",
+  "reviewed_pdf_sha256": "45d91e88ba8e854231dc7d9f3660c886082abd03e86eba8faa77305e3e24fb1a",
+  "page_count": 27,
+  "compilation_record_sha256": "f37a30c795f1ebd73506a9470d0a4ff3ac9611426facdf263b0ec3767422c171",
+  "review_actor": "Codex direct visual inspection; not human author sign-off",
   "render_dpi": 140,
   "pages": [
     {
       "page": 1,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-01.png",
-      "sha256": "16940ab0d27913e6acaf46f16eac8f3939f89f9c3dbb274c43b2a1b4eb4e8d2c",
-      "findings": "标题、署名、Working draft、摘要和研究假设清楚；无裁切或重叠，计算设计与实验预期分开。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-01.png",
+      "sha256": "8036e6d16ef0051fa8c35a5980a1ec37e640c35c07797271cb8692a138730238",
+      "findings": "Title, working-draft status, abstract and replication rationale are legible; no cropped text.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-01.png"
     },
     {
       "page": 2,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-02.png",
-      "sha256": "b9ec8961bbe94cdf3993d4f5a273a39ccd3572301e21cc2f9b3e72022059c966",
-      "findings": "版本化来源、库存未验证表述、标签方向、起止密码子、连接肽和酶对完整；段落与引用可读。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-02.png",
+      "sha256": "63c5448ba2cf3fed40ec58d0e0ed296dbcaf184f710f90aaa3cc9c496150efa3",
+      "findings": "Objectives and construct identity retain versioned references and exact fusion definition.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-02.png"
     },
     {
       "page": 3,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-03.png",
-      "sha256": "f3e35b77a0c17f41d8f2fcfb9daf4bfdfc677b7550f3c89c3c5dd3a24c24f895",
-      "findings": "表1两条克隆引物及分段、Tm/GC数值完整；表2和PCR程序清楚，表题与内容同页。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-03.png",
+      "sha256": "3944e538ee0265d2d0fdbc20f873e561170fa842b996dc0022cadff74c9ecdc4",
+      "findings": "Complete cloning-primer table is legible; the short PCR table was moved intact to the next page.",
+      "inspection_basis": "Directly viewed final rendered page"
     },
     {
       "page": 4,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-04.png",
-      "sha256": "62f789fa8ce66fa7790d0865f0074db6c0ec6dc83595127a21e35d3b86712c83",
-      "findings": "纯化、B7024含SDS且6X至1X、后染、连接量公式及加热用途完整；没有孤立表题。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-04.png",
+      "sha256": "b4f75301f71a6b5fb1dfc42f9d43bdd25f1e4e2a2676bf65063cd589b6edb717",
+      "findings": "PCR reaction table is now complete on one page; purification and restriction text is legible.",
+      "inspection_basis": "Directly viewed final rendered page"
     },
     {
       "page": 5,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-05.png",
-      "sha256": "171d72842178275447c304090b165276a2e34a5944a44f2d496d44500783c2e9",
-      "findings": "表3酶切与连接两部分同页，列对齐且单位完整；转化和筛选正文无越界。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-05.png",
+      "sha256": "342481b4e7b2dacb807061946fdd19c479dcfa0d5830d6df53fc4218f106478f",
+      "findings": "Ligation formula and reaction table fit; transformation text and units remain intact.",
+      "inspection_basis": "Directly viewed final rendered page"
     },
     {
       "page": 6,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-06.png",
-      "sha256": "c104f146a6a52669d945bf4a28e8bc60199ab756251c4806f21164d78aa0aea3",
-      "findings": "测序服务目标与模型说明可读；表4全部十行引物在同一页，末行未孤立，序列及窗口未裁切。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-06.png",
+      "sha256": "d30abb1cea81bc7a94df0cac3555cc772c645d711f91bfdc7e7eb9b18a6275c1",
+      "findings": "Screening controls and Sanger planning are legible with no overflow.",
+      "inspection_basis": "Directly viewed final rendered page"
     },
     {
       "page": 7,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-07.png",
-      "sha256": "4930d852b0d31ac6b2522830c53a25f887811de7e118e6026c520c4f661120d6",
-      "findings": "602–2799目标、双向Q20、补测/混峰处理边界完整；A对照衔接和N/C公式未重叠。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-07.png",
+      "sha256": "610a9d759313b474ca3557f161164611964db0d14d2194bb1b47d0ff6624fd89",
+      "findings": "All ten Sanger oligos, coordinates, planned windows and acceptance criteria remain legible.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-07.png"
     },
     {
       "page": 8,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-08.png",
-      "sha256": "02dd36d04ef0735eacbea3ae6828c6f435b9debcb0c1ecf93f167b4a23a9f34e",
-      "findings": "理论WB解释和全部B结果正文完整结束于本页；四种软件挑战及胶/Sanger局限保留，没有跨整页插图的尾句。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-08.png",
+      "sha256": "a0c5e443b17e0e07d9c4586902be2ea309f9b5a19e025652554caa7b5028bd36",
+      "findings": "Control codons and mutant construction limits are explicit; table columns fit.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-08.png"
     },
     {
       "page": 9,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-09.png",
-      "sha256": "cc85bb18a17ddad5f0bf94622721997f5456535c41a0649456ebd055884d50ef",
-      "findings": "质粒图的23个注释与两切口标签清楚；623/2062和识别位点的区别在图注中明确，表5完整。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-09.png",
+      "sha256": "82720f778f5c26ee5729d3fd53be1ad551fdea995ac874828a9553736e146308",
+      "findings": "Five native SnapGene maps retain visible feature labels and complete external captions.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-09.png"
     },
     {
       "page": 10,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-10.png",
-      "sha256": "b7b9c10200a56b5da36ea977db7e22276b8001b37a3d6440fa2d5eb60d387fd4",
-      "findings": "ImageGen七步流程图及控制框、箭头和图注清楚；无峰图，双向箭头覆盖目标；示意而非实测说明明确。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-10.png",
+      "sha256": "35288f2f5974167655c9b0d929fac20e62a2d8e4d3929302213f86ca8e0f44d5",
+      "findings": "Eleven control questions, comparisons and interpretation limits fit in one table.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-10.png"
     },
     {
       "page": 11,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-11.png",
-      "sha256": "99e2e022c158df0842a4a5f79a1c517015978ce95f2c87016b53f1b96d607ca5",
-      "findings": "四个预测条带面板、marker、泳道和短片段说明清楚；500/517共迁移与三碱基差异限制明确，图注完整。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-11.png",
+      "sha256": "43128e8b3997e68e6a6cc8edc4d682e484c283dd6a4ef9af5cc2fbd9e5581f3e",
+      "findings": "Treatment parameters and sampling schedule agree; detailed explanation stays in the caption.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-11.png"
     },
     {
       "page": 12,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-12.png",
-      "sha256": "4aaa3afd1adf953c2bc1eb8ea507c36860944d3477ad26cba2923c102b0a61d4",
-      "findings": "A预期、讨论、计划贡献和AI声明可读；无实测结果或已完成人类复核的虚构断言。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-12.png",
+      "sha256": "16ce067f00b71d01e09763f90d97b0a574d3d0c728503135ceebab5fd7222ca3",
+      "findings": "Imaging equation, exclusions, biological replication and WB/fractionation controls fit.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-12.png"
     },
     {
       "page": 13,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-13.png",
-      "sha256": "d27b4e9f80100220794aa74a2199bd9bb2d3f053349188fff4915c72658bd50e",
-      "findings": "AI声明自然续接后进入参考文献1–18；URL换行没有越界、遮挡或缺字。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-13.png",
+      "sha256": "91862c7bc65e14bcb566f2e3d72d998963f7ea996ce8dd7e713014715cd72ad9",
+      "findings": "Pathway depletion, co-IP and loss/rescue controls remain explicit and legible.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-13.png"
     },
     {
       "page": 14,
       "status": "visually_reviewed",
-      "image": "报告/build/compile-pages-0110b03a67634c9786700511cfbbd59d/page-14.png",
-      "sha256": "12b2fd619f082182118c3aad9dac7ddcd2c7c11be6a30b83a7c68e0ecbbcb979",
-      "findings": "参考文献19–27完整，末页没有正文/图表丢失；余白属于文献列表正常收尾。"
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-14.png",
+      "sha256": "cfeae7d0f03cc0d6c6b915be6070f7fbd6396691210a49be184e7bec75ca9bf0",
+      "findings": "Turnover controls, statistics and core schedule are legible; no invented outcomes.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-14.png"
+    },
+    {
+      "page": 15,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-15.png",
+      "sha256": "f631a0fcbc1b1066423ec88db26f8703920328ce90f8f23d96a3880d9c5605ad",
+      "findings": "ImageGen-derived vector evidence diagram is clear; widened ID column separates module and week.",
+      "inspection_basis": "Directly viewed final rendered page"
+    },
+    {
+      "page": 16,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-16.png",
+      "sha256": "4bd0f3123810b8ce4a80b3ffeae5e85494909e9c1c07f4eb640a655ee7ebeca9",
+      "findings": "Remaining core modules and the distinct literature-motivated research question are legible.",
+      "inspection_basis": "Directly viewed final rendered page"
+    },
+    {
+      "page": 17,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-17.png",
+      "sha256": "f5f019446940ec8f4b397e2394d13689358b70a4f5f9990ceb4343507e4cab35",
+      "findings": "Five new constructs, exact codons, tag removal and new acceptance route are explicit.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-17.png"
+    },
+    {
+      "page": 18,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-18.png",
+      "sha256": "09ffba9aac0dd249839a35a97776acc4549a8ed3c4aae6afe2df677d678cea03",
+      "findings": "Five additional native maps and both full captions fit without clipping.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-18.png"
+    },
+    {
+      "page": 19,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-19.png",
+      "sha256": "2b56ac1553f5d1fd7671311821034e84e0b3534592c9bdb827815e19859ce315",
+      "findings": "The 18-condition comparison, expression matching and primary contrast are legible.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-19.png"
+    },
+    {
+      "page": 20,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-20.png",
+      "sha256": "3be0597be4641e5dec287da0c4b3d4a6b779a16b15f5b133d5217fd4eeee3989",
+      "findings": "Factorial figure uses open condition symbols, not results; phosphosite and ChIP controls fit.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-20.png"
+    },
+    {
+      "page": 21,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-21.png",
+      "sha256": "44b3d8d99d0b8de5980fb4fb9d0764d29d9778f2761994c21d10373648710f8a",
+      "findings": "Alternative interpretations, conditional workload and computed-result boundary are clear.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-21.png"
+    },
+    {
+      "page": 22,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-22.png",
+      "sha256": "7bb5ad0e438f0b920682a88834b02771c79a1fc055336b82af721409ed6cac21",
+      "findings": "Aligned cassettes, residue labels and screening table retain accepted values.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-22.png"
+    },
+    {
+      "page": 23,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-23.png",
+      "sha256": "9c0d5841758cf14fa52a50a8d36314232058b8ac83912a0d51a60bf26efb17cc",
+      "findings": "ImageGen-derived cloning workflow is legible; predicted DNA bands and caption remain separate from data.",
+      "inspection_basis": "Directly viewed final rendered page"
+    },
+    {
+      "page": 24,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-24.png",
+      "sha256": "26d20e62322c846b4064d0e6a3d8055a52cb7c4833e15b877a98473fe2c28c61",
+      "findings": "Outcome decision matrix is legible; no effect estimates or significance are fabricated.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-24.png"
+    },
+    {
+      "page": 25,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-25.png",
+      "sha256": "1394805e1fd3d81b7a150981a1fcd35cafbe9da42514492a7a797f6faa71a95d",
+      "findings": "Limitations, planned author contributions and beginning of AI declaration are legible.",
+      "inspection_basis": "Byte-identical to the directly viewed raster in this work session",
+      "directly_viewed_matching_image": "报告/build/compile-pages-498200ea06b34632884d6a914758af59/page-25.png"
+    },
+    {
+      "page": 26,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-26.png",
+      "sha256": "f15f797f803ea29926f9f4a1a686f619ad2121d1e40b013d2344963a362a770f",
+      "findings": "AI/ImageGen/vectorization disclosure and the first reference block are complete and legible.",
+      "inspection_basis": "Directly viewed final rendered page"
+    },
+    {
+      "page": 27,
+      "status": "visually_reviewed",
+      "image": "报告/build/compile-pages-0b1a8cc6153949559643f53a9663767e/page-27.png",
+      "sha256": "d712cdff1cb56bfaef19153b48bd50d936eac183433d5086d0b86795593646b5",
+      "findings": "Final reference block includes both new primary papers; URLs/DOIs wrap without clipping.",
+      "inspection_basis": "Directly viewed final rendered page"
     }
   ],
-  "resolved_layout_issues": [
-    "Sanger table isolated final row",
-    "Digestion/ligation table orphan caption",
-    "B-R01: three-line text-only page between full-page figures"
-  ],
-  "remaining_visual_issues": [],
   "limitations": [
-    "Visual review does not establish experimental success",
-    "Independent part-A parameters and author confirmation remain outstanding",
-    "Ignored page rasters are local evidence; the final PDF and compact review records are retained"
+    "No wet-lab validation",
+    "Eighteen final rasters are byte-identical to pages directly inspected in this session; all nine changed rasters were viewed again",
+    "Nonfatal PDF inclusion-version warnings remain; final output is PDF 1.7"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "status": "rendered; visual review recorded separately",
   "kind": "predicted annotated sequence map",
-  "created_at_utc": "2026-10-23T17:54:33.541000+00:00",
+  "created_at_utc": "2026-10-25T07:28:36.847272+00:00",
   "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/render_accepted_map.py'",
   "design_version": "B-v1",
   "sequence_gate": {
@@ -66,7 +66,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#326EB5",
+      "color": "#3C5488",
       "display_label": "CMV promoter"
     },
     {
@@ -92,7 +92,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#D28B36",
+      "color": "#F39B7F",
       "display_label": "SV40 polyA signal 1"
     },
     {
@@ -118,7 +118,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#D28B36",
+      "color": "#F39B7F",
       "display_label": "SV40 polyA signal 2"
     },
     {
@@ -144,7 +144,7 @@
       "parsed_location_strand": -1,
       "direction_from_note": false,
       "arrow_strand": -1,
-      "color": "#8862B3",
+      "color": "#7E6148",
       "display_label": "f1 origin"
     },
     {
@@ -170,7 +170,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#326EB5",
+      "color": "#3C5488",
       "display_label": "KanR promoter -35"
     },
     {
@@ -196,7 +196,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#326EB5",
+      "color": "#3C5488",
       "display_label": "KanR promoter -10"
     },
     {
@@ -222,7 +222,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#8294A8",
+      "color": "#8491B4",
       "display_label": "SV40 early enhancer 1"
     },
     {
@@ -248,7 +248,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#8294A8",
+      "color": "#8491B4",
       "display_label": "SV40 early enhancer 2"
     },
     {
@@ -274,7 +274,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": true,
       "arrow_strand": 0,
-      "color": "#8862B3",
+      "color": "#B09C85",
       "display_label": "SV40 origin"
     },
     {
@@ -300,7 +300,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#326EB5",
+      "color": "#3C5488",
       "display_label": "SV40 early promoter\nelement"
     },
     {
@@ -332,7 +332,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#9962A9",
+      "color": "#8491B4",
       "display_label": "KanR/NeoR"
     },
     {
@@ -358,7 +358,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#D28B36",
+      "color": "#F39B7F",
       "display_label": "HSV TK polyA signal 1"
     },
     {
@@ -384,7 +384,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#D28B36",
+      "color": "#F39B7F",
       "display_label": "HSV TK polyA signal 2"
     },
     {
@@ -410,7 +410,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": true,
       "arrow_strand": 0,
-      "color": "#8862B3",
+      "color": "#B09C85",
       "display_label": "pUC origin"
     },
     {
@@ -442,7 +442,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#326EB5",
+      "color": "#3C5488",
       "display_label": "TFEB-EGFP fusion ORF"
     },
     {
@@ -468,7 +468,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#149A8A",
+      "color": "#00A087",
       "display_label": "TFEB"
     },
     {
@@ -494,7 +494,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#C78B2D",
+      "color": "#F39B7F",
       "display_label": "linker GDPPVAT"
     },
     {
@@ -520,7 +520,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#799E28",
+      "color": "#4DBBD5",
       "display_label": "EGFP"
     },
     {
@@ -546,7 +546,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#BD6D8D",
+      "color": "#8491B4",
       "display_label": "initiation context ACC"
     },
     {
@@ -572,7 +572,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#BD6D8D",
+      "color": "#8491B4",
       "display_label": "retained upstream MCS"
     },
     {
@@ -598,7 +598,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#BD6D8D",
+      "color": "#8491B4",
       "display_label": "retained downstream MCS"
     },
     {
@@ -624,7 +624,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#BD6D8D",
+      "color": "#8491B4",
       "display_label": "HindIII site"
     },
     {
@@ -650,7 +650,7 @@
       "parsed_location_strand": 1,
       "direction_from_note": false,
       "arrow_strand": 1,
-      "color": "#BD6D8D",
+      "color": "#8491B4",
       "display_label": "BamHI site"
     }
   ],
@@ -690,10 +690,11 @@
     "matplotlib": "3.11.2"
   },
   "scripts": {
-    "scripts/B-figures/render_accepted_map.py": "c8387450bba74a0c1a113d22e0e7259bac56d62c1651339a321b409712297510",
-    "scripts/B-figures/render_plasmid_map.py": "b8c80b5ed5611f72dddaf2d9838f3793255ca79d743953cd3f5896708a720e42",
+    "scripts/B-figures/render_accepted_map.py": "f3f2476a6369cb096e85347b8544d837965165d0e23a7da1f583dd6a82ac5ab8",
+    "scripts/B-figures/render_plasmid_map.py": "1b3b5e7e4b09f02426bf837cfdcf11c14cf9f371da030e0df08483ef16aca222",
+    "scripts/B-figures/publication_style.py": "1b1aaa144d0da17be4e3729fa2795c4358e2d44286871284126922cd0ca18234",
     "scripts/B-figures/handoff.py": "23360abef2285abfa531f5817fd39cae15c24cc6a7c8270849f8231e383b56a6",
-    "scripts/B-figures/figure_layouts.py": "8e45fa91f0d92eb4f0cc6c69f43cf3e4637d10fc4e198ed892a1ba750242fbf4"
+    "scripts/B-figures/figure_layouts.py": "7b84eb96f87eef07e9286c71ee8ac89b4f09ff052db28eb0b92ca68a0f27365d"
   },
   "conventions": [
     "Feature coordinates are 0-based half-open, with 1-based inclusive equivalents",
@@ -703,8 +704,8 @@
     "Overlapping fusion ORF and component annotations are intentional"
   ],
   "outputs": {
-    "报告/images/B/plasmid-map.pdf": "b1cd1bfac9a1bb917c492710f7e97ef2a2ff42bdc22e7c1ff68e3005ba868f4f",
-    "报告/images/B/plasmid-map.svg": "39a9ca518b00071213ace4f6fb36c3f0b0878f050bfce9c6902439b5e6bc0726",
-    "报告/images/B/plasmid-map.png": "19787623e3af1ff1accabcafbe9b48c67941c27aa62af5040df9d5747732744a"
+    "报告/images/B/plasmid-map.pdf": "306a859911a73fddff1f11f07ce5ca278b34236c161e7852e602a891128d9fa2",
+    "报告/images/B/plasmid-map.svg": "b78323bb8b13a73af45ce5892a586119d7c264069aff2b7275201b5cf67cdb17",
+    "报告/images/B/plasmid-map.png": "1906f8310a7afdffe61487f06675fc324cfd64be2645e436cb5254c6fb18a153"
   }
 }

@@ -37,18 +37,18 @@ class MapError(ValueError):
 
 
 PALETTE = {
-    "CDS": "#159A8C",
-    "promoter": "#326EB5",
-    "rep_origin": "#8862B3",
-    "terminator": "#D28B36",
-    "polyA_signal": "#D28B36",
-    "mRNA": "#7BB7A8",
-    "primer_bind": "#7F8C99",
-    "misc_feature": "#BD6D8D",
-    "misc_RNA": "#69964C",
+    "CDS": "#00A087",
+    "promoter": "#3C5488",
+    "rep_origin": "#B09C85",
+    "terminator": "#F39B7F",
+    "polyA_signal": "#F39B7F",
+    "mRNA": "#91D1C2",
+    "primer_bind": "#888888",
+    "misc_feature": "#8491B4",
+    "misc_RNA": "#4DBBD5",
 }
-FALLBACK_COLOR = "#8294A8"
-CUT_COLOR = "#A94734"
+FALLBACK_COLOR = "#8491B4"
+CUT_COLOR = "#E64B35"
 
 
 def sha256(path):
@@ -208,7 +208,7 @@ def draw_map(record, graphic_features, shown, enzymes, title):
     plt.rcParams.update({
         "font.family": "DejaVu Sans", "pdf.fonttype": 42,
         "svg.fonttype": "none", "figure.facecolor": "white",
-        "axes.facecolor": "white", "text.color": "#253544",
+        "axes.facecolor": "white", "text.color": "#222222",
     })
     fig, ax = plt.subplots(figsize=(10, 7.2))
     circular = CircularGraphicRecord(
@@ -260,19 +260,16 @@ def draw_map(record, graphic_features, shown, enzymes, title):
     tick_step = max(1, math.ceil(len(record) / 8 / 100) * 100)
     for position in range(0, len(record), tick_step):
         start, end = polar(position, len(record), 0.89), polar(position, len(record), 0.94)
-        ax.plot([start[0], end[0]], [start[1], end[1]], color="#AEB9C2", lw=0.65)
+        ax.plot([start[0], end[0]], [start[1], end[1]], color="#BBBBBB", lw=0.65)
         x, y = polar(position, len(record), 0.75)
-        ax.text(x, y, str(position), fontsize=8.5, color="#788692", ha="center", va="center")
+        ax.text(x, y, str(position), fontsize=8.5, color="#777777", ha="center", va="center")
     ax.text(0, -0.82, textwrap.fill(title, width=12, break_long_words=True), ha="center", va="center",
             fontsize=12, fontweight="bold", linespacing=1.3)
-    ax.text(0, -1.20, f"{len(record):,} bp", ha="center", va="center", fontsize=12, color="#627687")
+    ax.text(0, -1.20, f"{len(record):,} bp", ha="center", va="center", fontsize=12, color="#666666")
     ax.set_xlim(-outer_radius - 2.55, outer_radius + 2.55)
     ax.set_ylim(-1 - vertical_extent - 0.25, -1 + vertical_extent + 0.25)
     ax.set_aspect("equal")
     ax.axis("off")
-    fig.text(0.5, 0.055, "Enzyme labels: 1-based first nucleotide after cleavage  ·  Inner scale: 0-based boundary offsets",
-             ha="center", fontsize=9, color="#71808D")
-    fig.text(0.5, 0.035, "Predicted annotation map rendered with DNA Features Viewer", ha="center", fontsize=9, color="#8B969F")
     fig.subplots_adjust(left=0.025, right=0.975, top=0.97, bottom=0.09)
     return fig
 

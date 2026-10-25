@@ -1,12 +1,14 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-23T18:12:03.906215+00:00",
+  "checked_at_utc": "2026-10-25T07:42:25.095691+00:00",
   "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/check_report_consistency.py'",
   "scope": "report consistency only; manual page review is separate",
   "checks": {
     "compilation_inputs_PDF_text_log_and_page_images_match_bound_build": true,
     "figure_input_and_output_hashes": true,
-    "selected_ImageGen_illustration_matches_its_reviewed_snapshot": true,
+    "native_maps_publication_figures_and_mutants_match_verified_inputs": true,
+    "five_research_constructs_and_ten_native_map_inputs_match_audits": true,
+    "ImageGen_vector_paths_and_editable_labels_match_bound_sources": true,
     "all_feature_intervals_and_displayed_strands_match_accepted_table": true,
     "cleavage_labels_distinguished_from_recognition_starts": true,
     "all_plotted_lane_sizes_and_marker_sizes_match_accepted_table": true,
@@ -96,18 +98,18 @@
   },
   "compilation_record": {
     "path": "docs/协作/报告编译核验.json",
-    "sha256": "ec55401d704f4f2027defa5d2847e4df6fe41e65d934e86910ed79c49134aee8"
+    "sha256": "f37a30c795f1ebd73506a9470d0a4ff3ac9611426facdf263b0ec3767422c171"
   },
   "pdf": {
     "path": "报告/main.pdf",
-    "sha256": "a3d7ba452ccd8ad7c474b2a6b088f0a48b9710445a9e899b5e516eb000f93b10",
-    "pages": 14
+    "sha256": "45d91e88ba8e854231dc7d9f3660c886082abd03e86eba8faa77305e3e24fb1a",
+    "pages": 27
   },
   "pdf_text": {
     "path": "报告/build/main.txt",
-    "sha256": "5ccdb86c26ad061b0e058bacc8cfb88487a77632216b2b2ad7d4c0efa348f24c"
+    "sha256": "a62ee909df913a39c6b886e541ffce76ce7f5e593b8d4f66fad10598678e4b7d"
   },
-  "script_sha256": "0323de9b034b47ead277bc827d910925efb4008bf37cefe2e97141eded5c77fd",
+  "script_sha256": "a6effdb5e10c60de19ef8822782810a377b1512529637ce85391107a84a9779a",
   "limitations": [
     "Does not revalidate all prose claims or calculations",
     "Does not establish experimental success or human author review",

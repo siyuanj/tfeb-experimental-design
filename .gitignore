@@ -20,3 +20,5 @@ docs/备份/
 .env
 .env.*
 __pycache__/
+tools/
+.sglock/

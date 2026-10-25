@@ -21,8 +21,7 @@ def main():
     spec = json.loads((ROOT / "设计/construct_spec.json").read_text())
     record, source_format, source_hash = read_input(source)
     graphics, shown, omitted = prepare_features(record, {"source"})
-    palette = {"TFEB": "#149A8A", "EGFP": "#799E28", "linker GDPPVAT": "#C78B2D",
-               "TFEB-EGFP fusion ORF": "#326EB5", "KanR/NeoR": "#9962A9"}
+    from publication_style import FEATURE_COLORS as palette
     for graphic, feature in zip(graphics, shown):
         if feature["label"] in palette:
             feature["color"] = palette[feature["label"]]
@@ -46,7 +45,7 @@ def main():
             name: version(name) for name in ("biopython", "dna_features_viewer", "matplotlib")}},
         "scripts": {str(p.relative_to(ROOT)): sha256(p) for p in [
             ROOT / "scripts/B-figures/render_accepted_map.py", ROOT / "scripts/B-figures/render_plasmid_map.py",
-            ROOT / "scripts/B-figures/handoff.py", ROOT / "scripts/B-figures/figure_layouts.py"]},
+            ROOT / "scripts/B-figures/publication_style.py", ROOT / "scripts/B-figures/handoff.py", ROOT / "scripts/B-figures/figure_layouts.py"]},
         "conventions": ["Feature coordinates are 0-based half-open, with 1-based inclusive equivalents",
                         "Enzyme labels are the first 1-based nucleotide after reference-strand cleavage",
                         "An explicit no-direction note suppresses the origin arrow after GenBank round-trip",
