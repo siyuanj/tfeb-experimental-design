@@ -1,5 +1,32 @@
 # 工作进展
 
+## 2026-10-25 05:06 EDT 扩展分支合并 main
+
+### 这次做了什么
+
+- 用户明确要求将 `codex/tfeb-controls-figures` 合并到 `main` 并 push。依项目约定创建并合并 [PR #6](https://github.com/siyuanj/tfeb-experimental-design/pull/6)，保留完整提交历史；本地切换至 main 并快进同步。
+- GitHub 插件创建 PR 返回集成权限 403，改用已登录的 GitHub CLI 成功完成。合并前固定核对 PR head `6492427b6ddb9f39fc33d9fbfaa7d48e9e1dba82`，GitHub 报告 MERGEABLE/CLEAN；未使用强制推送、管理员绕过或删除功能分支。
+
+### 现在真实状态
+
+- GitHub 实际合并时间为 `2026-10-25T09:05:29Z`；合并提交 `620ec8540318eaffb235fdcc02943aa70f2ca795`，PR 状态 MERGED。本地 HEAD 与拉取后的 origin/main 均为此提交，合并树与已审阅分支最终树完全相同。
+- 本轮在 main 再核实 report-ready 为 ready，189 个交付文件及输入哈希全部匹配；32 页 PDF 哈希仍为 `9ea8012c80885695d6019e2042e7bf530d9cb926ab21b9a9190c59be5aed66a0`。未修改报告、序列或图版，未重复编译或冒称重新完成科学/逐页核验；上一节记录仍适用于同一产物。
+- PR 返回的 statusCheckRollup 为空，不声称 GitHub CI 通过。此节为合并后的交接记录，将作为独立文档提交推送 main；最终 HEAD 以 Git 日志及远端为准。
+- STATUS 写前备份为 `docs/备份/merge-main-20261025-050611/STATUS.md`；写后逐字核验历史正文保留。
+
+### 卡在哪
+
+- 合并已完成，无阻塞。后续协作从更新后的 main 新建工作分支。
+
+### 还没验证的
+
+- 本次仅完成版本交付，未做湿实验或验证剩余 pilot/试剂性能；报告的 Working draft 与科学限制不变。
+
+### 要用户定的
+
+- 无。
+
+
 ## 2026-10-25 04:30 EDT 审稿视角补强与功能分支推送
 
 ### 这次做了什么
