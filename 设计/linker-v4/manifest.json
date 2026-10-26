@@ -1,0 +1,47 @@
+{
+  "status": "designed; independent audit required",
+  "records": [
+    {
+      "name": "TFEB-WT-linker",
+      "variant": "WT",
+      "bp": 5417,
+      "protein_aa": 483,
+      "orf_start_1based": 631,
+      "orf_end_1based": 2082,
+      "removed_bp": 720,
+      "added_bp": 3
+    },
+    {
+      "name": "TFEB-3A-linker",
+      "variant": "3A",
+      "bp": 5417,
+      "protein_aa": 483,
+      "orf_start_1based": 631,
+      "orf_end_1based": 2082,
+      "removed_bp": 720,
+      "added_bp": 3
+    }
+  ],
+  "inputs": {
+    "设计/construct.gb": "3b56af861589b34be89ed9e7145c70acf7f7c4d033e4ea83be94d4af7c96c9f0",
+    "设计/research-v3/TFEB-3A-EGFP.gb": "b6316e83df6115b2f47f4bf4d7b46f6aca1c2ee79db017af5917160b800a6a4a",
+    "scripts/B-figures/build_linker_controls.py": "95a22cb1574b963fd340ee0c944aaa3d6e10bcd3e65d9160b0f2f372be3f32e5"
+  },
+  "outputs": {
+    "设计/linker-v4/TFEB-3A-linker-protein.fasta": "6db703f39e8ad9e1089c55760b882eedb587ff17e2fbc4d4e87acd1fc6f02096",
+    "设计/linker-v4/TFEB-3A-linker.fasta": "28df902aaf9068e178f1cf30c5220ef936515bedc081a98f9070cf854f7f1b98",
+    "设计/linker-v4/TFEB-3A-linker.gb": "5952e83bfe729d72047b99268786f938ee62807ca4a0212b231322016c1ff56f",
+    "设计/linker-v4/TFEB-WT-linker-protein.fasta": "9af9be47fbbf097c75666db0769efbbb0e3030e6f378363f0569553404931d4c",
+    "设计/linker-v4/TFEB-WT-linker.fasta": "c12b59955553e630613f3c5728e1edd3db5e6ef9a6ff9bc4912deb62b79e719a",
+    "设计/linker-v4/TFEB-WT-linker.gb": "3a9abd97db186b4b9a8b6248b2f4ea1303f422973bae37b0763dd274ef2b8d70"
+  },
+  "design_choices": {
+    "stop_codon": "TAA, matching the EGFP stop it replaces",
+    "replacement": "B-v1 bp 2080..2799 (EGFP including TAA) replaced by TAA; delta -717 bp",
+    "retained": "HindIII (622) and BamHI (2061) sites and the GDPPVAT linker"
+  },
+  "limitations": [
+    "No wet-lab validation",
+    "Whole-plasmid synthesis and sequencing; the B-v1 Sanger primers S-F5 and S-R2 bind inside EGFP and are absent"
+  ]
+}

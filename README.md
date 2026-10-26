@@ -12,6 +12,8 @@
 
 2026-10-25 审稿视角复查进一步补齐融合结构混杂、稳态 RNA/转录速率区别、TFE3 代偿、完整敲低/救援对照及统计规则。18 个研究条件加对照后主实验为 45 条件，第二条 siRNA 确认 39 条件；六天、每条件两培养孔的最低规模为每 assay/endpoint 1,008 孔，另计 pilot 和机制追加。详见 [审稿复查与修订](docs/10-25%20审稿视角复查与修订.md) 及 `设计/research-v3/condition-plan.tsv`。这些是计划量，未做湿实验。
 
+2026-10-25 Claude 独立复查进一步补设计：主要估计量改为架构依赖的 3A 效应 A_M、A_T 及其差 C，新增 Akt/S467、HeLa 缺 LKB1、主终点靶基因预选、TFE3 背景前置、数值成功标准等，并重新设计两个 linker-only 质粒（`设计/linker-v4/`，条件模块 R06）。正文同时删除防御性写作，重画时间表与研究设计图。详见 [Claude 独立审稿复查](docs/10-25%20Claude独立审稿复查与措辞修订.md)。
+
 以下为已合并 B-v1 的历史基线；其独立验收不自动覆盖本次新增细胞方案。
 
 截至 2026-10-23，B 的 P0–P9 已完成并通过父会话独立总验收，[PR #4](https://github.com/siyuanj/tfeb-experimental-design/pull/4) 已合并到 `main`；交付见 [验收记录](docs/B验收记录.md)。B-v1 固定为人 TFEB `NM_007162.3` / `NP_009093.1`、pEGFP-N1 空载体 `U55762.1` 与 C 端 EGFP 融合。序列设计经本地独立路径验收：最终质粒 6134 bp，融合蛋白 722 aa，理论未修饰平均质量约 80.425 kDa；英文 PDF 为 14 页。阶段结果以 [B 执行进度](docs/B执行进度.md) 与 [STATUS](docs/STATUS.md) 的实际证据为准。
@@ -37,6 +39,7 @@
 | `文献调研/` | 文献总报告、检索记录和分类阅读笔记；2026-10-25 范围更新见目录入口 |
 | `设计/construct_spec.json`、`construct.gb`、`construct.fasta` | 唯一设计参数及可导入序列工具的最终构建 |
 | `设计/primers.tsv`、`expected_fragments.tsv`、`sanger_coverage.tsv` | 完整引物、鉴定预测及测序覆盖 |
+| `设计/linker-v4/` | R06 条件模块的两个 linker-only 质粒（WT/3A，5,417 bp）、清单与独立核查 |
 | `资料/B来源索引.tsv`、`资料/序列/` | 来源台账、带版本原始记录与派生参考序列 |
 | `scripts/B-sequence/`、`scripts/B-methods/`、`scripts/B-figures/` | 可复算序列、方法与图表；运行前阅读对应说明 |
 

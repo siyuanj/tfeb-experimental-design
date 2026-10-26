@@ -1,10 +1,10 @@
 % Derived sequences are saved separately from the accepted WT design.
 \subsection{Sequence-Defined Control and Mutant Constructs}\label{sec:control-constructs}
-Five plasmid conditions are defined: parental pEGFP-N1 expressing EGFP only, the accepted WT TFEB--EGFP reporter, and three derived reporters carrying S211A, S142A or S142A/S211A (Figures~\ref{fig:control-plasmids} and \ref{fig:mutant-plasmids}). Amino-acid positions refer to human NP\_009093.1. The fusion constructs share the same 6,134-bp plasmid architecture, the GDPPVAT junction and C-terminal EGFP, and encode 722 residues. The two single mutants and their combination allow site-specific and combined comparisons; they are not three interchangeable ``constitutively nuclear'' positive controls~\cite{Vega2017,Napolitano2018}.
+Five plasmid conditions are defined: parental pEGFP-N1 expressing EGFP only, the accepted WT TFEB--EGFP reporter, and three derived reporters carrying S211A, S142A or S142A/S211A (Figures~\ref{fig:control-plasmids} and \ref{fig:mutant-plasmids}). Amino-acid positions refer to human NP\_009093.1. The fusion constructs share the same 6,134-bp plasmid architecture, the GDPPVAT junction and C-terminal EGFP, and encode 722 residues. The single mutants and their combination are compared with WT under each treatment, which separates site-specific from combined contributions~\cite{Vega2017,Napolitano2018}.
 
 \begin{table}[htbp]
 \centering\small
-\caption{Exact designed codon changes; plasmid coordinates are 1-based inclusive.}
+\caption{Designed codon changes; plasmid coordinates are 1-based inclusive.}
 \begin{tabularx}{\textwidth}{l l l Y}
 \toprule Variant & Codon change & Plasmid nucleotides & Comparison enabled \\
 \midrule
@@ -15,21 +15,21 @@ S142A/S211A & Both changes & Both intervals & Combined perturbation versus each 
 \end{tabularx}
 \end{table}
 
-Generate each mutant using a sequence-defined synthetic donor with the same cloning flanks as the accepted WT amplicon, followed by the established HindIII/BamHI workflow. The supplied donor FASTAs specify the intended DNA; they are not purchased or experimentally validated material. Existing cloning primers may amplify the matched donors, but new mutagenesis primers are not invented. Include no-template PCR, digested-vector-only ligation and the established positive transformation control for each batch. Sequence the full fusion region and both junctions in both directions, explicitly including both target codons. Use two independently recovered, sequence-correct bacterial clones per genotype for key-contrast confirmation to detect clone/preparation-specific effects; randomize clone identity across experimental days. Bacterial clones are not additional biological cell-culture replicates.
+Each mutant is generated from a sequence-defined synthetic donor that carries the same cloning flanks as the WT amplicon, followed by the HindIII/BamHI workflow above. The donor FASTA files are in the design record. The WT cloning primers anneal outside the mutated codons and amplify each donor, so no mutagenesis primers are needed. Each batch includes a no-template PCR, a digested-vector-only ligation and the positive transformation control. Sanger reads cover the full fusion region and both junctions in both directions, with the target codons read explicitly. Two independently recovered, sequence-correct bacterial clones per genotype confirm the key contrasts and detect clone- or preparation-specific effects; clone identity is randomized across experimental days. Bacterial clones serve as technical confirmation, and independent culture days remain the biological replicates.
 
-The derived sequences retain the WT reading frame and unique HindIII/BamHI cleavage geometry. Ordinary diagnostic band sizes therefore do not identify these point mutants; the existing gel predictions apply to their gross insert/backbone sizes only. Sequence acceptance, intact expression and cell phenotype are three distinct checks. Alanine removes the serine phospho-acceptor but can also alter local interactions; none of these substitutions alone proves the responsible kinase or a direct phosphorylation reaction. A phosphomimetic S-to-D/E construct is not included as a guaranteed phosphorylated-state control.
+The derived sequences keep the WT reading frame and the unique HindIII/BamHI cleavage geometry. Their digest and colony-PCR patterns therefore match WT, and full-length bidirectional sequencing identifies each mutant. Each construct passes three gates in order: sequence acceptance, intact full-length expression (anti-GFP and anti-TFEB blots), then phenotype. Alanine removes the serine phospho-acceptor and also alters local interactions; the RNAi and phospho-specificity modules address kinase identity. Phosphomimetic S-to-D/E variants are omitted because they do not reliably reproduce the phosphorylated state.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{images/B/control-plasmids.pdf}
-\caption{SnapGene Viewer maps of (A) the 4,733-bp EGFP-only control and (B) the 6,134-bp WT TFEB--EGFP reporter. Selected features retain their sequence coordinates and use a consistent NPG palette. The linker and minor regulatory annotations are omitted at this scale; complete GenBank records accompany the design. Native SVG geometry and vendor credit are preserved; the size unit is typeset in English. These are designed constructs, not verified experimental clones.}
+\caption{SnapGene Viewer maps of (A) the 4,733-bp EGFP-only control and (B) the 6,134-bp WT TFEB--EGFP reporter. Selected features keep their sequence coordinates and use a consistent NPG palette. The linker and minor regulatory annotations are omitted at this scale; complete GenBank records accompany the design.}
 \label{fig:control-plasmids}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.98\textwidth,height=0.74\textheight,keepaspectratio]{images/B/mutant-plasmids.pdf}
-\caption{SnapGene Viewer maps of (A) S211A, (B) S142A and (C) S142A/S211A. Red marks identify the substituted codons; residue numbering refers to NP\_009093.1. Every plasmid remains 6,134 bp and encodes 722 residues. EGFP, backbone and linker sequences remain identical to WT. These substitutions define experimental comparisons and do not establish a constitutively nuclear phenotype.}
+\caption{SnapGene Viewer maps of (A) S211A, (B) S142A and (C) S142A/S211A. Red marks identify the substituted codons; residue numbering refers to NP\_009093.1. Every plasmid is 6,134 bp and encodes 722 residues; EGFP, backbone and linker sequences are identical to WT.}
 \label{fig:mutant-plasmids}
 \end{figure}
 \FloatBarrier

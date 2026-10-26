@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-25T08:25:04.181102+00:00",
-  "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/check_report_consistency.py'",
+  "checked_at_utc": "2026-10-25T19:05:59.268453+00:00",
+  "actual_command": "/Library/Developer/CommandLineTools/usr/bin/python3 '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/check_report_consistency.py'",
   "scope": "report consistency only; manual page review is separate",
   "checks": {
     "compilation_inputs_PDF_text_log_and_page_images_match_bound_build": true,
@@ -9,6 +9,7 @@
     "native_maps_publication_figures_and_mutants_match_verified_inputs": true,
     "five_research_constructs_and_ten_native_map_inputs_match_audits": true,
     "research_control_inventory_workload_and_contrast_algebra_are_current": true,
+    "linker_only_constructs_and_architecture_panel_match_independent_audit": true,
     "ImageGen_vector_paths_and_editable_labels_match_bound_sources": true,
     "all_feature_intervals_and_displayed_strands_match_accepted_table": true,
     "cleavage_labels_distinguished_from_recognition_starts": true,
@@ -99,18 +100,18 @@
   },
   "compilation_record": {
     "path": "docs/协作/报告编译核验.json",
-    "sha256": "c8d427617cc49079774dd5f60133cebd72e7acac3ffa078bf0999bdfc925cb84"
+    "sha256": "2bcff6acbdc89a31d4a6ea64d0a90fd57d1c4b5b8d6d524530967b4d30ce2278"
   },
   "pdf": {
     "path": "报告/main.pdf",
-    "sha256": "9ea8012c80885695d6019e2042e7bf530d9cb926ab21b9a9190c59be5aed66a0",
-    "pages": 32
+    "sha256": "5781f01a2e5f674274f94265eb6dd567c009cea9f56ff53818671251689517c9",
+    "pages": 34
   },
   "pdf_text": {
     "path": "报告/build/main.txt",
-    "sha256": "cfddd8ea1a7ecec1d1e4a1dd6e65b22242262f14e2566051b8375ce90afdeff6"
+    "sha256": "6ce63c8bea7d050ce65736cca2bbb12d5ba31992c9ef24ad495e3f88a6b61d7e"
   },
-  "script_sha256": "968860ab76c4d0a8143099c056144f666739506215e034255401fb29ef1abe7b",
+  "script_sha256": "7bb67a91c31133703276e3631a758a07ef04bdde462d557be2977d51622b62d1",
   "limitations": [
     "Does not revalidate all prose claims or calculations",
     "Does not establish experimental success or human author review",

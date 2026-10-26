@@ -15,9 +15,12 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch, FancyBboxPatch
 from publication_style import INK, BLUE, TEAL, ORANGE, NPG, SOURCE
 from figure_layouts import save_figure, style
-from scientific_schematics import evidence_flow, research_matrix
+from scientific_schematics import evidence_flow
+from academic_panels import schedule_panel, research_design_panel
+import subprocess
 
 FIG = ROOT/'报告/images/B'
+BOLD_FONT = matplotlib.font_manager.findfont(matplotlib.font_manager.FontProperties(family='DejaVu Sans', weight='bold'))
 NATIVE = ROOT/'报告/质粒图-SnapGene'
 
 
@@ -29,19 +32,26 @@ def compose_native(stems, name, cols=2):
     rows = (len(stems)+cols-1)//cols
     doc = fitz.open()
     page = doc.new_page(width=720, height=rows*290)
+    # Pass the font as bytes: PyMuPDF rejects font paths containing non-ASCII characters.
+    page.insert_font(fontname='dvbold', fontbuffer=Path(BOLD_FONT).read_bytes())
     for i,stem in enumerate(stems):
         src = fitz.open(NATIVE/f'{stem}-en.pdf')
         col,row = i%cols,i//cols
         if len(stems)%cols and i==len(stems)-1: col=.5
         rect = fitz.Rect(col*360,row*290+15,(col+1)*360,(row+1)*290)
         page.show_pdf_page(rect,src,0)
-        page.insert_text((col*360+5,row*290+19),chr(65+i),fontsize=14,fontname='hebo')
+        page.insert_text((col*360+5,row*290+19),chr(65+i),fontsize=14,fontname='dvbold')
         src.close()
-    svg = page.get_svg_image(text_as_path=True)
-    (FIG/f'{name}.svg').write_text(svg)
-    # Keep native paths as vector artwork throughout panel composition.
-    cairosvg.svg2pdf(bytestring=svg.encode(),write_to=str(FIG/f'{name}.pdf'))
-    with fitz.open(FIG/f'{name}.pdf') as final:
+    # Save the PDF directly: a PDF-to-SVG-to-PDF round trip drops the soft mask of the
+    # vendor credit badge and turns it into a black box.
+    pdf_path = FIG/f'{name}.pdf'
+    try:
+        doc.subset_fonts()   # keep only the glyphs used by the panel letters
+    except Exception:
+        pass
+    doc.save(str(pdf_path), garbage=3, deflate=True)
+    subprocess.run(['pdftocairo', '-svg', str(pdf_path), str(FIG/f'{name}.svg')], check=True)
+    with fitz.open(pdf_path) as final:
         final[0].get_pixmap(matrix=fitz.Matrix(2.5,2.5),alpha=False).save(FIG/f'{name}.png')
     doc.close()
 
@@ -120,12 +130,12 @@ def main():
     compose_native(['TFEB-S211A-EGFP','TFEB-S142A-EGFP','TFEB-S142A-S211A-EGFP'],'mutant-plasmids')
     compose_native(['TFEB-3A-EGFP','TFEB-3T-EGFP'],'research-tagged-plasmids')
     compose_native(['TFEB-WT-untagged','TFEB-3A-untagged','TFEB-3T-untagged'],'research-untagged-plasmids')
-    cassette();schedule();evidence()
-    save_figure(research_matrix(),FIG/'research-design')
+    cassette();save_figure(schedule_panel(),FIG/'control-schedule');evidence()
+    save_figure(research_design_panel(),FIG/'research-design')
     names=['control-plasmids','mutant-plasmids','fusion-cassettes','control-schedule','evidence-design',
            'research-tagged-plasmids','research-untagged-plasmids','research-design']
     outputs += [FIG/f'{n}.{ext}' for n in names for ext in ('pdf','png','svg')]
-    sources.update({str(p.relative_to(ROOT)):sha(p) for p in (Path(__file__).resolve(),Path(__file__).with_name('publication_style.py'),Path(__file__).with_name('figure_layouts.py'),Path(__file__).with_name('scientific_schematics.py'))})
+    sources.update({str(p.relative_to(ROOT)):sha(p) for p in (Path(__file__).resolve(),Path(__file__).with_name('publication_style.py'),Path(__file__).with_name('figure_layouts.py'),Path(__file__).with_name('scientific_schematics.py'),Path(__file__).with_name('academic_panels.py'))})
     payload={'status':'rendered; actual page review required','palette_source':SOURCE,
              'sources':sources,'outputs':{str(p.relative_to(ROOT)):sha(p) for p in outputs},
              'native_renderer':'SnapGene Viewer 8.2.3, GUI SVG export, largest font, enzymes hidden',

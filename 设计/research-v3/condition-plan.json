@@ -16,8 +16,17 @@
     "qPCR technical reactions",
     "conditional TFE3/nascent RNA/AMPK/phosphosite/ChIP experiments"
   ],
-  "primary_estimand": "C = (Delta_E_M - Delta_U_M) - (Delta_E_T - Delta_U_T); Delta = mutant drug-minus-vehicle minus WT drug-minus-vehicle",
-  "minimum_precision_target": "95% CI half-width 0.5 log2 units, sample size fixed from separate pilot; not an equivalence margin",
+  "primary_estimand": "Three primary estimands with Holm correction: A_M, A_T and C = A_M - A_T, where A_s = (3A - WT in EGFP fusion) - (3A - WT in untagged) at stimulus s; equivalently C = (Delta_E_M - Delta_U_M) - (Delta_E_T - Delta_U_T)",
+  "minimum_precision_target": "95% CI half-width 0.5 log2 units for C (the most variable estimand), sample size fixed from separate pilot; not an equivalence margin",
   "scope": "Linker-EGFP fusion architecture, not EGFP alone; mature RNA abundance unless nascent RNA validated",
-  "manifest": "设计/research-v3/condition-plan.tsv"
+  "manifest": "设计/research-v3/condition-plan.tsv",
+  "R06": {
+    "status": "conditional on an R02 architecture effect",
+    "added_conditions_per_day": 6,
+    "added_arms": "KD + WT/3A linker-only x 3 stimuli",
+    "conditions_per_day": 51,
+    "minimum_wells_per_assay_endpoint": 612,
+    "constructs": "设计/linker-v4/",
+    "contrasts": "A^{E-L} and A^{L-U} at each drug; one Holm family of four"
+  }
 }

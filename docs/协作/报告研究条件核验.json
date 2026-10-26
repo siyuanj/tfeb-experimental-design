@@ -1,17 +1,18 @@
 {
   "status": "passed",
-  "checked_at": "2026-10-25T04:24:43.384998-04:00",
+  "checked_at": "2026-10-25T15:01:17.786614-04:00",
   "checks": {
     "unique_condition_ids_and_campaigns": true,
     "all_research_and_required_control_arms_complete_in_both_campaigns": true,
     "primary_contrast_available_in_both_campaigns_and_vehicle_cancels": true,
-    "culture_well_counts_include_controls_and_two_separate_campaigns": true
+    "culture_well_counts_include_controls_and_two_separate_campaigns": true,
+    "R06_added_conditions_and_wells_and_C_equals_A_M_minus_A_T": true
   },
   "inputs": {
     "设计/research-v3/condition-plan.tsv": "a4937f4fcb11d4e2863a015c2b5212e2355e9949a52315abb86fe42833296c7c",
-    "设计/research-v3/condition-plan.json": "5016d01b6e4c2d3c1962697103dd76be7db704ecb74b83f7d7f3363352c3db58",
-    "报告/sections/research-extension.tex": "6beaa8e6bf712a24a299f0600806cee56aac63297f86546d3daad6367569de4b",
-    "scripts/B-audit/check_research_condition_plan.py": "a8f72d8e85f465dc8b23710051af10d307f333dabe0005cb3a3e69aabf1437e6"
+    "设计/research-v3/condition-plan.json": "4799984a8eca786e4c500a35a02189652baf67623e8ff2262f6fba2274c7e194",
+    "报告/sections/research-extension.tex": "0cb00c8fc1e8856317bfb63237ac71275b58d44845adda57cc902cf8100a363f",
+    "scripts/B-audit/check_research_condition_plan.py": "06c47fb63a77425852ec4b8ae88fe247a55675c0a72a61c7020df8e21e48d2c9"
   },
   "conditions": {
     "primary": 45,

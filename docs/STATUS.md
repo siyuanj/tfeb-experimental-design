@@ -1,5 +1,38 @@
 # 工作进展
 
+## 2026-10-25 15:10 EDT Claude 独立审稿复查、质粒补充与措辞清理（Claude 工作线）
+
+### 这次做了什么
+
+- 用户要求：从审稿人角度判断设计是否合理、是否严谨，不只是写作问题；需要时补实验设计或重新设计质粒；删除 Codex 正文里的防御性写作；重画不符合学术风格的图；解决后 push。用户还让我阅读其与 Codex 的会话，据此确认作业定位和工作量要求（未改主线方案）。
+- 我的判断（C01–C15，详见 `docs/10-25 Claude独立审稿复查与措辞修订.md`）：主估计量只覆盖三因素交互、没有直接检验“3A 效应是否依赖架构”，已改为 A_M、A_T 与 C（Holm）；补入 Akt/S467（Palmieri 2017）、HeLa 缺 LKB1（Fogarty 2010）、主终点靶基因预选与 MK-8722 退路、TFE3 背景前置、瞬转异质性应对、核心复现数值成功标准、莱普霉素 B 核内上限对照、双批次 midi 级 DNA、两种文献模型对 3A 的相反预测。
+- 重新设计质粒：`设计/linker-v4/` 的 TFEB-WT-linker 与 TFEB-3A-linker（TFEB + GDPPVAT + TAA，5,417 bp / 483 aa），对应条件模块 R06，用于把架构效应拆成连接肽/终止位置与 EGFP 两个分量。生成脚本 `scripts/B-figures/build_linker_controls.py`，独立核查 `scripts/B-audit/check_linker_controls.py`。
+- 文献表述回查：Negoita 全文中找不到“明确提出丙氨酸改变局部结构”，已删；Vega 2017 摘要不支持“S211A 保留 Torin1 响应”，已改；Paquette 的“同时检验 S142A/S211A 组合”无法核实，已删；Martina 2014 改为全文可支持的表述。
+- 正文 15 个文件按“直述”重写，保留的只有决定怎么做、怎么判读的规则（用户偏好，见 Claude 记忆 no-defensive-writing）。AI 声明新增 Claude 的实际用途。
+- 图：`control-schedule`、`research-design` 重画；新增 `architecture-panel`；多面板质粒图的署名角标黑块与面板字母字体回退已修复（`render_publication_figures.py`、新增 `academic_panels.py`）。账本脚本 `check_report_consistency.py`、`finalize_report.py` 纳入 linker 构建与架构图。
+
+### 现在真实状态
+
+- 最终 PDF 实测 34 页，SHA-256 `5781f01a2e5f674274f94265eb6dd567c009cea9f56ff53818671251689517c9`；正文 38 条参考文献。Tectonic 0.17.0，日志无 Overfull、未定义引用或缺字（仍有 PDF 1.7 输入提示）。
+- linker 构建独立核查 9 项通过；研究条件核验 5 项通过（C = A_M − A_T 代数、R06 的 51 条件 / 612 孔）；报告一致性 12 项通过；`docs/协作/report-ready.json` 为 ready，206 个文件哈希已绑定。我独立回算的序列坐标与报告全部一致。
+- 逐页目视 34 页（`报告逐页核验.json`）：10 页为最终版直接查看，其余页的页图与此前直接查看的页图逐字节相同。过程中有批次图像读取被系统移除，这些页面按真实看到的版本重新核对。
+- 工作在分支 `claude/reviewer-revision-20261025`（起点 main `5fcad00`）；push 结果以 `git ls-remote` 与 Git 日志为准。未合并 main。
+- 写前备份：`docs/备份/claude-reviewer-20261025-150338/`；旧图备份 `docs/备份/figures-before-academic-20261025/`（均为本地、不入 Git）。
+
+### 卡在哪
+
+- 无阻塞。合并 main 需用户决定（见下）。
+
+### 还没验证的
+
+- 全部为设计：没有湿实验；R06 质粒未合成测序；siRNA、qPCR 寡核苷酸、抗体与新生 RNA 性能、Akt 抑制剂剂量、莱普霉素 B 浓度、第二细胞系均未设计或验证。
+- Paquette 2021 与 Vega 2017 全文未取得，相关表述限于摘要及 Negoita 引言的转述。controls-v2 / research-v3 的序列核验未重跑，只确认输入哈希未变。
+- 这是 Claude 自审，不是外部审稿或作者签字；全球新颖性未证明。作者署名、学号、实际贡献和课程提交要求待作者确认，PDF 保持 Working draft。
+
+### 要用户定的
+
+- 是否将该分支经 PR 合并到 main。
+
 ## 2026-10-25 05:06 EDT 扩展分支合并 main
 
 ### 这次做了什么

@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "started_at": "2026-10-25T04:24:43.412107-04:00",
+  "started_at": "2026-10-25T15:01:17.820218-04:00",
   "scope": "Compilation and artifact binding only; visual review is separate",
-  "actual_command": "'/Volumes/Work/课程/10-18 分子生物学实验/.venv-plasmid/bin/python' '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/compile_report.py'",
+  "actual_command": "/Library/Developer/CommandLineTools/usr/bin/python3 '/Volumes/Work/课程/TFEB综合实验设计/scripts/B-figures/compile_report.py'",
   "commands": [
     {
       "argv": [
@@ -11,9 +11,9 @@
       ],
       "command": "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic --version",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:43.421933-04:00",
+      "started_at": "2026-10-25T15:01:17.873571-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:43.439340-04:00"
+      "completed_at": "2026-10-25T15:01:17.895171-04:00"
     },
     {
       "argv": [
@@ -22,9 +22,9 @@
       ],
       "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext -v",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:43.439472-04:00",
+      "started_at": "2026-10-25T15:01:17.895345-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:43.461706-04:00"
+      "completed_at": "2026-10-25T15:01:17.913539-04:00"
     },
     {
       "argv": [
@@ -33,9 +33,9 @@
       ],
       "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm -v",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:43.461847-04:00",
+      "started_at": "2026-10-25T15:01:17.913689-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:43.480996-04:00"
+      "completed_at": "2026-10-25T15:01:17.923994-04:00"
     },
     {
       "argv": [
@@ -44,9 +44,9 @@
       ],
       "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo -v",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:43.481247-04:00",
+      "started_at": "2026-10-25T15:01:17.924137-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:43.501070-04:00"
+      "completed_at": "2026-10-25T15:01:17.934415-04:00"
     },
     {
       "argv": [
@@ -59,10 +59,10 @@
       ],
       "command": "/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic -X compile --keep-logs --keep-intermediates main.tex",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:43.501161-04:00",
+      "started_at": "2026-10-25T15:01:17.934491-04:00",
       "output_path": "报告/build/tectonic-output.txt",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:45.072643-04:00"
+      "completed_at": "2026-10-25T15:01:19.538766-04:00"
     },
     {
       "argv": [
@@ -73,9 +73,9 @@
       ],
       "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftotext -layout '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf' '/Volumes/Work/课程/TFEB综合实验设计/报告/build/main.txt'",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:45.073057-04:00",
+      "started_at": "2026-10-25T15:01:19.539342-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:45.122927-04:00"
+      "completed_at": "2026-10-25T15:01:19.592682-04:00"
     },
     {
       "argv": [
@@ -84,13 +84,13 @@
         "-r",
         "140",
         "/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf",
-        "/Volumes/Work/课程/TFEB综合实验设计/报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page"
+        "/Volumes/Work/课程/TFEB综合实验设计/报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page"
       ],
-      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm -png -r 140 '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf' '/Volumes/Work/课程/TFEB综合实验设计/报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page'",
+      "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdftoppm -png -r 140 '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf' '/Volumes/Work/课程/TFEB综合实验设计/报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page'",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:45.123300-04:00",
+      "started_at": "2026-10-25T15:01:19.593008-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:51.316247-04:00"
+      "completed_at": "2026-10-25T15:01:27.069087-04:00"
     },
     {
       "argv": [
@@ -99,13 +99,17 @@
       ],
       "command": "/opt/homebrew/Cellar/poppler/26.10.0/bin/pdfinfo '/Volumes/Work/课程/TFEB综合实验设计/报告/main.pdf'",
       "cwd": "/Volumes/Work/课程/TFEB综合实验设计/报告",
-      "started_at": "2026-10-25T04:24:51.316293-04:00",
+      "started_at": "2026-10-25T15:01:27.069220-04:00",
       "returncode": 0,
-      "completed_at": "2026-10-25T04:24:51.328283-04:00"
+      "completed_at": "2026-10-25T15:01:27.087128-04:00"
     }
   ],
   "inputs": {
     "报告/elegantpaper.cls": "29370455a0cdf0af94039a6483ba1433f5b067666771b0f96c4cca0159830173",
+    "报告/images/B/architecture-panel.json": "36c5e4811d0cde7858ff8ffb72f385b3afae5a3cc03a55ee650ccd97cb926e35",
+    "报告/images/B/architecture-panel.pdf": "5d6e1e7566efaa950d4c2d5a9361e089c8371f959903a3e9b65034ba5bfc2461",
+    "报告/images/B/architecture-panel.png": "c5ee52a0204be311df28cf7957a5bd8dd56c177065b019711e8fd75037d7aefe",
+    "报告/images/B/architecture-panel.svg": "69be999b68c5c5144788b02e067b1c1ff80d42bf421a6d6e03ff619bfb9c84dd",
     "报告/images/B/cloning-workflow-imagegen-v1.png": "a3fb8b624bdca7e111eb6c590857500555d3e460a4ac011ebdf3c95755a5e9d5",
     "报告/images/B/cloning-workflow-imagegen-v2.png": "228791286e04758a25870953c2c93ba74166690f79a3c19b0faf2a9ad0f6e78c",
     "报告/images/B/cloning-workflow-imagegen-v3.pdf": "9f9991387ca5c41aea36ea42e81883173855b31caa8aa28a30a95cfeea8728ee",
@@ -114,21 +118,21 @@
     "报告/images/B/cloning-workflow.pdf": "ced840eed87300c70342b7dfc8c34865c28a19336463248b59b86474a2977303",
     "报告/images/B/cloning-workflow.png": "bf9097ef5383482771591b10eecc2da35099c9a63c41f4f3ffc25fd94dc93898",
     "报告/images/B/cloning-workflow.svg": "54e3b063527a3efee153746209f6fbddc0d5140fc4dafb6442ca7a8121e64bf2",
-    "报告/images/B/control-plasmids.pdf": "4b8ae50858666a182274bd7a2c6638f08c75018010979982fb4900120760f12d",
-    "报告/images/B/control-plasmids.png": "67adc8272c66d747678b39cb7674f37376333bf678bbd3082b4499641f1b71e2",
-    "报告/images/B/control-plasmids.svg": "31555b55fbe0588d36812aa2b2fd120c9179e0389dfc50afdc9023c3d16e8f93",
-    "报告/images/B/control-schedule.pdf": "699458280255727bdc84c7e0f9cafc08d0fabb56105e7055c930e00b4a22f29b",
-    "报告/images/B/control-schedule.png": "74aa0a61f7fe85d0162bde4dbce7ef320b455edaa8e2ce6e6b805c0f0bff3bfa",
-    "报告/images/B/control-schedule.svg": "04afbbfc5e3d1a0c265c062f9c953ebff4c08a6065c25b524dcd81351317ad71",
+    "报告/images/B/control-plasmids.pdf": "2a3591e1fda9a6bca155760571fec4b3b98558cf63f9369f4e3efaccbaa59685",
+    "报告/images/B/control-plasmids.png": "1ea26e1c52b2a675ad0c70b65b25961bdb38d3fe3ac0ea7a0687f7dee2296143",
+    "报告/images/B/control-plasmids.svg": "2cf746b072c11f6bec5130440a908dfe0c295bc77f013b2c810f2053330d9324",
+    "报告/images/B/control-schedule.pdf": "389d2f1d962681d491e74073f7f64d8d6b6a9df0cc546fc19e0205bbde305030",
+    "报告/images/B/control-schedule.png": "0c5495e43a14c5c2d803db7e6280c2d05b8b671a4b63feddd76721f729231e12",
+    "报告/images/B/control-schedule.svg": "f91ade819715154bec25e54ef65bd99f12f1534d640c5bd64f24182ae5d764ed",
     "报告/images/B/evidence-design-imagegen-v3.pdf": "4263fce9d205e8c9f915be287af379b46d3dea3c9336bc42f3acd8b008796a7d",
     "报告/images/B/evidence-design-imagegen-v3.png": "91a2a068938acf994c72b52c970f9de87719999cab2ab130d52dc14772336121",
     "报告/images/B/evidence-design-imagegen-v3.svg": "0a703674314b7fdf16b6bcf2e79c7c61deb1d7be76b52a0762ea65329667fa31",
-    "报告/images/B/evidence-design.pdf": "65fa9c5295efdb1c0f133d5811412744e0b9ff618172f179889cd5718fe5dd2d",
+    "报告/images/B/evidence-design.pdf": "2afdd27cfa0cc39b6381206449f63e23b669319ddb32427ea54df2695b6f18ca",
     "报告/images/B/evidence-design.png": "b3d64957a4d387e19d6020985816ef5d80044dd32d57d787947c177e62298b34",
-    "报告/images/B/evidence-design.svg": "86b6a2cbcae7751147f9fb0587c85449862f64bb50ce784c26b5b73d03c9b890",
-    "报告/images/B/fusion-cassettes.pdf": "a208d78ba9c64680b4e57269d9e472c77885b9e96eee182f906cfb034c4ecb91",
+    "报告/images/B/evidence-design.svg": "cbcca67569303f96eda10ae37a0ebb986f413da0f464b19085d85bd4ac187c50",
+    "报告/images/B/fusion-cassettes.pdf": "4d255b189aa0849fd1fb38e832dab3ef7f455a46ac8cfccf2b58bf3fc081a80e",
     "报告/images/B/fusion-cassettes.png": "69df32841b1a17a57ffa1c42466d56e8595c852057c3f55668b8699dda9aaaf4",
-    "报告/images/B/fusion-cassettes.svg": "01c653236515d6b9b224226bdd9a3cbb5706ba12a70f3de64a249121c40b911b",
+    "报告/images/B/fusion-cassettes.svg": "de85b6e19bacf565c3f752f000f50ad52ec057d5314213dbc3882efe8c13f966",
     "报告/images/B/imagegen-flow-v3.json": "eaa1ec06f2275d7911ccd384a1101e21b78ca21d9dae47bdcf324f5a6d3164d8",
     "报告/images/B/imagegen-v3/cloning-initial.png": "fb72a33faaad968f5cbcd3fa505fd1a1100808890e325e768bff89f2e852ffb5",
     "报告/images/B/imagegen-v3/cloning-source.png": "754cd50978c28074a1a4497e7ff66ee141410d0c470b9d1c3c7542912131597a",
@@ -136,9 +140,9 @@
     "报告/images/B/imagegen-v3/evidence-source.png": "8f3ff5e143953443e36b7dbe1ed022b5f52930c5d036993649f41768d8d76413",
     "报告/images/B/imagegen-v3/evidence-trace.svg": "33b76118b91d0b578547725f4063ec28f73b85c5c4d462f47ec1ec8ac2284992",
     "报告/images/B/imagegen-workflow.json": "3e504a37a4b0e9670774f718ae293e7acd099ea62a48f0a904b05e8108208e15",
-    "报告/images/B/mutant-plasmids.pdf": "d8fb01e6baf6fea5a9ea7a536e3d56752f65154439a570a630a7b0547a856c16",
-    "报告/images/B/mutant-plasmids.png": "c3b67ccb006f071d10b56918c0ea13035951bfdb96a0a558c4f4debb228059d0",
-    "报告/images/B/mutant-plasmids.svg": "bb49e3aaa23bdaa85c6f82759705b139d0f1520c4f52756c87d4dada9aaa468f",
+    "报告/images/B/mutant-plasmids.pdf": "0b38674638a09940fcbcd4391e9fffe5a8398f5939e9bc8e970fd5f69ebdf95c",
+    "报告/images/B/mutant-plasmids.png": "c059e41ded9d22da95eb2c180552679cad69d883e925b14a00ce85267cdc254b",
+    "报告/images/B/mutant-plasmids.svg": "36ce6219bf594252f447fddc6bdfa0fa841fae34c40b0dd37e5f06205d7cf931",
     "报告/images/B/pipeline-figures.json": "9921a78c02cbd3dea196b90a6053169c15bda203e9c1b7f1a99ea62dbed892f0",
     "报告/images/B/plasmid-map.json": "f0823ea4d2e92d4ede96066811c5dd9d31d6aac897d1f11f6ddb6b6ab0961eec",
     "报告/images/B/plasmid-map.pdf": "306a859911a73fddff1f11f07ce5ca278b34236c161e7852e602a891128d9fa2",
@@ -147,33 +151,33 @@
     "报告/images/B/predicted-bands.pdf": "7ca1107fb984c42ec7b4dd6e6a1a885c713f9c27979ce4b80f93b8011ca309e4",
     "报告/images/B/predicted-bands.png": "8febbc896dbf06bf7262732daeb143495bcc3c43ad9f3159144cc380a820a323",
     "报告/images/B/predicted-bands.svg": "1ba435a2ff69935917f27cb1865810290670366d35a2cab382cc7647db442eac",
-    "报告/images/B/publication-figures.json": "8f54f6940daf08e399d2eb592e863e3c1f11cfd04d9d9437c72a54764d877b02",
-    "报告/images/B/research-design.pdf": "d1d44ac6c9742c4d736418de29c4b3e05411df561439f3ce33563d5fb7f6b0c3",
-    "报告/images/B/research-design.png": "a9b2f43a47aa2ec173975ecd17bdeb0e74aae7a9d548ab090f37a1ab7e4ee102",
-    "报告/images/B/research-design.svg": "dde1f386bf7521117d77b2abdfd90b988e6c58a12d3f6917cacb81ebd4cef812",
-    "报告/images/B/research-tagged-plasmids.pdf": "1e2d9535b27caf00d8b1b61244df7dbb196ad04121ef914ca42367ac8f072d54",
-    "报告/images/B/research-tagged-plasmids.png": "930232e2cd3a3bcad1c70ee8f52541cbb40c52d2d1961d0b3495b4ddd1839bf1",
-    "报告/images/B/research-tagged-plasmids.svg": "88f80d41b9784264ec5d20944d1e2257ffe716fd94d5071d8b3fed5f691ff380",
-    "报告/images/B/research-untagged-plasmids.pdf": "826f2dc93a845d4d607db49a718aa33c3a57af936fd56047512050315925a3bb",
-    "报告/images/B/research-untagged-plasmids.png": "f5d3f6d3795f29bf498eae69e524415c0e879d8cfae6f72bb8ac45bc85d0db4f",
-    "报告/images/B/research-untagged-plasmids.svg": "f48ddc5235819a8f77fc526ccc3a865e690de3a1bc21d1151a0d7f5c76f5f540",
-    "报告/main.tex": "b9480c90f2e352c4dfef087fe56d135104e2024ceb5999da39aca9111dfc1b04",
-    "报告/references.bib": "5f6812540817727526f29ec94f6f463b591a8a5a56e07ca6008198e6bd8f9526",
-    "报告/sections/abstract.tex": "174f928427dcf24b17787ac63f06acddf90570bac743e488ecc998c46ddfc8bd",
-    "报告/sections/background.tex": "94c43eb91576bce0e6a81dec23a0794dddcaa93ef691d87400efd138aebb85c4",
+    "报告/images/B/publication-figures.json": "7641cd954f12b4cccec27d5f5b2fcb488bbfd7858a34b8e8e9e302a3838ca8a6",
+    "报告/images/B/research-design.pdf": "0a2859303feba4201a7c06cc57078e98217a5888ecb2d0b8512e30aa47f974cf",
+    "报告/images/B/research-design.png": "e860ddbb73f24a84b517deb48c9c9fd18388e4f1ae324b8d240a753535e12c9b",
+    "报告/images/B/research-design.svg": "f34426e244962e0bf9412baace5972629ec5edbe64d55512a1920f1c7f752fab",
+    "报告/images/B/research-tagged-plasmids.pdf": "89fa1d4635124cd1726fde6ff71e9d3b3b1e8293891e4cb07bba489ddd2fcfec",
+    "报告/images/B/research-tagged-plasmids.png": "4ccfcd7b85adbc939bd6433c2c7fd8178b7cc959fdd4061d374525ea5194ec77",
+    "报告/images/B/research-tagged-plasmids.svg": "c1cd7b6637dd9db77b878099d835ef40152eb032ed440bbadec9266f3d227b19",
+    "报告/images/B/research-untagged-plasmids.pdf": "ce4ca56f57f2f178892e92c13af6b2cf2ee53e1f7dea5d0ae8b86996ca3f3d4c",
+    "报告/images/B/research-untagged-plasmids.png": "6beba537b3b6b8320f4a18fd8344a1fdec3aea04d44a662b901cae9681017841",
+    "报告/images/B/research-untagged-plasmids.svg": "e99b0bcc281369a951072a4ee94210fa80ffbc34ec6ca6146037db2ee44f3959",
+    "报告/main.tex": "e1430184e9877c46d9373da998711025fc12da8d8d5dc0dffea3dfc17739b24b",
+    "报告/references.bib": "cf1432f9f98808b9ad2e2354a7bb43cff9c6bd740acfa4d56e8491946349f4b3",
+    "报告/sections/abstract.tex": "655f8e382b6b81b10019ba4031092fc9934a22175d8a3a0eee07ff1d98c14f58",
+    "报告/sections/background.tex": "012f06776ad90fe733904e695d343316cbff35685048fddd8df65bc45c48e925",
     "报告/sections/construct-values.tex": "0c532eae821598e1760bd78a01fcdb4e80295fac8bc03936cbbc98c14fadd285",
-    "报告/sections/control-constructs.tex": "47f5f171f4f6d95f6828e0f5dcd19a3986b8dab1b0faa12b5971826eba59a240",
-    "报告/sections/declarations.tex": "cf9286c584b142da489df4b53c69f6aca2c342595df16df8fb95ee240334a8b1",
+    "报告/sections/control-constructs.tex": "8e8d1c1b65a98fe5db2bd1df77d2f625f60926508ed0a13fd5dc3ee739b1e419",
+    "报告/sections/declarations.tex": "a2397ddab15956a7bb11125636f99da01a204501fc578d4d8f7d7167199be166",
     "报告/sections/design.tex": "c4574b234741a9b67bb7cfcf3823b29858535b1c56a55527e1ff53d02f098215",
-    "报告/sections/discussion.tex": "3584573f0fcc626984c90bf53e71944a0b9eabb00209af3697aa209d42eea7e5",
+    "报告/sections/discussion.tex": "a07e6ea7a9f279cb0ef46dc04bef543326b9ca7aeb658e4a6b0a52a389eecfa5",
     "报告/sections/expected-results.tex": "6dfd1515842cd8003e22a63d25aab2cddf64512de619f101a6b076e5cf2af43b",
-    "报告/sections/methods-cell.tex": "648a4c1e6d5995e318bf552586cc643494efe0c1dbfc1706d22c2beb20fcf221",
-    "报告/sections/methods-cloning.tex": "d22594a59ba8a7ca79b70b0cb3cb67a531beaa680e02585a457f212c591c9742",
-    "报告/sections/research-extension.tex": "6beaa8e6bf712a24a299f0600806cee56aac63297f86546d3daad6367569de4b",
-    "报告/sections/results-cell.tex": "e6e6eee548a5653f2349d95508547bb3f43cb56b2fdfe2d0c9db3a950912f7fb",
-    "报告/sections/results-cloning.tex": "73d1e8795a5f250607e157caf6c41654757e0a10ffeae3efbd075a9ac9800e7c",
-    "报告/sections/screening-results.tex": "57d6784bc3bc95db88378f99ccb3cc80c5a786183c26d9b963dd3c001179b32c",
-    "报告/sections/workplan.tex": "98281df1eea887e5d3d61767db692a2882cf0e694ddf6886052f0dc8f7a085cf"
+    "报告/sections/methods-cell.tex": "a96c38ef6790ce212e01ac18206db6bb43d8f1f2d1bf871ad61c944a78c56306",
+    "报告/sections/methods-cloning.tex": "ad7ccafc391a886d0075f0a14891747b4f4bb6ac959eb3c7024a1cd0e9106cc0",
+    "报告/sections/research-extension.tex": "0cb00c8fc1e8856317bfb63237ac71275b58d44845adda57cc902cf8100a363f",
+    "报告/sections/results-cell.tex": "2b2511c1fdb2f9c77fd33c1c30be6ffba7ba866c9e4a9aed36772a6fc714d83a",
+    "报告/sections/results-cloning.tex": "a533533eb8e3768c5d8aa62e43b7df04e753edb9d13e05b3573977887d5cd440",
+    "报告/sections/screening-results.tex": "149dd8ebed23a272d79955e443abc9a1b4c03e2bb37e5fb08fa6f96f913b7c52",
+    "报告/sections/workplan.tex": "27445035e336b89e77c7ce63b7e612a2245df5eea683df7937ec9d12dc7e0238"
   },
   "sequence_gate": {
     "path": "docs/协作/sequence-ready.json",
@@ -275,180 +279,190 @@
       "version_output": "pdfinfo version 26.10.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
     }
   },
-  "completed_at": "2026-10-25T04:24:51.345090-04:00",
+  "completed_at": "2026-10-25T15:01:27.152893-04:00",
   "pdf": {
     "path": "报告/main.pdf",
-    "sha256": "9ea8012c80885695d6019e2042e7bf530d9cb926ab21b9a9190c59be5aed66a0",
-    "pages": 32
+    "sha256": "5781f01a2e5f674274f94265eb6dd567c009cea9f56ff53818671251689517c9",
+    "pages": 34
   },
   "pdf_text": {
     "path": "报告/build/main.txt",
-    "sha256": "cfddd8ea1a7ecec1d1e4a1dd6e65b22242262f14e2566051b8375ce90afdeff6"
+    "sha256": "6ce63c8bea7d050ce65736cca2bbb12d5ba31992c9ef24ad495e3f88a6b61d7e"
   },
   "compiler_log": {
     "path": "报告/build/tectonic-output.txt",
-    "sha256": "d56c8414f63252962b47611c2edb71bdfffb9209ce30f4e7870dbf934b47156a"
+    "sha256": "48c4d3c714bf222a56ebbd7a7052f24841204fe1a8667986b2d0ca1d5df91391"
   },
   "page_images": [
     {
       "page": 1,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-01.png",
-      "sha256": "6d6752745a42b1e94c347d53534ae0e5740ddebb830b38e2e10427233fc7db88"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-01.png",
+      "sha256": "e7f90f51cc512ebf2cfd260cf77641dad9d14982ea9892f4a52bd4ab268c4117"
     },
     {
       "page": 2,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-02.png",
-      "sha256": "4d4fc9b00a5e7ec25a99dd015e5e61d6428aa1b026ea666987230f575bc0f56a"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-02.png",
+      "sha256": "70e40e750b9b233e322a9d68a51cbdd287b39b11b3d068109cf5c75766a1df72"
     },
     {
       "page": 3,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-03.png",
-      "sha256": "b938ee9dda04f7440ab93c43f72c02f675992e7655d3ba512c2ef8654f9c0b86"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-03.png",
+      "sha256": "6eafcef195ebfe759339b6d44337643099dd43cf29426967b0dcb0448045283d"
     },
     {
       "page": 4,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-04.png",
-      "sha256": "91efc4aa3b90b7e2478bbb65c03b95e467aa530e05cf8d2f1e7638a4a9f3c4e6"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-04.png",
+      "sha256": "1a721ab4948c8577653a1e7a5ecb37126abbd377682ee8e64f76b8354db1b4c2"
     },
     {
       "page": 5,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-05.png",
-      "sha256": "ae10cea4a4a4f2f88f1e4b1e404779f9451002f774916f95ce21d145b891de58"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-05.png",
+      "sha256": "8d2260a2d39a8b33de69b3bbeb50b3312589d9d38c12456e956c64d0c9a6866d"
     },
     {
       "page": 6,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-06.png",
-      "sha256": "78a13baab4bfc8a0b92d1a115707c8e8fcdd48565d2e7da58afacafa656d50ef"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-06.png",
+      "sha256": "7f90fef3ab3a9421605779ab40464e815bae6f96c1524117efd188714c378029"
     },
     {
       "page": 7,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-07.png",
-      "sha256": "339dd505faff7fd8c16bc46504d76e675f1b3fdefd0651656c1ceac38bd823f9"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-07.png",
+      "sha256": "62f1326d2707c56921662af03bc1625b97d9691197d856b37b8ef2df9d00b2b4"
     },
     {
       "page": 8,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-08.png",
-      "sha256": "8d6c0a8af0ad48ae2b0228a4813160a981e6f9776a33c504936f93ca843c77cf"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-08.png",
+      "sha256": "7d9326aea4e142d7df71f70b8fcdd450f6819434a8725368953dd4b162f01f4f"
     },
     {
       "page": 9,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-09.png",
-      "sha256": "82720f778f5c26ee5729d3fd53be1ad551fdea995ac874828a9553736e146308"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-09.png",
+      "sha256": "14b44165045cdf4a27251eab52b056ac58b6d2e0c603e9b7146316cd7a0fe0ce"
     },
     {
       "page": 10,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-10.png",
-      "sha256": "35288f2f5974167655c9b0d929fac20e62a2d8e4d3929302213f86ca8e0f44d5"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-10.png",
+      "sha256": "2227695693459a555c90cdac579604f3d63d22d0c61b03f1438dfae16fe0d36e"
     },
     {
       "page": 11,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-11.png",
-      "sha256": "5d8c99e745c62c345502a329ade83c038d84ca53f98508a41518f158d5302da0"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-11.png",
+      "sha256": "ed220cd79296f6fe9b606a4c4e717632369ead976e2960340c7d27d7740264bf"
     },
     {
       "page": 12,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-12.png",
-      "sha256": "16ce067f00b71d01e09763f90d97b0a574d3d0c728503135ceebab5fd7222ca3"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-12.png",
+      "sha256": "9fd5e12d16921c01474c7cbdc4e49fc13964415a4193f197960b1eb0a9570767"
     },
     {
       "page": 13,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-13.png",
-      "sha256": "8c58447771051c066b529fe8ed76bd4fd1c9cc3eddb363c6476634dfa95c295d"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-13.png",
+      "sha256": "26f69c2d9ee88afe5532be69a384f4b736bc918f3310e6a1d3d42657d995301b"
     },
     {
       "page": 14,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-14.png",
-      "sha256": "90369c410dd8443596046a954837542dd82fb4d6d01117ec87561205f4afd836"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-14.png",
+      "sha256": "16d67df3c2a4d77ec9b80b293e45f208e575eb5a7e96959dc6ca43eff8ad978b"
     },
     {
       "page": 15,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-15.png",
-      "sha256": "b93d20cc4a0009d3b1670b718f26d348ba2ea669ddaad5c4dbe12933c55c212c"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-15.png",
+      "sha256": "e9299c8a3d008a11d51358c8bc02bebde8404be8ac7175832f1fafdf0226aa4d"
     },
     {
       "page": 16,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-16.png",
-      "sha256": "84cdb7aa99e6b7a70773defadf6264fa56d7bed858e402fe21b1f265aa51eb1d"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-16.png",
+      "sha256": "f37e164bb23a7bd4204a687868b456cb5dd9d6f25f43fb2dfa371d7a807be0c5"
     },
     {
       "page": 17,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-17.png",
-      "sha256": "d98034000bd64e4d352985d9ef7f6f5d1a7627bb7bedfb8a74abcb8adc26bbd3"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-17.png",
+      "sha256": "400bccb1520244c2307e95a89b77a1308b696e4e525946a8092f448208482b03"
     },
     {
       "page": 18,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-18.png",
-      "sha256": "09ffba9aac0dd249839a35a97776acc4549a8ed3c4aae6afe2df677d678cea03"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-18.png",
+      "sha256": "3da1ce0c90da0e8956397dac6a0067f5efbf01fea6c79ed52a21f83108d6f958"
     },
     {
       "page": 19,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-19.png",
-      "sha256": "d044d57878322cc573fc2d1c89e8eafdf3a071bc51c8b5c5124d5ccabbd3566f"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-19.png",
+      "sha256": "273fa15232ac9aa843265a8c4757321478cfca19498ec6ec0f15d73a22e8e8d5"
     },
     {
       "page": 20,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-20.png",
-      "sha256": "38cd24088048fe08e0f3d4c02a4a73a1ca64d8a92e084d7562ef636985c42b34"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-20.png",
+      "sha256": "8805766f6778e7de77c7b5a82d1319e9aad45bacb1e9b8b225cfc2dd06f3ffed"
     },
     {
       "page": 21,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-21.png",
-      "sha256": "5bbe7c477bbfb809acd8a04981911ab861a704986e3a731973162541b9a9ac9a"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-21.png",
+      "sha256": "26a687b7d97600553eb66b6c040e5d7d80b04172ce2029b5a310a975d9197a33"
     },
     {
       "page": 22,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-22.png",
-      "sha256": "9e5d0c5451ed29297d7f1636b28460e841ee7750396c243ef490afd0e10d35a4"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-22.png",
+      "sha256": "940343a0285f1e45f01d4275bdebafd50d49700369cf2730ddabb8fa69d385b7"
     },
     {
       "page": 23,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-23.png",
-      "sha256": "5722fe92b7ef484da3f3c31e6eb45c179b50ce481063eedf93ab78b2d13158fb"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-23.png",
+      "sha256": "d665b19ae48391005f71059f2840d08635dfd61a9508a0a1ec27f670829ffe66"
     },
     {
       "page": 24,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-24.png",
-      "sha256": "5026c993ceb11b2ce5de3d70d7ffa04ccdacb72ae6092d987c260ac8d731ad83"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-24.png",
+      "sha256": "3b230e5831e097e958e295ab18d79767ee56b22d27455f83f1fd66cfac3ea42a"
     },
     {
       "page": 25,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-25.png",
-      "sha256": "74790567228b8f27572827589d4eaa04feeecae26152792a3640ccd6b29fad16"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-25.png",
+      "sha256": "a69989dfa9de9a99f90e243af2df6fa957d5ca6d2b927a0da51e0d4f3f62d18a"
     },
     {
       "page": 26,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-26.png",
-      "sha256": "4d6fc5f179bc33470913e636477ab305fc8fd4155cca2bb4a9e9e11928455ed2"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-26.png",
+      "sha256": "cc73fe927c0ff30d3f174d3cb4ff6054e5de8ccc271ee2d7c9047fca710de7df"
     },
     {
       "page": 27,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-27.png",
-      "sha256": "dd84530f77c8fb3635599079f15cd7dc7efd970fdb8219ac95f51c112319dbe0"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-27.png",
+      "sha256": "85a3fe78bf0dedd832caf6c7479b67b597665652530327d288ac13d0fcf15590"
     },
     {
       "page": 28,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-28.png",
-      "sha256": "d79473efba7ccb1e43af1e80fbd26da43719a05f8210c4fd99da91355fe0052e"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-28.png",
+      "sha256": "ef00224680f88cbe39e86c1be513658a2b5108b3dbd8ef48d83be01b7225ebb0"
     },
     {
       "page": 29,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-29.png",
-      "sha256": "f320af9c31502a060052d00dc0aab1aa0d9446dd9caedf89909f8d1f3ddd9195"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-29.png",
+      "sha256": "1d6e30f48327a397c665a6a074b991c85278e19e425d10f973d775979ca8a75d"
     },
     {
       "page": 30,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-30.png",
-      "sha256": "c53f9d823c876ede8a36593df4fde9fc9c6daa00d86efd9fe5e5709b9306ca19"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-30.png",
+      "sha256": "30e41e815c965e7814b7409a49093cc3ba9bd14a2d9cbaf8d7d8e3464d4e4ae4"
     },
     {
       "page": 31,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-31.png",
-      "sha256": "d38dec9529f086009da73cd3f2fa1cb4287e04c9a7e29d167fef70aac5e2147b"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-31.png",
+      "sha256": "52f7fce5c3a600d385a84585ca3645ad33f8252d6bd1b771edfd5a6b708898f5"
     },
     {
       "page": 32,
-      "path": "报告/build/compile-pages-76e6ee36b84e4269b32db31b4ca0dc43/page-32.png",
-      "sha256": "7aa56193d9c2331ce9f11ac81ed4f52b5a6c716131b0449e61e60f63c8d84a28"
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-32.png",
+      "sha256": "5ae5e80a1ef8198729fb45764b2620e2230fefbe99eb820e4a9ff1fb5556fb57"
+    },
+    {
+      "page": 33,
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-33.png",
+      "sha256": "4d415321e8fef9488326f60742f0906064a4780e0a0a41aa61ddec257398c163"
+    },
+    {
+      "page": 34,
+      "path": "报告/build/compile-pages-dcdcd9d0414641c78b5ace90f36f986e/page-34.png",
+      "sha256": "f2671cfcf4bb317b346d5d31e45d8576cb071c6015776e37097eefcb276e94dd"
     }
   ],
   "limitations": [

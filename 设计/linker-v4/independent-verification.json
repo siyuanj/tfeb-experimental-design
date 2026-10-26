@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-25T15:05:26.911442-04:00",
+  "checks": {
+    "all_input_output_hashes": true,
+    "exact_full_DNA_sequence_from_frozen_WT": true,
+    "native_residue_numbering_and_translation": true,
+    "single_TAA_stop_no_internal_stop": true,
+    "EGFP_fully_removed": true,
+    "HindIII_BamHI_sites_retained_and_unique": true,
+    "digest_geometry": true,
+    "FASTA_GenBank_protein_agree": true,
+    "annotation_bounds_and_preserved_backbone_features": true
+  },
+  "constructs": [
+    {
+      "name": "TFEB-WT-linker",
+      "bp": 5417,
+      "protein_aa": 483,
+      "specific_edits_1based": {},
+      "HindIII_BamHI_insert_nt": 1439,
+      "HindIII_BamHI_backbone_nt": 3978
+    },
+    {
+      "name": "TFEB-3A-linker",
+      "bp": 5417,
+      "protein_aa": 483,
+      "specific_edits_1based": {
+        "2026": "G",
+        "2027": "C",
+        "2029": "G",
+        "2030": "C",
+        "2035": "G",
+        "2036": "C"
+      },
+      "HindIII_BamHI_insert_nt": 1439,
+      "HindIII_BamHI_backbone_nt": 3978
+    }
+  ],
+  "manifest_sha256": "963f13bf35d69d9e266b3545c18dc88ba7ea7d9a9f341034e71de53719803ddc",
+  "audit_script_sha256": "d4b81bc686a12c4ba31ea8fae3ded3a916236f74b7011683442f99127370c170",
+  "translation_audit_sha256": "c8e7dd14ccf87179deb77e1b50824745c9da1be68007cc7930f46dd318d52080",
+  "limitations": [
+    "Sequence design only; no synthesis, cloning or expression result"
+  ]
+}
