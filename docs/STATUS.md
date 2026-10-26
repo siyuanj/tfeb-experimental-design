@@ -1,5 +1,31 @@
 # 工作进展
 
+## 2026-10-25 21:42 EDT Claude 审稿修订分支合并 main（Claude 工作线）
+
+### 这次做了什么
+
+- 用户明确要求：把 `claude/reviewer-revision-20261025` 通过 PR 合并到 main 并 push。依项目约定开 [PR #7](https://github.com/siyuanj/tfeb-experimental-design/pull/7)，用已登录的 GitHub CLI 合并，保留完整提交历史；合并时用 `--match-head-commit` 固定为已审阅的 head `5ab9660555ebe98eebb13baa74b2f61b3ab9df93`。未使用强制推送或管理员绕过，未删除功能分支。
+- 上一节“要用户定的：是否合并”已由用户决定并执行，该节正文保持不变。
+
+### 现在真实状态
+
+- GitHub 合并时间 `2026-10-26T01:41:55Z`，合并提交 `88d43890006391c6dedf7f7a0b0cfb4cd1c0ee35`，PR 状态 MERGED。本地 main 与 `origin/main` 均为此提交；合并树 `99f00268a50f2e6cb94d6d72fddad338b2d13a6b` 与已审阅分支树完全相同。
+- 合并前 PR 为 MERGEABLE/CLEAN；仓库没有 CI，`statusCheckRollup` 为空，不声称 CI 通过。
+- 在 main 上重跑 `finalize_report.py`：ready，206 个文件哈希匹配，PDF 仍为 34 页、SHA-256 `5781f01a2e5f674274f94265eb6dd567c009cea9f56ff53818671251689517c9`。该脚本只刷新 `ready_at` 时间戳，未提交。没有重新编译或改动报告、序列、图版。
+- STATUS 写前备份：`docs/备份/claude-merge-20261025-214224/STATUS.md`（本地，不入 Git）。
+
+### 卡在哪
+
+- 无阻塞。后续协作从更新后的 main 新建工作分支；`claude/reviewer-revision-20261025` 与 `codex/tfeb-controls-figures` 仍保留在远端，是否清理由用户决定。
+
+### 还没验证的
+
+- 与上一节相同：没有湿实验；R06 质粒未合成测序；siRNA、qPCR 寡核苷酸、抗体与新生 RNA 性能、Akt 抑制剂剂量、莱普霉素 B 浓度、第二细胞系均未设计或验证。作者署名、学号、实际贡献和课程提交要求待作者确认。
+
+### 要用户定的
+
+- 无。
+
 ## 2026-10-25 15:10 EDT Claude 独立审稿复查、质粒补充与措辞清理（Claude 工作线）
 
 ### 这次做了什么
